@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/5137ecb4c3aedf2b.css" as="style"/><link rel="stylesheet" href="/_next/static/css/5137ecb4c3aedf2b.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script><script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/_next/static/chunks/main-433ff526183b1a63.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/_next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/_next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>基础</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e简单说\u003c/h5\u003e\n\u003cp\u003eindexedDB 是对象数据库，而不是关系数据库，它比 支持 SQL 简单多了。但是，它要比 Web 储存在 API 支持的键值对储存强大、更健壮、更高效。与 Web 储存和文件系统一样，insexedDB\n    数据库的作用也局限在包含它们的文档源中：两个同源的 Web 页面相互之间可以访问对方的数据，但是同源的页面不行。\u003c/p\u003e\n\u003cp\u003e每一个源可以有任意数目的 indexedDB 数据库。但是每一额数据库的名字都必须在该源下必须是唯一的。在 indexedDB API 中，一个数据库就是一个命名的对象仓库的集合。\u003c/p\u003e\n\u003cp\u003e每一个仓库必须有一个键，通过该键实现储存区进行该对象的储存和获取。键必须是唯一的，同一个储存区不能拥有相同的键，并且它们必须按照自然顺序储存，以便查询。\u003c/p\u003e\n\u003cp\u003eindexedDB API 很简单，查询或更新数据库步骤如下：\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003e通过指定的名字打开数据库\u003c/li\u003e\n    \u003cli\u003e创建一个事务，使用该方法在数据库中通过名字查询数据库对象储存区\u003c/li\u003e\n    \u003cli\u003e调用对象储存区的 get() 方法来查询对象，或者是 put 来存储新的对象\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e如果要避免覆盖新的已有对象，可以调用 add() 方法。\u003c/p\u003e\n\u003cp\u003e如果想查询表示键范围的对象，通过创建一个 IDBRange 对象，并将其传递给对象仓库的 openCursor() 方法。\u003c/p\u003e\n\u003cp\u003e如果想用次键查询，通过查询对象仓库的命名索引，然后调用索引对象上的 get() 方法或 openCursor() 方法。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ indexedDB","title":"基础"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","indexedDB","基础"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/5137ecb4c3aedf2b.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/5137ecb4c3aedf2b.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-433ff526183b1a63.js" defer=""></script>
+  <script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="_next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>基础</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="_next_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e简单说\u003c/h5\u003e\n\u003cp\u003eindexedDB 是对象数据库，而不是关系数据库，它比 支持 SQL 简单多了。但是，它要比 Web 储存在 API 支持的键值对储存强大、更健壮、更高效。与 Web 储存和文件系统一样，insexedDB\n    数据库的作用也局限在包含它们的文档源中：两个同源的 Web 页面相互之间可以访问对方的数据，但是同源的页面不行。\u003c/p\u003e\n\u003cp\u003e每一个源可以有任意数目的 indexedDB 数据库。但是每一额数据库的名字都必须在该源下必须是唯一的。在 indexedDB API 中，一个数据库就是一个命名的对象仓库的集合。\u003c/p\u003e\n\u003cp\u003e每一个仓库必须有一个键，通过该键实现储存区进行该对象的储存和获取。键必须是唯一的，同一个储存区不能拥有相同的键，并且它们必须按照自然顺序储存，以便查询。\u003c/p\u003e\n\u003cp\u003eindexedDB API 很简单，查询或更新数据库步骤如下：\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003e通过指定的名字打开数据库\u003c/li\u003e\n    \u003cli\u003e创建一个事务，使用该方法在数据库中通过名字查询数据库对象储存区\u003c/li\u003e\n    \u003cli\u003e调用对象储存区的 get() 方法来查询对象，或者是 put 来存储新的对象\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e如果要避免覆盖新的已有对象，可以调用 add() 方法。\u003c/p\u003e\n\u003cp\u003e如果想查询表示键范围的对象，通过创建一个 IDBRange 对象，并将其传递给对象仓库的 openCursor() 方法。\u003c/p\u003e\n\u003cp\u003e如果想用次键查询，通过查询对象仓库的命名索引，然后调用索引对象上的 get() 方法或 openCursor() 方法。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ indexedDB","title":"基础"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","indexedDB","基础"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/5137ecb4c3aedf2b.css" as="style"/><link rel="stylesheet" href="/_next/static/css/5137ecb4c3aedf2b.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script><script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/_next/static/chunks/main-433ff526183b1a63.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/_next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/_next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>form</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eform\u003c/h5\u003e\n\u003cp\u003e 在 HTML 5 中，使用 XMLHttpRequest 对象发送表单数据时，需要先创建一个 FormData 对象。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003evar form = document.getElementById('form1'); \u003c/span\u003e\u003cspan class=\"p2\"\u003evar formData =\n        new FormData(form);\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003eFormData() 构造函数包含一个参数，表示页面中的一个表单（ form ）元素。 \u003c/p\u003e\n\u003cp\u003e 创建好 formData 的时候，把该对象传递给 XMLHttpRequest 对象的 send() 方法即可。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003exhr.send(formData);\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 使用 formData 对象的 append() 方法可以追加数据，这些数据将向服务器发送时随着用户在表单控件的输入数据一起发向服务器端： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eformData.append('add_data',' 测试 '); \u003cspan class=\"r\"\u003e// 发送前追加数据 \u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e 该方法包括两个参数：第一个是追加数据的键名，第二个是追加数据的键值。 \u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e 在服务器端，使用相同的方法来处理使用 XMLHttpRequest 对象提交的表单数据与使用非 Ajax 方式提交的表单数据，当 formData 对象中的包含附加数据时，服务器端将该数据的键名视为一个表单控件的\n        name 属性值，将该数据的键值视为该表单控件的数据。 \u003c/p\u003e\n\u003c/div\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e\u0026lt;!DOCTYPE html\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;html\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u0026lt;head\u0026gt;\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;meta\n        charset=\"utf-8\"\u0026gt;\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;title\u0026gt;123\u0026lt;/title\u0026gt;\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;script\u0026gt;\u003c/span\u003e\u003cspan class=\"p4\"\u003efunction sendForm() {\u003c/span\u003e\u003cspan class=\"p6\"\u003evar form =\n        document.getElementById(\"form1\");\u003c/span\u003e\u003cspan class=\"p6\"\u003evar formData = new FormData(form);\u003c/span\u003e\u003cspan\n        class=\"p6\"\u003eformData.append('grade', '3'); \u003cspan class=\"r\"\u003e// 在发送之前添加附加数据 \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p6\"\u003evar xhr = new XMLHttpRequest();\u003c/span\u003e\u003cspan class=\"p6\"\u003exhr.open('POST', 'test.php',\n        true);\u003c/span\u003e\u003cspan class=\"p6\"\u003exhr.onload = function(e) {\u003c/span\u003e\u003cspan class=\"p8\"\u003eif (this.status == 200)\n        {\u003c/span\u003e\u003cspan class=\"p0\"\u003edocument.getElementById(\"result\").innerHTML = this.response;\u003c/span\u003e\n    \u003cspan class=\"p8\"\u003e}\u003c/span\u003e\u003cspan class=\"p6\"\u003e};\u003c/span\u003e\u003cspan class=\"p6\"\u003exhr.send(formData);\u003c/span\u003e\u003cspan\n        class=\"p4\"\u003e}\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;/script\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;/head\u0026gt;\u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;body\u0026gt;\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;form id=\"form1\"\u0026gt;\u003c/span\u003e\u003cspan class=\"p4\"\u003e 用户名： \u0026lt;input type=\"text\"\n        name=\"name\"\u0026gt;\u0026lt;br/\u0026gt; 密 码： \u0026lt;input type=\"password\" name=\"pass\"\u0026gt;\u0026lt;br/\u0026gt;\u003c/span\u003e\u003cspan\n        class=\"p4\"\u003e\u0026lt;input type=\"button\" value=\" 发送 \" onclick=\"sendForm();\"\u0026gt;\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;/form\u0026gt;\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;output id=\"result\"\u0026gt;\u0026lt;/output\u0026gt;\u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u0026lt;/body\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;/html\u0026gt;\u003c/span\u003e\n\u003c/code\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ XHR 2","title":"form"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","XHR 2","form"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/5137ecb4c3aedf2b.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/5137ecb4c3aedf2b.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-433ff526183b1a63.js" defer=""></script>
+  <script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="_next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>form</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="_next_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eform\u003c/h5\u003e\n\u003cp\u003e 在 HTML 5 中，使用 XMLHttpRequest 对象发送表单数据时，需要先创建一个 FormData 对象。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003evar form = document.getElementById('form1'); \u003c/span\u003e\u003cspan class=\"p2\"\u003evar formData =\n        new FormData(form);\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003eFormData() 构造函数包含一个参数，表示页面中的一个表单（ form ）元素。 \u003c/p\u003e\n\u003cp\u003e 创建好 formData 的时候，把该对象传递给 XMLHttpRequest 对象的 send() 方法即可。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003exhr.send(formData);\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 使用 formData 对象的 append() 方法可以追加数据，这些数据将向服务器发送时随着用户在表单控件的输入数据一起发向服务器端： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eformData.append('add_data',' 测试 '); \u003cspan class=\"r\"\u003e// 发送前追加数据 \u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e 该方法包括两个参数：第一个是追加数据的键名，第二个是追加数据的键值。 \u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e 在服务器端，使用相同的方法来处理使用 XMLHttpRequest 对象提交的表单数据与使用非 Ajax 方式提交的表单数据，当 formData 对象中的包含附加数据时，服务器端将该数据的键名视为一个表单控件的\n        name 属性值，将该数据的键值视为该表单控件的数据。 \u003c/p\u003e\n\u003c/div\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e\u0026lt;!DOCTYPE html\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;html\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u0026lt;head\u0026gt;\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;meta\n        charset=\"utf-8\"\u0026gt;\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;title\u0026gt;123\u0026lt;/title\u0026gt;\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;script\u0026gt;\u003c/span\u003e\u003cspan class=\"p4\"\u003efunction sendForm() {\u003c/span\u003e\u003cspan class=\"p6\"\u003evar form =\n        document.getElementById(\"form1\");\u003c/span\u003e\u003cspan class=\"p6\"\u003evar formData = new FormData(form);\u003c/span\u003e\u003cspan\n        class=\"p6\"\u003eformData.append('grade', '3'); \u003cspan class=\"r\"\u003e// 在发送之前添加附加数据 \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p6\"\u003evar xhr = new XMLHttpRequest();\u003c/span\u003e\u003cspan class=\"p6\"\u003exhr.open('POST', 'test.php',\n        true);\u003c/span\u003e\u003cspan class=\"p6\"\u003exhr.onload = function(e) {\u003c/span\u003e\u003cspan class=\"p8\"\u003eif (this.status == 200)\n        {\u003c/span\u003e\u003cspan class=\"p0\"\u003edocument.getElementById(\"result\").innerHTML = this.response;\u003c/span\u003e\n    \u003cspan class=\"p8\"\u003e}\u003c/span\u003e\u003cspan class=\"p6\"\u003e};\u003c/span\u003e\u003cspan class=\"p6\"\u003exhr.send(formData);\u003c/span\u003e\u003cspan\n        class=\"p4\"\u003e}\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;/script\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;/head\u0026gt;\u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;body\u0026gt;\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;form id=\"form1\"\u0026gt;\u003c/span\u003e\u003cspan class=\"p4\"\u003e 用户名： \u0026lt;input type=\"text\"\n        name=\"name\"\u0026gt;\u0026lt;br/\u0026gt; 密 码： \u0026lt;input type=\"password\" name=\"pass\"\u0026gt;\u0026lt;br/\u0026gt;\u003c/span\u003e\u003cspan\n        class=\"p4\"\u003e\u0026lt;input type=\"button\" value=\" 发送 \" onclick=\"sendForm();\"\u0026gt;\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;/form\u0026gt;\u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;output id=\"result\"\u0026gt;\u0026lt;/output\u0026gt;\u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u0026lt;/body\u0026gt;\u003c/span\u003e\u003cspan class=\"p\"\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;/html\u0026gt;\u003c/span\u003e\n\u003c/code\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ XHR 2","title":"form"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","XHR 2","form"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/5137ecb4c3aedf2b.css" as="style"/><link rel="stylesheet" href="/_next/static/css/5137ecb4c3aedf2b.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script><script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/_next/static/chunks/main-433ff526183b1a63.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/_next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/_next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>原理</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003e使用 Web Workers 的基本原理如下：\u003c/p\u003e\n\u003cp\u003e在使用 Web Workers 时，必须建立一个 Worker 实例，并使用要被执行的 JavaScript 文件所在 URL 作为参数，而且必须把 Worker 要执行的 Javascript 程序写在如下的文件中：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar worker = new Worker(\"worker.js\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e这样， worker.js 中的程序代码便开始运行了。每一个运行在客户端操作系统线程中的 JavaScript 程序代码称为一个 Worker ， worker.js 中的程序代码便是一个 Worker 。\u003c/p\u003e\n\u003cp\u003e主页面与 Worker 之间，只通过 postMessage() 方法与 onmessage 事件来沟通。 Worker 中的 postMessage() 方法用来向页面传送讯息，页面收到讯息时，则使用 onmessage\n    事件处理函数来处理。 onmessage 事件处理函数的参数中有一个 data 属性，用于携带传送的数据。\u003c/p\u003e\n\u003cp\u003eWeb Workers 发生错误时，会触发 error 事件，使用 error 事件处理函数可以处理。\u003c/p\u003e\n\u003cp\u003e另外， Worker 对象还有一个方法叫做 terminate() ，可以强制结束其执行。\u003c/p\u003e\n\u003ch5\u003e使用 Web Workers 入门\u003c/h5\u003e\n\u003cp\u003e下面来看一下如何使用 Web Workers 实现求素数的复杂运算。往往包含以下两个步骤。\u003c/p\u003e\n\u003ch6\u003e首先建立一个 JavaScript 文件 \u003c/h6\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003eonmessage = function(e) { \u003c/span\u003e\u003cspan class=\"p2\"\u003evar n = e.data * 100; \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003epostMessage(n); }\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003e在 HTML 网页中创建 Worker ，并接收消息 \u003c/h6\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;p\u0026gt;Prime found: \u0026lt;span id=\"state\"\n        style=\"background-color:#09F\"\u0026gt;0\u0026lt;/span\u0026gt; \u0026lt;/p\u0026gt; \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;script \u0026gt;\n    \u003c/span\u003e\u003cspan class=\"p4\"\u003evar state = document.getElementById(\"state\"); \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003eif (window.Worker) { \u003c/span\u003e\u003cspan class=\"p6\"\u003evar worker = new Worker(\"213.js\"); \u003c/span\u003e\u003cspan\n        class=\"p6\"\u003eworker.postMessage(2); \u003c/span\u003e\u003cspan class=\"p6\"\u003eworker.onmessage = function(event) { \u003c/span\u003e\u003cspan\n        class=\"p8\"\u003estate.textContent = event.data; \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003e}; \u003c/span\u003e\u003cspan class=\"p4\"\u003e} else { \u003c/span\u003e\u003cspan class=\"p6\"\u003ealert(\" 浏览器不支持 Web Workers!\");\n    \u003c/span\u003e\u003cspan class=\"p4\"\u003e} \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;/script\u0026gt;\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e在浏览器中执行这个网页，现在求素数的 JavaScript 程序代码运行在客户端操作系统线程中。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 线程","title":"原理"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","线程","原理"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/5137ecb4c3aedf2b.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/5137ecb4c3aedf2b.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-433ff526183b1a63.js" defer=""></script>
+  <script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="_next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>原理</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="_next_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003e使用 Web Workers 的基本原理如下：\u003c/p\u003e\n\u003cp\u003e在使用 Web Workers 时，必须建立一个 Worker 实例，并使用要被执行的 JavaScript 文件所在 URL 作为参数，而且必须把 Worker 要执行的 Javascript 程序写在如下的文件中：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar worker = new Worker(\"worker.js\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e这样， worker.js 中的程序代码便开始运行了。每一个运行在客户端操作系统线程中的 JavaScript 程序代码称为一个 Worker ， worker.js 中的程序代码便是一个 Worker 。\u003c/p\u003e\n\u003cp\u003e主页面与 Worker 之间，只通过 postMessage() 方法与 onmessage 事件来沟通。 Worker 中的 postMessage() 方法用来向页面传送讯息，页面收到讯息时，则使用 onmessage\n    事件处理函数来处理。 onmessage 事件处理函数的参数中有一个 data 属性，用于携带传送的数据。\u003c/p\u003e\n\u003cp\u003eWeb Workers 发生错误时，会触发 error 事件，使用 error 事件处理函数可以处理。\u003c/p\u003e\n\u003cp\u003e另外， Worker 对象还有一个方法叫做 terminate() ，可以强制结束其执行。\u003c/p\u003e\n\u003ch5\u003e使用 Web Workers 入门\u003c/h5\u003e\n\u003cp\u003e下面来看一下如何使用 Web Workers 实现求素数的复杂运算。往往包含以下两个步骤。\u003c/p\u003e\n\u003ch6\u003e首先建立一个 JavaScript 文件 \u003c/h6\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003eonmessage = function(e) { \u003c/span\u003e\u003cspan class=\"p2\"\u003evar n = e.data * 100; \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003epostMessage(n); }\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003e在 HTML 网页中创建 Worker ，并接收消息 \u003c/h6\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;p\u0026gt;Prime found: \u0026lt;span id=\"state\"\n        style=\"background-color:#09F\"\u0026gt;0\u0026lt;/span\u0026gt; \u0026lt;/p\u0026gt; \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;script \u0026gt;\n    \u003c/span\u003e\u003cspan class=\"p4\"\u003evar state = document.getElementById(\"state\"); \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003eif (window.Worker) { \u003c/span\u003e\u003cspan class=\"p6\"\u003evar worker = new Worker(\"213.js\"); \u003c/span\u003e\u003cspan\n        class=\"p6\"\u003eworker.postMessage(2); \u003c/span\u003e\u003cspan class=\"p6\"\u003eworker.onmessage = function(event) { \u003c/span\u003e\u003cspan\n        class=\"p8\"\u003estate.textContent = event.data; \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003e}; \u003c/span\u003e\u003cspan class=\"p4\"\u003e} else { \u003c/span\u003e\u003cspan class=\"p6\"\u003ealert(\" 浏览器不支持 Web Workers!\");\n    \u003c/span\u003e\u003cspan class=\"p4\"\u003e} \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u0026lt;/script\u0026gt;\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e在浏览器中执行这个网页，现在求素数的 JavaScript 程序代码运行在客户端操作系统线程中。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 线程","title":"原理"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","线程","原理"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/5137ecb4c3aedf2b.css" as="style"/><link rel="stylesheet" href="/_next/static/css/5137ecb4c3aedf2b.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script><script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/_next/static/chunks/main-433ff526183b1a63.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/_next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/_next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>bitSet</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003e位集合实现了一组单独的设置和清除的位标志。值啊处理一组布尔值的时候非常有用。\u003c/p\u003e\n\u003ch5\u003e方法\u003c/h5\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003cscript\u003e\n        _MiMethod.td(\"Aa\", [\n            [\" void and(BitSet set)\", \" 对此目标位 set 和参数位 set 执行逻辑与操作 \"],\n            [\" void andNot(BitSet set)\", \" 清除此 BitSet 中所有的位，其相应的位在指定的 BitSet 中已设置 \"],\n            [\" int cardinality( )\", \" 返回此 BitSet 中设置为 true 的位数 \"],\n            [\" void clear( )\", \" 将此 BitSet 中的所有位设置为 false \"],\n            [\" void clear(int index)\", \" 将索引指定处的位设置为 false \"],\n            [\" void clear(int startIndex, int endIndex)\", \" 将指定的 startIndex（包括）到指定的 toIndex（不包括）范围内的位设置为 false \"],\n            [\" Object clone( )\", \" 复制此 BitSet，生成一个与之相等的新 BitSet \"],\n            [\" boolean equals(Object bitSet)\", \" 将此对象与指定的对象进行比较 \"],\n            [\" void flip(int index)\", \" 将指定索引处的位设置为其当前值的补码 \"],\n            [\" void flip(int startIndex, int endIndex)\", \" 将指定的 fromIndex（包括）到指定的 toIndex（不包括）范围内的每个位设置为其当前值的补码 \"],\n            [\" boolean get(int index)\", \" 返回指定索引处的位值 \"],\n            [\" BitSet get(int startIndex, int endIndex)\", \" 返回一个新的 BitSet，它由此 BitSet 中从 fromIndex（包括）到 toIndex（不包括）范围内的位组成 \"],\n            [\" int hashCode( )\", \" 返回此位 set 的哈希码值 \"],\n            [\" boolean intersects(BitSet bitSet)\", \" 如果指定的 BitSet 中有设置为 true 的位，并且在此 BitSet 中也将其设置为 true，则返回 true \"],\n            [\" boolean isEmpty( )\", \" 如果此 BitSet 中没有包含任何设置为 true 的位，则返回 true \"],\n            [\" int length( )\", \" 返回此 BitSet 的\\\"逻辑大小\\\"：BitSet 中最高设置位的索引加 1 \"],\n            [\" int nextClearBit(int startIndex)\", \" 返回第一个设置为 false 的位的索引，这发生在指定的起始索引或之后的索引上 \"],\n            [\" int nextSetBit(int startIndex)\", \" 返回第一个设置为 true 的位的索引，这发生在指定的起始索引或之后的索引上 \"],\n            [\" void or(BitSet bitSet)\", \" 对此位 set 和位 set 参数执行逻辑或操作 \"],\n            [\" void set(int index)\", \" 将指定索引处的位设置为 true \"],\n            [\" void set(int index, boolean v)\", \"  将指定索引处的位设置为指定的值 \"],\n            [\" void set(int startIndex, int endIndex)\", \" 将指定的 fromIndex（包括）到指定的 toIndex（不包括）范围内的位设置为 true \"],\n            [\" void set(int startIndex, int endIndex, boolean v)\", \" 将指定的 fromIndex（包括）到指定的 toIndex（不包括）范围内的位设置为指定的值 \"],\n            [\" int size( )\", \" 返回此 BitSet 表示位值时实际使用空间的位数 \"],\n            [\" String toString( )\", \" 返回此位 set 的字符串表示形式 \"],\n            [\" void xor(BitSet bitSet)\", \" 对此位 set 和位 set 参数执行逻辑异或操作\"]\n        ])\n    \u003c/script\u003e\n\u003c/table\u003e\n\u003ctbody\u003e\n    \"],[\" 方法描述\u003c/th\u003e\n    \u003c/tr\u003e\n    \"],\u003c/tbody\u003e","pageTitle":"java ✈︎✈︎ java ✈︎✈︎ 数据结构","title":"bitSet"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["java","java","数据结构","bitSet"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/5137ecb4c3aedf2b.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/5137ecb4c3aedf2b.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-433ff526183b1a63.js" defer=""></script>
+  <script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="_next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>bitSet</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="_next_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003e位集合实现了一组单独的设置和清除的位标志。值啊处理一组布尔值的时候非常有用。\u003c/p\u003e\n\u003ch5\u003e方法\u003c/h5\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003cscript\u003e\n        _MiMethod.td(\"Aa\", [\n            [\" void and(BitSet set)\", \" 对此目标位 set 和参数位 set 执行逻辑与操作 \"],\n            [\" void andNot(BitSet set)\", \" 清除此 BitSet 中所有的位，其相应的位在指定的 BitSet 中已设置 \"],\n            [\" int cardinality( )\", \" 返回此 BitSet 中设置为 true 的位数 \"],\n            [\" void clear( )\", \" 将此 BitSet 中的所有位设置为 false \"],\n            [\" void clear(int index)\", \" 将索引指定处的位设置为 false \"],\n            [\" void clear(int startIndex, int endIndex)\", \" 将指定的 startIndex（包括）到指定的 toIndex（不包括）范围内的位设置为 false \"],\n            [\" Object clone( )\", \" 复制此 BitSet，生成一个与之相等的新 BitSet \"],\n            [\" boolean equals(Object bitSet)\", \" 将此对象与指定的对象进行比较 \"],\n            [\" void flip(int index)\", \" 将指定索引处的位设置为其当前值的补码 \"],\n            [\" void flip(int startIndex, int endIndex)\", \" 将指定的 fromIndex（包括）到指定的 toIndex（不包括）范围内的每个位设置为其当前值的补码 \"],\n            [\" boolean get(int index)\", \" 返回指定索引处的位值 \"],\n            [\" BitSet get(int startIndex, int endIndex)\", \" 返回一个新的 BitSet，它由此 BitSet 中从 fromIndex（包括）到 toIndex（不包括）范围内的位组成 \"],\n            [\" int hashCode( )\", \" 返回此位 set 的哈希码值 \"],\n            [\" boolean intersects(BitSet bitSet)\", \" 如果指定的 BitSet 中有设置为 true 的位，并且在此 BitSet 中也将其设置为 true，则返回 true \"],\n            [\" boolean isEmpty( )\", \" 如果此 BitSet 中没有包含任何设置为 true 的位，则返回 true \"],\n            [\" int length( )\", \" 返回此 BitSet 的\\\"逻辑大小\\\"：BitSet 中最高设置位的索引加 1 \"],\n            [\" int nextClearBit(int startIndex)\", \" 返回第一个设置为 false 的位的索引，这发生在指定的起始索引或之后的索引上 \"],\n            [\" int nextSetBit(int startIndex)\", \" 返回第一个设置为 true 的位的索引，这发生在指定的起始索引或之后的索引上 \"],\n            [\" void or(BitSet bitSet)\", \" 对此位 set 和位 set 参数执行逻辑或操作 \"],\n            [\" void set(int index)\", \" 将指定索引处的位设置为 true \"],\n            [\" void set(int index, boolean v)\", \"  将指定索引处的位设置为指定的值 \"],\n            [\" void set(int startIndex, int endIndex)\", \" 将指定的 fromIndex（包括）到指定的 toIndex（不包括）范围内的位设置为 true \"],\n            [\" void set(int startIndex, int endIndex, boolean v)\", \" 将指定的 fromIndex（包括）到指定的 toIndex（不包括）范围内的位设置为指定的值 \"],\n            [\" int size( )\", \" 返回此 BitSet 表示位值时实际使用空间的位数 \"],\n            [\" String toString( )\", \" 返回此位 set 的字符串表示形式 \"],\n            [\" void xor(BitSet bitSet)\", \" 对此位 set 和位 set 参数执行逻辑异或操作\"]\n        ])\n    \u003c/script\u003e\n\u003c/table\u003e\n\u003ctbody\u003e\n    \"],[\" 方法描述\u003c/th\u003e\n    \u003c/tr\u003e\n    \"],\u003c/tbody\u003e","pageTitle":"java ✈︎✈︎ java ✈︎✈︎ 数据结构","title":"bitSet"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["java","java","数据结构","bitSet"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

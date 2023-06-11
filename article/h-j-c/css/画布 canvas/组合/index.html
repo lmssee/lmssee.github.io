@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/5137ecb4c3aedf2b.css" as="style"/><link rel="stylesheet" href="/_next/static/css/5137ecb4c3aedf2b.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script><script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/_next/static/chunks/main-433ff526183b1a63.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/_next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/_next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>组合</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e图形的组合\u003c/h5\u003e\n\u003cp\u003e当两个或两个以上的图形存在重叠区域时，默认情况下一个图形画在前一个图形之上。通过指定图形 globalCompositeOperation属性的值可以改变图形的绘制顺序或绘制方式，从而实现更多种可能。此外，还可以使用\n    globalAlpha属性来指定图形的透明度。\u003c/p\u003e\n\u003cp\u003eglobalCompositeOperation() 处于原有图形与新图形之间。\u003c/p\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003ccaption\u003eglobalCompositeOperation属性所有可用的值\u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth\u003e属性值\u003c/th\u003e\n        \u003cth\u003e图形合成实例\u003c/th\u003e\n        \u003cth\u003e说明\u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\n\u003cscript\u003e\n    var Aa = [\n        [\"source-over\", \"\", \"A over B，这是默认设置，即新图形覆盖在原有内容之上 \"],\n        [\"destination-over\", \"\", \"B over A，即原有内容覆盖在新图形之上 \"],\n        [\"source-atop\", \"\", \"只绘制原有内容和新图形与原有内容重叠的部分，且新图形位于原有内容之上 \"],\n        [\"destination-atop\", \"\", \"只绘制新图形和新图形与原有内容重叠的部分，且原有内容位于重叠部分之下 \"],\n        [\"source-in\", \"\", \"新图形只出现在与原有内容重叠的部分，其余区域变为透明 \"],\n        [\"destination-in\", \"\", \" 原有内容只出现在与新图形重叠的部分，其余区域为透明 \"],\n        [\"source-out\", \"\", \" 新图形中与原有内容不重叠的部分被保留 \"],\n        [\"destination-out\", \"\", \"原有内容中与新图形不重叠的部分被保留 \"],\n        [\"lighter\", \"\", \"两图形重叠的部分作加色处理 \"],\n        [\"darker\", \"\", \"两图形重叠的部分作减色处理 \"],\n        [\"copy\", \"\", \"只保留新图形。在 Chrome浏览器中无效， Opera 11.5中有效 \"],\n        [\"xor\", \"\", \"将重叠的部分变为透明 \"],\n    ];\n    _MiMethod.td(\"Aa\");\n    for (var k = 1; k \u003c 13; k++) {\n        var canvas = document.createElement(\"canvas\");\n        canvas.id = \"canvas\" + k;\n        canvas.width = \"70\";\n        canvas.height = \"36\";\n        document.querySelectorAll(\"td\")[3 * k - 2].appendChild(canvas);\n    }; function canvaS(id, name) {\n        var c = document.querySelector(\"#\" + id);\n        var context = c.getContext(\"2d\");\n        context.fillStyle = \"#000\";\n        context.fillRect(50, 5, 20, 20);\n        context.fillStyle = \"#00f\";\n        context.globalCompositeOperation = name;\n        context.beginPath();\n        context.arc(50, 25, 10, 0, Math.PI * 2, true);\n        context.closePath();\n        context.fill();\n    }\n    for (var i = 1; i \u003c 13; i++) {\n        canvaS(\"canvas\" + i, Aa[i - 1][0]);\n    }\n\u003c/script\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ 画布 canvas","title":"组合"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","画布 canvas","组合"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/5137ecb4c3aedf2b.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/5137ecb4c3aedf2b.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-433ff526183b1a63.js" defer=""></script>
+  <script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="_next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>组合</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="_next_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e图形的组合\u003c/h5\u003e\n\u003cp\u003e当两个或两个以上的图形存在重叠区域时，默认情况下一个图形画在前一个图形之上。通过指定图形 globalCompositeOperation属性的值可以改变图形的绘制顺序或绘制方式，从而实现更多种可能。此外，还可以使用\n    globalAlpha属性来指定图形的透明度。\u003c/p\u003e\n\u003cp\u003eglobalCompositeOperation() 处于原有图形与新图形之间。\u003c/p\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003ccaption\u003eglobalCompositeOperation属性所有可用的值\u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth\u003e属性值\u003c/th\u003e\n        \u003cth\u003e图形合成实例\u003c/th\u003e\n        \u003cth\u003e说明\u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\n\u003cscript\u003e\n    var Aa = [\n        [\"source-over\", \"\", \"A over B，这是默认设置，即新图形覆盖在原有内容之上 \"],\n        [\"destination-over\", \"\", \"B over A，即原有内容覆盖在新图形之上 \"],\n        [\"source-atop\", \"\", \"只绘制原有内容和新图形与原有内容重叠的部分，且新图形位于原有内容之上 \"],\n        [\"destination-atop\", \"\", \"只绘制新图形和新图形与原有内容重叠的部分，且原有内容位于重叠部分之下 \"],\n        [\"source-in\", \"\", \"新图形只出现在与原有内容重叠的部分，其余区域变为透明 \"],\n        [\"destination-in\", \"\", \" 原有内容只出现在与新图形重叠的部分，其余区域为透明 \"],\n        [\"source-out\", \"\", \" 新图形中与原有内容不重叠的部分被保留 \"],\n        [\"destination-out\", \"\", \"原有内容中与新图形不重叠的部分被保留 \"],\n        [\"lighter\", \"\", \"两图形重叠的部分作加色处理 \"],\n        [\"darker\", \"\", \"两图形重叠的部分作减色处理 \"],\n        [\"copy\", \"\", \"只保留新图形。在 Chrome浏览器中无效， Opera 11.5中有效 \"],\n        [\"xor\", \"\", \"将重叠的部分变为透明 \"],\n    ];\n    _MiMethod.td(\"Aa\");\n    for (var k = 1; k \u003c 13; k++) {\n        var canvas = document.createElement(\"canvas\");\n        canvas.id = \"canvas\" + k;\n        canvas.width = \"70\";\n        canvas.height = \"36\";\n        document.querySelectorAll(\"td\")[3 * k - 2].appendChild(canvas);\n    }; function canvaS(id, name) {\n        var c = document.querySelector(\"#\" + id);\n        var context = c.getContext(\"2d\");\n        context.fillStyle = \"#000\";\n        context.fillRect(50, 5, 20, 20);\n        context.fillStyle = \"#00f\";\n        context.globalCompositeOperation = name;\n        context.beginPath();\n        context.arc(50, 25, 10, 0, Math.PI * 2, true);\n        context.closePath();\n        context.fill();\n    }\n    for (var i = 1; i \u003c 13; i++) {\n        canvaS(\"canvas\" + i, Aa[i - 1][0]);\n    }\n\u003c/script\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ 画布 canvas","title":"组合"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","画布 canvas","组合"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

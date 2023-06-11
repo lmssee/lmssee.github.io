@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/5137ecb4c3aedf2b.css" as="style"/><link rel="stylesheet" href="/_next/static/css/5137ecb4c3aedf2b.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script><script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/_next/static/chunks/main-433ff526183b1a63.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/_next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/_next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>环境搭建</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e window 环境变量的配置 \u003c/h5\u003e\n\u003ch6\u003e 配置默认安装目录和缓存日志目录 \u003c/h6\u003e\n\u003cp\u003e 这里的环境配置主要配置的是 npm 安装的全局模块所在的路径，以及缓存 cache 的路径，之所以要配置，是因为以后在执行类似： npm install express [-g]\n    （后面的可选参数 -g ， g 代表 global 全局安装的意思）的安装语句时，会将安装的模块安装到【 C:\\Users\\ 用户名 \\AppData\\Roaming\\npm 】路径中，占 C 盘空间。\n\u003c/p\u003e\n\u003cp\u003e 将全模块所在路径和缓存路径放在我 node.js 安装的文件夹中，则在我安装的文件夹【 D:\\Develop\\nodejs 】下创建两个文件夹【 node_global 】及【 node_cache 】。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003enpm config set prefix \"D:\\data\\nodejs\\node_global\" \u003c/span\u003e\u003cspan class=\"p2\"\u003enpm\n        config set cache \"D:\\data\\nodejs\\node_cache\"\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003e 环境变量配置 \u003c/h6\u003e\n\u003cul\u003e\n    \u003cli\u003e “我的电脑” - 右键 - “属性” - “高级系统设置” - “高级” - “环境变量” \u003c/li\u003e\n    \u003cli\u003e 进入环境变量对话框 \u003c/li\u003e\n    \u003cli\u003e 在【系统变量】下新建【 NODE_PATH 】，输入【 D:\\Develop\\nodejs\\node_global\\node_modules 】，将【用户变量】下的【 Path 】修改为【\n        D:\\Develop\\nodejs\\node_global 】\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003ch6\u003e 测试 \u003c/h6\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p2\"\u003enpm install express - g# - g 是全局安装的意思 \u003c/span\u003e\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003enpm i 停留在 idealTree:admin: sill idealTree buildDeps ： \u003c/p\u003e\n    \u003cp\u003e 设置淘宝镜像 npm config set registry https://registry.npm.taobao.org\u003c/p\u003e\n    \u003cp\u003e 检验设置是否成功 npm config get registry\u003c/p\u003e\n\u003c/div\u003e","pageTitle":"node ✈︎✈︎ NodeJs ✈︎✈︎ 基础","title":"环境搭建"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["node","NodeJs","基础","环境搭建"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/5137ecb4c3aedf2b.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/5137ecb4c3aedf2b.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-433ff526183b1a63.js" defer=""></script>
+  <script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="_next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>环境搭建</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="_next_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e window 环境变量的配置 \u003c/h5\u003e\n\u003ch6\u003e 配置默认安装目录和缓存日志目录 \u003c/h6\u003e\n\u003cp\u003e 这里的环境配置主要配置的是 npm 安装的全局模块所在的路径，以及缓存 cache 的路径，之所以要配置，是因为以后在执行类似： npm install express [-g]\n    （后面的可选参数 -g ， g 代表 global 全局安装的意思）的安装语句时，会将安装的模块安装到【 C:\\Users\\ 用户名 \\AppData\\Roaming\\npm 】路径中，占 C 盘空间。\n\u003c/p\u003e\n\u003cp\u003e 将全模块所在路径和缓存路径放在我 node.js 安装的文件夹中，则在我安装的文件夹【 D:\\Develop\\nodejs 】下创建两个文件夹【 node_global 】及【 node_cache 】。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003enpm config set prefix \"D:\\data\\nodejs\\node_global\" \u003c/span\u003e\u003cspan class=\"p2\"\u003enpm\n        config set cache \"D:\\data\\nodejs\\node_cache\"\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003e 环境变量配置 \u003c/h6\u003e\n\u003cul\u003e\n    \u003cli\u003e “我的电脑” - 右键 - “属性” - “高级系统设置” - “高级” - “环境变量” \u003c/li\u003e\n    \u003cli\u003e 进入环境变量对话框 \u003c/li\u003e\n    \u003cli\u003e 在【系统变量】下新建【 NODE_PATH 】，输入【 D:\\Develop\\nodejs\\node_global\\node_modules 】，将【用户变量】下的【 Path 】修改为【\n        D:\\Develop\\nodejs\\node_global 】\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003ch6\u003e 测试 \u003c/h6\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p2\"\u003enpm install express - g# - g 是全局安装的意思 \u003c/span\u003e\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003enpm i 停留在 idealTree:admin: sill idealTree buildDeps ： \u003c/p\u003e\n    \u003cp\u003e 设置淘宝镜像 npm config set registry https://registry.npm.taobao.org\u003c/p\u003e\n    \u003cp\u003e 检验设置是否成功 npm config get registry\u003c/p\u003e\n\u003c/div\u003e","pageTitle":"node ✈︎✈︎ NodeJs ✈︎✈︎ 基础","title":"环境搭建"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["node","NodeJs","基础","环境搭建"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

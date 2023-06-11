@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/5137ecb4c3aedf2b.css" as="style"/><link rel="stylesheet" href="/_next/static/css/5137ecb4c3aedf2b.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script><script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/_next/static/chunks/main-433ff526183b1a63.js" defer=""></script><script src="/_next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/_next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/_next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script><script src="/_next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>通信层</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eOSI\u003c/h5\u003e\n\u003cp\u003e国际标准化组织（International Standard Organization，ISO）提出一个通用的网络通信参考模型——OSI（Open System\n    Interconnect）模型，称为开放系统互联模型。将整个网络系统分成7 层，每层各自负责特定的工作，各层都有主要的功能\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e第七层 应用层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第六层 表示层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第五层 会话层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第四层 传输层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第三层 网络层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第二层 数据链路层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第一层 物理层\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e7层之中，1～3 层接近于硬件，4～7 层则以软件实现为主。一台计算机的第n 层与另一台计算机的第n 层对话，所使用的规则和约定集合起来称为网络的第n 层协议。例如TCP/IP、IPX、PPP、X.25\n    等，它们都可以归纳入某一层的协议中。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e在通信时，高层的数据和控制信息是传递给相邻的下一层，一层一层直至最底层，通过物理线路传到对方后，再一层一层还原，最底层实现的是真实的通信，各层之间实现的是虚拟通信。\u003c/p\u003e\n\u003c/div\u003e\n\u003ch5\u003e分层原则\u003c/h5\u003e\n\u003cp\u003e按网络通信功能性质进行分层，性质相似的工作计划分在同一层，每一层所负责的工作范围分得很清楚，彼此不重叠，处理事情时逐层处理，绝不允许越层，功能界限清晰，并且每层向相邻的层提供透明的服务。\u003c/p\u003e\n\u003ch6\u003e\u003e物理层\u003c/h6\u003e\n\u003cp\u003e也称最低层，它提供计算机操作系统和网络线路之间的物理连接，它规定电缆引线的分配、线上的电压、接口的规格以及物理层以下的物理传输介质等。在这一层传输的数据以比特为单位。\u003c/p\u003e\n\u003ch6\u003e 数据链路层\u003c/h6\u003e\n\u003cp\u003e完成传输数据的打包和拆包工作。把上一层传来的数据按一定的格式组织，这个工作称为成数据帧，然后将帧按顺序传出。另外，它主要解决数据帧的破坏、遗失和重复发送等问题，目的是把一条可能出错的物理链路变成让网络层看起来是一条不出差错的理想链路。数据链路层传输的数据以帧为单位。\n\u003c/p\u003e\n\u003ch6\u003e网络层\u003c/h6\u003e\n\u003cp\u003e主要功能是为数据分组进行路由选择，并负责通信子网的流量控制、拥塞控制。要保证发送端传输层所传下来的数据分组能准确无误地传输到目的节点的传输层。网络层传输的数据以数据单元为单位。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e一般称以上介绍的3 层为通信子网。\u003c/p\u003e\n\u003c/div\u003e\n\u003ch6\u003e 传输层\u003c/h6\u003e\n\u003cp\u003e主要功能是为会话层提供一个可靠的端到端连接，以使两通信端系统之间透明地传输报文。传输层是计算机网络体系结构中最重要的一层，传输层协议也是最复杂的，其复杂程度取决于网络层所提供的服务类型及上层对传输层的要求。传输层传输的数据以报文为单位。\n\u003c/p\u003e\n\u003ch6\u003e 会话层\u003c/h6\u003e\n\u003cp\u003e主要功能是使用传输层提供的可靠的端到端连接，在通信双方应用进程之间建立会话连接，并对会话进行管理和控制，保证会话数据可靠传送。会话层传输的数据以报文为单位。\u003c/p\u003e\n\u003ch6\u003e 表示层\u003c/h6\u003e\n\u003cp\u003e主要功能是完成被传输数据的表示工作，包括数据格式、数据转化、数据加密和数据压缩等语法变换服务。表示层传输的数据以报文为单位。\u003c/p\u003e\n\u003ch6\u003e 应用层\u003c/h6\u003e\n\u003cp\u003e它是OSI 参考模型中的最高层，功能与计算机应用系统所要求的网络服务目的有关。通常是为应用系统提供访问OSI\n    环境的接口和服务，常见的应用层服务如虚拟终端、文件传输、远程登录、电子邮件等。应用层传输的数据以报文为单位。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e一般称第 5 ～ 7 层为资源子层\u003c/p\u003e\n\u003c/div\u003e\n\u003ch5\u003e通信方式\u003c/h5\u003e\n\u003cp\u003e。在OSI 参考模型中，通信双方的数据由发送端应用层开始向下逐层传输，并在每层增加一些控制信息，可以理解为每层对信息加一层信封，到达最低层后，源数据加了7\n    层信封；再通过网络传输介质，传送到接收端的最低层，再由下向上逐层传输，并在每层去掉一个信封，至接收端的最高层，数据还原成原始状态。\n    另外，当通信双方进行数据传输时，实际上是对等层使用相应的规定在沟通。这里使用的规定，我们才称之为协议。它是在不同终端上、相同层中实施的规则。如果是在同一终端、不同层中实施的规则，则称之为接口，或称之为服务访问点。\u003c/p\u003e","pageTitle":"computer ✈︎✈︎ 计算机基础 ✈︎✈︎ 互联网","title":"通信层"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["computer","计算机基础","互联网","通信层"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/5137ecb4c3aedf2b.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/5137ecb4c3aedf2b.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-f4e565fa88055a70.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-433ff526183b1a63.js" defer=""></script>
+  <script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_buildManifest.js" defer=""></script>
+  <script src="/next/static/iIKERKMchG9u86_BU6FBa/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="_next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>通信层</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="_next_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eOSI\u003c/h5\u003e\n\u003cp\u003e国际标准化组织（International Standard Organization，ISO）提出一个通用的网络通信参考模型——OSI（Open System\n    Interconnect）模型，称为开放系统互联模型。将整个网络系统分成7 层，每层各自负责特定的工作，各层都有主要的功能\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e第七层 应用层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第六层 表示层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第五层 会话层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第四层 传输层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第三层 网络层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第二层 数据链路层\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e第一层 物理层\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e7层之中，1～3 层接近于硬件，4～7 层则以软件实现为主。一台计算机的第n 层与另一台计算机的第n 层对话，所使用的规则和约定集合起来称为网络的第n 层协议。例如TCP/IP、IPX、PPP、X.25\n    等，它们都可以归纳入某一层的协议中。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e在通信时，高层的数据和控制信息是传递给相邻的下一层，一层一层直至最底层，通过物理线路传到对方后，再一层一层还原，最底层实现的是真实的通信，各层之间实现的是虚拟通信。\u003c/p\u003e\n\u003c/div\u003e\n\u003ch5\u003e分层原则\u003c/h5\u003e\n\u003cp\u003e按网络通信功能性质进行分层，性质相似的工作计划分在同一层，每一层所负责的工作范围分得很清楚，彼此不重叠，处理事情时逐层处理，绝不允许越层，功能界限清晰，并且每层向相邻的层提供透明的服务。\u003c/p\u003e\n\u003ch6\u003e\u003e物理层\u003c/h6\u003e\n\u003cp\u003e也称最低层，它提供计算机操作系统和网络线路之间的物理连接，它规定电缆引线的分配、线上的电压、接口的规格以及物理层以下的物理传输介质等。在这一层传输的数据以比特为单位。\u003c/p\u003e\n\u003ch6\u003e 数据链路层\u003c/h6\u003e\n\u003cp\u003e完成传输数据的打包和拆包工作。把上一层传来的数据按一定的格式组织，这个工作称为成数据帧，然后将帧按顺序传出。另外，它主要解决数据帧的破坏、遗失和重复发送等问题，目的是把一条可能出错的物理链路变成让网络层看起来是一条不出差错的理想链路。数据链路层传输的数据以帧为单位。\n\u003c/p\u003e\n\u003ch6\u003e网络层\u003c/h6\u003e\n\u003cp\u003e主要功能是为数据分组进行路由选择，并负责通信子网的流量控制、拥塞控制。要保证发送端传输层所传下来的数据分组能准确无误地传输到目的节点的传输层。网络层传输的数据以数据单元为单位。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e一般称以上介绍的3 层为通信子网。\u003c/p\u003e\n\u003c/div\u003e\n\u003ch6\u003e 传输层\u003c/h6\u003e\n\u003cp\u003e主要功能是为会话层提供一个可靠的端到端连接，以使两通信端系统之间透明地传输报文。传输层是计算机网络体系结构中最重要的一层，传输层协议也是最复杂的，其复杂程度取决于网络层所提供的服务类型及上层对传输层的要求。传输层传输的数据以报文为单位。\n\u003c/p\u003e\n\u003ch6\u003e 会话层\u003c/h6\u003e\n\u003cp\u003e主要功能是使用传输层提供的可靠的端到端连接，在通信双方应用进程之间建立会话连接，并对会话进行管理和控制，保证会话数据可靠传送。会话层传输的数据以报文为单位。\u003c/p\u003e\n\u003ch6\u003e 表示层\u003c/h6\u003e\n\u003cp\u003e主要功能是完成被传输数据的表示工作，包括数据格式、数据转化、数据加密和数据压缩等语法变换服务。表示层传输的数据以报文为单位。\u003c/p\u003e\n\u003ch6\u003e 应用层\u003c/h6\u003e\n\u003cp\u003e它是OSI 参考模型中的最高层，功能与计算机应用系统所要求的网络服务目的有关。通常是为应用系统提供访问OSI\n    环境的接口和服务，常见的应用层服务如虚拟终端、文件传输、远程登录、电子邮件等。应用层传输的数据以报文为单位。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e一般称第 5 ～ 7 层为资源子层\u003c/p\u003e\n\u003c/div\u003e\n\u003ch5\u003e通信方式\u003c/h5\u003e\n\u003cp\u003e。在OSI 参考模型中，通信双方的数据由发送端应用层开始向下逐层传输，并在每层增加一些控制信息，可以理解为每层对信息加一层信封，到达最低层后，源数据加了7\n    层信封；再通过网络传输介质，传送到接收端的最低层，再由下向上逐层传输，并在每层去掉一个信封，至接收端的最高层，数据还原成原始状态。\n    另外，当通信双方进行数据传输时，实际上是对等层使用相应的规定在沟通。这里使用的规定，我们才称之为协议。它是在不同终端上、相同层中实施的规则。如果是在同一终端、不同层中实施的规则，则称之为接口，或称之为服务访问点。\u003c/p\u003e","pageTitle":"computer ✈︎✈︎ 计算机基础 ✈︎✈︎ 互联网","title":"通信层"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["computer","计算机基础","互联网","通信层"]},"buildId":"iIKERKMchG9u86_BU6FBa","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>
