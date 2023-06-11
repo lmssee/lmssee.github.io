@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>简介</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e位图图像与矢量图形\u003c/h5\u003e\n\u003ch6\u003e位图图像\u003c/h6\u003e\n\u003cp\u003e位图图像（ bitmap image ）又称栅格图（ raster graphics ），由像素矩阵组成，也就是由无数个像素点组成\n    。位图图像的特点是色彩变化丰富，可逼真地再现世界，因此常用于数码照片、页面效果图等。但当无限放大时，将会看到像素块，图像会失真。\u003c/p\u003e\n\u003ch6\u003e矢量图形\u003c/h6\u003e\n\u003cp\u003e矢量图形（ vector graphics ）由点和线组成，把点看成是一个坐标，在两个点之间用曲线或直线连接，可以组成任何形状\n    。与位图相比，色彩比较简单，无法表现逼真图像，但是当放大、缩小或旋转的时候，不会丢失细节，也不会影响清晰度（即不失真），常用于三维建模、特殊字体、图标和 logo 等。\u003c/p\u003e\n\u003ch5\u003e在页面中使用 canvas 元素\u003c/h5\u003e\n\u003cp\u003ecanvas 元素是 HTML 5 的新元素，用于在网页上绘制图形，相当于在 HTML 中嵌入了一张画布，这样就可以直接在页面上进行图形操作了，因此 canvas 具有极大的应用价值，可以在较多场景下使用。\u003c/p\u003e\n\u003cp\u003e默认情况下， Canvas 所创建的矩形区域大小为宽 300 像素、高 150 像素，也可以使用 width 与 height 属性来自定义其宽度和高度。\u003c/p\u003e\n\u003cp\u003ecanvas 元素本身是没有绘图能力的，需要借助额外的 JavaScript 脚本来实现绘图。\u003c/p\u003e\n\u003ch5\u003e渲染上下文对象 Context\u003c/h5\u003e\n\u003cp\u003ecanvas 元素只是一个容器，只使用它并不能够做任何事情。在 Windows 里绘制图形时需要先得到一个设备上下文 DC ，同样，在 canvas 元素上绘图时也需要得到一个渲染上下文对象 Context 。\u003c/p\u003e\n\u003cp\u003e上下文对象可以让各种不同的图形设备在外界看起来都是一个样式，这样读者只需要关注绘图，其它的工作都可以交给操作系统和浏览器。简单来说，上下文对象就是把各式各样的具体变成一个统一的抽象，从而减轻开发人员的负担。使用 canvas\n    绘图时并不是直接绘制到屏幕上的，而是先画到一个上下文 Context 上，然后再刷新到屏幕上。\u003c/p\u003e\n\u003cp\u003e一个 canvas 元素中只能有一个唯一的 ID 并且每个上下文对象也都是唯一的，获取渲染上下文对象 Context 非常简单，首先获取 canvas 元素对象，然后再调用 canvas 对象的 getContext()\n    方法。\u003c/p\u003e\n\u003ch5\u003ecanvas 与 SVG 的区别\u003c/h5\u003e\n\u003cp\u003eSVG （ Scalable Vector Graphics ）即可伸缩矢量图形，是一种用 XML 描述图形的标记语言，用于描述二维矢量图形的一种图形格式。 SVG 由 W3C 制定，是一个开放标准。另外， SVG 还是\n    Static Var Generator （静止无功发生器）的简称。，早在 2003 年就已成为 W3C 标准。与 Canvas 只能用 JavaScript 绘图不同， SVG\n    提供了各种类型的元素，包括形状、文本、渐变、动画和滤镜等，并且可以为每个元素附加 DOM 事件，还能用\n    CSS 控制它们的样式，不过只能使用部分 CSS 属性，如 border 、 background 就不可用。 SVG 中也可插入图像（即插入 img 元素），执行裁剪、遮罩、旋转等功能。不过， SVG 不能像 canvas\n    那样，将处理过的图形输出， canvas 元素有个 toDataURL （）方法，可以将画布中的内容编码成字符串形式。\u003c/p\u003e\n\u003cp\u003eSVG 有很多优势，例如，其图像可以通过文本编辑器来创建和更改， SVG 图像可以被搜索、索引、脚本化或压缩， SVG 图像可以在任何的分辨率下被高质量地打印，以及可以在图像质量不下降的情况下被放大等。\u003c/p\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003ccaption\u003ecanvas 与 SVG 的区别\u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth\u003e\u003c/th\u003e\n        \u003cth\u003eCanvas\u003c/th\u003e\n        \u003cth\u003eSVG\u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\u003cul\u003e\n    \u003cli\u003esvg 通常用于查看和打印高保真文档，例如，在制作一个分辨率无关的用户界面或者漂亮的动画时就可以选择 svg\u003c/li\u003e\n    \u003cli\u003e在绘制一些图表曲线（如科学研究的数据可视化）时也可以使用 svg\u003c/li\u003e\n    \u003cli\u003e如果要完成的工作非常困难，可以通过取长补短将两者结合起来使用\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e如果浏览器不支持 Canvas\u003c/h5\u003e\n\u003cp\u003e有些浏览器可能不支持 canvas 元素，因此就需要为这些浏览器提供替代显示的内容。方法比较简单，只需要直接在 canvas 元素内插入替代内容即可。不支持 canvas 的浏览器会忽略 canvas\n    元素而直接显示替代内容，支持 Canvas 的浏览器则会正常地渲染 Canvas 。\u003c/p\u003e\n\u003ch5\u003e测浏览器支持\u003c/h5\u003e\n\u003cp\u003e可以使用 JavaScript 脚本来检测浏览器是否支持 canvas ，方法是判断 getContext 函数是否存在。\u003c/p\u003e\n\u003ch5\u003e复杂场景使用多层画布\u003c/h5\u003e\n\u003cp\u003e为了减少对单一画布的操作、 提高画布性能， 在较为复杂场景下， 可以使用多层画布 。\u003c/p\u003e\n\u003ch5\u003e使用 requestAnimationFrame 制作游戏或动画\u003c/h5\u003e\n\u003cp\u003e目前， 制作动画可以使用 CSS 3 的 animattion + keyframes ， 也可以使用 CSS 3 的 transition 属性， 或者使用 SVG 。 当然还可以使用最原始的\n    window.setTimout() 或者 window.setInterval() 方法， 通过不断更新元素的状态位置等来实现动画， 前提是画面的更新频率要达到每秒 60 次才能让肉眼看到流畅的动画效果。\u003c/p\u003e\n\u003cp\u003esetTimeout() 几乎在所有浏览器上都运行得不错， 但还有一个更好的方法， 那就是 requestAnimFrame 。 requestAnimFrame 方法原理与 setTimeout / setInterval\n    差不多， 通过递归调用同一方法来不断更新画面以达到动起来的效果， 但它优于 setTimeout / setInterval ， 在于它是由浏览器专门为动画提供的 API ， 在运行时浏览器会自动优化方法的调用，\n    并且如果页面不是激活状态的话， 动画会自动暂停， 可以优化绘制循环，\n    减少与剩下的页面回流， 有效节省了 CPU 开销。\u003c/p\u003e\n\u003cp\u003e可以直接调用 requestAnimationFrame 方法， 也可以通过 window 来调用， 接收一个函数作为回调， 返回一个 ID 值， 通过把这个 ID 值传给\n    window.cancelAnimationFrame() 可以取消该次动画。\u003c/p\u003e\n\u003ch5\u003e如何显示满屏 canvas \u003c/h5\u003e\n\u003cp\u003e根据画布所包含的文件元素的大小来灵活地调整画布尺寸 。\u003c/p\u003e\n\u003ch5\u003ecanvas 圆环进度条\u003c/h5\u003e\n\u003cp\u003e圆形进度条的步骤是： 开始画一个灰色的圆、 填充颜色、 画进度、 画内部空白、 画一条线、 在画布中间写上进度文案 。\u003c/p\u003e\n\u003ch5\u003e清空画布\u003c/h5\u003e\n\u003cp\u003e使用 clearRect 方法可清除指定的矩形区域内的所有图形， 显示出画布的背景 。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003econtext.clearRect(x, y, width, height); \u003c/span\u003e\u003c/code\u003e\n\n\u003cscript\u003e\n    let Aa = [\n        [' 依赖分辨率 ', ' 依赖分辨率 ', ' 不依赖分辨率 '],\n        [' 事件处理器 ', ' 不支持事件处理器 ', ' 支持事件处理器 '],\n        [' 渲染能力 ', ' 比较弱，   不适合大型程序 ', ' 最适合带有大型渲染区域的应用程序，   如谷歌地图 '],\n        [' 游戏应用 ', ' 最适合图像密集型的游戏 ', ' 不太适合做游戏应用 '],\n    ];\n    _MiMethod.td('Aa', Aa);\n\u003c/script\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ 画布 canvas","title":"简介"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","画布 canvas","简介"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","css","画布 canvas","简介"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","画布 canvas","简介"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

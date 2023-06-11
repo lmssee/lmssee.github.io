@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>查询数据</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e查询数据\u003c/h5\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eselect \u003cspan class=\"dust\"\u003e...\u003c/span\u003e from \u003cspan class=\"dust\"\u003emain\u003c/span\u003e \u003cspan class=\"r\"\u003e// ... 表示要查询的字段\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e[inner | left right] join newMain on conditions \u003cspan class=\"r\"\u003e// 根据条件查关联表\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003ewhere conditions \u003cspan class=\"r\"\u003e// 过滤结果\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003egroup by . \u003cspan class=\"r\"\u003e// 通过 . 来分组\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003ehaving group_conditions \u003cspan class=\"r\"\u003e// 过滤器基于 group by 定义\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003eorder by \u003cspan class=\"dust\"\u003e...\u003c/span\u003e \u003cspan class=\"r\"\u003e// 指定 . 来排序\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003elimit \u003cspan class=\"dust\"\u003enumber\u003c/span\u003e \u003cspan class=\"r\"\u003e// 限制返回的数量\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003eoffset \u003cspan class=\"dust\"\u003enumber\u003c/span\u003e;\u003cspan class=\"r\"\u003e// 返回数偏移量，结合 limit 做分页查询\u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n\u003cp\u003e可以将 select 获取的数据直接填充给 insert into ，达到复制表的副作用。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003einsert into  \u003cspan class=\"dust\"\u003enewMain\u003c/span\u003e \u003c/span\u003e\n    \u003cspan class=\"p\"\u003eselect \u003cspan class=\"dust\"\u003e*\u003c/span\u003e from \u003cspan class=\"dust\"\u003eoldMain\u003c/span\u003e;\u003c/span\u003e\n\u003c/code\u003e\n\u003c/div\u003e\n\u003ch6\u003ewhere\u003c/h6\u003e\n\u003cp\u003e类似于编程语言中的 if （由于 if 用在了库，所以）：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e... where \u003cspan class=\"dust\"\u003emain_age\u003c/span\u003e \u003e 40;\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003ewhere 中可用的操作符有  = 、\u0026lt;\u0026gt;、 != 、\u0026lt;、\u0026gt;、\u0026lt;=、\u0026gt;= 。 \u003c/p\u003e\n\u003cp\u003e使用主键查询时速度贼快。\u003c/p\u003e\n\u003cp\u003elink 匹配基于模式匹配的值， in 指定值是否包含匹配列表的任何值。 is null 检查该值是否为 null 。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n\u003cp\u003e默认查询是不分大小写，可以使用 binary 来设定区分大小写。\u003c/p\u003e\n\u003c/div\u003e\n\u003ch6\u003elink\u003c/h6\u003e\n\u003cp\u003e模糊查询，在 delete 、update 命令中使用 where...link 来指定语句。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e select * from \u003cspan class=\"dust\"\u003emain\u003c/span\u003e where \u003cspan class=\"dust\"\u003emain_age\u003c/span\u003e LIKE '\u003cspan class=\"dust\"\u003e%0\u003c/span\u003e';\u003c/span\u003e\n\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n\u003cp\u003e% 代表任意字符\u003c/p\u003e\n\u003c/div\u003e\n\u003ch6\u003eregexp\u003c/h6\u003e\n\u003cp\u003e像正则一样去模糊匹配，比 like 更加嚣张，支持首尾限制的 ^、$；匹配任意的 . ；单字符控制的 []、[^]、|；及数量匹配的 *、+、{n}、{n, m}\u003c/p\u003e\n\u003ch6\u003e主键冲突\u003c/h6\u003e\n\u003cp\u003e插入时，最后添加 on duplicate key update 来更新原有行\u003c/p\u003e\n\u003ch6\u003eunion\u003c/h6\u003e\n\u003cp\u003eunion 操作符用于连接两个以上的 select 语句的结合组合到一个集合中，会默认（distinct）自动删除重复数据，除非 ALL。\u003c/p\u003e\n\u003ch6\u003eorder by\u003c/h6\u003e\n\u003cp\u003eorder 用于排序，默认 ASC 升序，也可以设置 DESC 降序来对查询后结果排序。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eselect * from \u003cspan class=\"dust\"\u003emain\u003c/span\u003e \u003c/span\u003e\n    \u003cspan class=\"p\"\u003eorder by\u003c/span\u003e\n    \u003cspan class=\"p dust\"\u003emain_age\u003c/span\u003e\n    \u003cspan class=\"p\"\u003easc;\u003cspan class=\"r\"\u003e// asc 升序，desc 降序\u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e对于字符排序，如果是 gbk ，可直接 order by；如果是 utf8，则需要转码：\u003c/p\u003e\n    \u003ccode class=\"c\"\u003e\n        \u003cspan class=\"p\"\u003eselect * from \u003cspan class=\"dust\"\u003emain\u003c/span\u003e \u003c/span\u003e\n        \u003cspan class=\"p\"\u003eorder by\u003c/span\u003e\n        \u003cspan class=\"p\"\u003econvert(\u003cspan class=\"dust\"\u003emain_name\u003c/span\u003e  using gbk)\u003c/span\u003e\n        \u003cspan class=\"p\"\u003easc;\u003cspan class=\"r\"\u003e// asc 升序，desc 降序\u003c/span\u003e\u003c/span\u003e\n    \u003c/code\u003e\n\u003c/div\u003e\n\u003cdiv class=\"note\"\u003e\n\u003cp\u003eorder by 通过 rand() 排序可以抓到随机顺序。\u003c/p\u003e\n\u003c/div\u003e\n\u003ch5\u003enull\u003c/h5\u003e\n\u003cp\u003e当数据库读到 null 时就会失灵。所以应当用 is null 、 is not null 、 \u0026lt;=\u0026gt; 来处理。\u003c/p\u003e\n\n","pageTitle":"computer ✈︎✈︎ 计算机基础 ✈︎✈︎ mySQL","title":"查询数据"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["computer","计算机基础","mySQL","查询数据"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["computer","计算机基础","mySQL","查询数据"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["computer","计算机基础","mySQL","查询数据"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

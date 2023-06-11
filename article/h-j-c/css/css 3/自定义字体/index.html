@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>自定义字体</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e简介\u003c/h5\u003e\n\u003cp\u003e@font-face 属性不仅可以用于显示服务器端的字体，也可以用来显示客户端本地的字体。\u003c/p\u003e\n\u003cp\u003e举个例子来说，在客户端本地已经安装了 Arial 字体系列（ font-family ）。 Arial 字体系列由以下几个字体组成。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eArial\u003c/li\u003e\n    \u003cli\u003eArial Italic\u003c/li\u003e\n    \u003cli\u003eArial Bold\u003c/li\u003e\n    \u003cli\u003eArial Bold Italic\u003c/li\u003e\n    \u003cli\u003eArial Black\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e在浏览器中，当使用 Arial 字体系列显示文字的正体与粗体时，分别使用 Arial 字体与 Arial Bold 字体。但是，可以通过书写样式代码的方式让浏览器在显示粗体时使用 Arial Black 字体。另外，使用\n    @font-face 属性显示客户端本地的字体时，需要将字体文件路径的 URL 属性值修改为\" local （）\"形式的属性值，并且在\" local \"后面的括号中写入使用的字体。\u003c/p\u003e\n\u003ch5\u003efont-size-adjust\u003c/h5\u003e\n\u003cp\u003efont-size-adjust 属性的使用方法很简单，但是它需要使用每个字体种类自带的一个 aspect 值（比例值）。\u003c/p\u003e\n\u003cp\u003easpect 值可以用来在将字体修改为其它字体时保持字体大小基本不变。这个 aspect 值的计算方法为 x-height 值除以该字体的尺寸， x-height 值是指使用这个字体书写出来的小写 x\n    的高度（像素为单位）。如果某个字体的尺寸为 100px 时， x-height 值为 58 像素，则该字体的 aspect 值为 0.58 ，因为字体的 x-height 值总是随着字体的尺寸一起改变的，所以字体的\n    aspect 值都是一个常数。\u003c/p\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003ccaption\u003e常用西方字体的参照值\u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth\u003e字体种类\u003c/th\u003e\n        \u003cth\u003easpect 值\u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\u003cp\u003e在 font-size-adjust 属性中指定 aspect 值并且将字体修改为其它字体后，浏览器对于修改后的字体尺寸的计算公式如下所示。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003ec = （ a/b ） s\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e其中， a 表示实际使用的字体的 aspect 值， b 表示修改前字体的 aspect 值， s 表示指定的字体尺寸， c 为浏览器实际显示时的字体尺寸。\u003c/p\u003e\n\u003cp\u003e如果想将 16px 的 Times New Roman 字体修改为 Comic Sans MS 字体，字体大小仍然保持 16px 的 Times New Roman 字体的大小，则需要执行如下步骤：\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003e查得 Times New Roman 字体的 aspect 值为 0.46\u003c/li\u003e\n    \u003cli\u003e查得 Comic Sans MS 字体的 aspect 值为 0.54\u003c/li\u003e\n    \u003cli\u003e将 0.54 除以 0.46 后得到近似值 1.17\u003c/li\u003e\n    \u003cli\u003e因为需要让浏览器实际显示的字体尺寸为 16px ，所以将 16 除以 1.17 ，得出大约 14px ，然后在样式中指定字体尺寸为 14px 。也就是说， 14px 的 Comic Sans MS 相当于 16px\n        的 Times New Roman 字体\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e最后要补充说明的是，在实际使用过程中，读者也可以根据需要对 aspect 值进行微调以达到最满意的效果，也可以将 font-size-adjust 属性的属性值设为\" none \"，设定为\" none \"的意思等同于不对\n    font-size-adjust 属性进行设置，按照字体原来的大小显示。\u003c/p\u003e\n\u003ch5\u003elist-item 类型\u003c/h5\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003e@font-face { \u0026lt;font-description\u0026gt;} \u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e属性和取值如下：\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003efont-family: 设置文本名称\u003c/li\u003e\n    \u003cli\u003efont-style: 文本样式\u003c/li\u003e\n    \u003cli\u003efont-variant: 文本是否大小写\u003c/li\u003e\n    \u003cli\u003efont-weight: 文本粗细\u003c/li\u003e\n    \u003cli\u003efont-stretch ：是否横向拉伸变形\u003c/li\u003e\n    \u003cli\u003efont-size ：大小\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e字体图标\u003c/h5\u003e\n\u003cp\u003e使用 @font-fac 命令引入外部字体图标文件，然后定义几个字体图标，然后嵌入导航菜单项目中 。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003e@font-face { \u003c/span\u003e\u003cspan class=\"p4\"\u003e/* 选择默认的字体类型 */ \u003c/span\u003e\u003cspan class=\"p4\"\u003efont-family:\n        \"lexograph\"; \u003c/span\u003e\u003cspan class=\"p4\"\u003e/* 兼容IE */ \u003c/span\u003e\u003cspan class=\"p4\"\u003esrc:\n        url(http://randsco.com\u003cspan class=\"r\"\u003e // fonts/lexograph.eot); \u003c/span\u003e \u003c/span\u003e\u003cspan class=\"p4\"\u003e/* 兼容非IE */\n    \u003c/span\u003e\u003cspan class=\"p4\"\u003esrc: local(\"Lexographer\"), url(http://randsco.com/fonts/lexograph.ttf)\n        format(\"truetype\"); \u003c/span\u003e\u003cspan class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p4\"\u003e h1 { \u003c/span\u003e\u003cspan class=\"p4\"\u003e/*\n        设置引入字体文件中的lexograph字体类型 */ \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003efont-family: lexograph, verdana, sans-serif; \u003c/span\u003e\u003cspan class=\"p4\"\u003efont-size: 4em;\n    \u003c/span\u003e\u003cspan class=\"p2\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e嵌入外部字体的需求考虑带宽问题，因为一个中文字体小的几 M ，大的十几 M ，这么大的字体下载会出现延迟，同时服务器不忍受如此频繁的的申请下载。如果只想让图标用特殊字体，最好还是设计成图片。\u003c/p\u003e\n\u003c/div\u003e\n\u003ch6\u003eEntypoRegular 字体\u003c/h6\u003e\n\u003cp\u003e显示比较神奇\u003c/p\u003e\n\n\u003cscript\u003e\n    let Aa = [\n        ['Verdana ', ' 0.58 '],\n        ['Comic Sans MS ', ' 0.54 '],\n        ['Trebuchet MS ', ' 0.53 '],\n        ['Georgia ', ' 0.5 '],\n        ['Myriad Web ', ' 0.48 '],\n        ['Minion Web ', ' 0.47 '],\n        ['Times New Roman ', ' 0.46 '],\n        ['Gill Sans ', ' 0.46 '],\n        ['Bernhand Modern ', ' 0.4 '],\n        ['Caflisch Script Web ', ' 0.37 '],\n        ['Mjemish Script ', ' 0.28 '],\n    ];\n    _MiMethod.td('Aa', Aa);\n\u003c/script\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ css 3","title":"自定义字体"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","css 3","自定义字体"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","css","css 3","自定义字体"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","css 3","自定义字体"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

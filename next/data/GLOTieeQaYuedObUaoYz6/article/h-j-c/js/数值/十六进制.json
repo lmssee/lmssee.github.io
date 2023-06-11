@@ -1,1 +1,0 @@
-{"pageProps":{"data":"<p> 十六进制数以 0x 前缀开头，例如， 0xFF 表示数字 255 。 JavaScript 之前就有处理十六进制数的功能，但是最近该语言还有了处理二进制数和八进制数的功能</p>\n<p> 在 JavaScript 中，可以使用 Number 的 toString(16) 方法将十进制转化为十六进制字符串的形式显示。</p>","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ 数值","title":"十六进制"},"__N_SSG":true}

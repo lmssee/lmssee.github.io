@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>握手协议</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003een \u003c/h5\u003e\n\u003cp\u003e 三次握手协议指的是在发送数据的准备阶段，服务器端和客户端之间需要进行三次交互： \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e 第一次握手：建立连接时，客户端发送 syn 包 (syn=j) 到服务器，并进入 SYN_SEND 状态，等待服务器确认 \u003c/li\u003e\n    \u003cli\u003e 第二次握手：服务器收到 syn 包，必须确认客户的 syn （ ack=j+1 ），同时自己也发送一个 SYN 包（ syn=k ），即 SYN+ACK 包，此时服务器进入 SYN_RECV 状态 \u003c/li\u003e\n    \u003cli\u003e 第三次握手：客户端收到服务器的 SYN+ACK 包，向服务器发送确认包 ACK(ack=k+1) ，此包发送完毕，客户端和服务器进入 ESTABLISHED 状态，完成三次握手 \u003c/li\u003e\n    \u003cli\u003e 完成三次握手，客户端与服务器开始传送数据 \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e 为了提供可靠的传送， TCP 在发送新的数据之前，以特定的顺序将数据包的序号，并需要这些包传送给目标机之后的确认消息。 TCP 总是用来发送大批量的数据。当应用程序在收到数据后要做出确认时也要用到 TCP\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e 未连接队列：在三次握手协议中，服务器维护一个未连接队列，该队列为每个客户端的 SYN 包（ syn=j ）开设一个条目，该条目表明服务器已收到\n        SYN 包，并向客户发出确认，正在等待客户的确认包。这些条目所标识的连接在服务器处于 Syn_RECV 状态，当服务器收到客户的确认包时，删除该条目，服务器进入 ESTABLISHED 状态\n    \u003c/li\u003e\n    \u003cli\u003eSYN-ACK\n        重传次数：服务器发送完 SYN －\n        ACK 包，如果未收到客户确认包，服务器进行首次重传，等待一段时间仍未收到客户确认包，进行第二次重传，如果重传次数超过系统规定的最大重传次数，系统将该连接信息从半连接队列中删除。注意，每次重传等待的时间不一定相同\n    \u003c/li\u003e\n    \u003cli\u003e 半连接存活时间：是指半连接队列的条目存活的最长时间，也即服务从收到 SYN 包到确认这个报文无效的最长时间，该时间值是所有重传请求包的最长等待时间总和。有时我们也称半连接存活时间为 Timeout 时间、\n        SYN_RECV 存活时间\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e 攻击 \u003c/h5\u003e\n\u003ch6\u003eSYN FLOOD\u003c/h6\u003e\n\u003cp\u003e 当客户端和服务器在网络中使用 TCP 协议发起会话时，在服务器内存中会开辟一小块缓冲区来处理会话过程中消息的“握手”交换。会话建立数据包包含一个 SYN 片段，用于标识消息交换中的序列号。而 SYN\n    FLOOD\n    试图摧毁这一过程。攻击者快速发送一连串连接请求，之后并不响应服务器发送回来的应答，造成三次握手无法完成，在服务器上留下半打开的连接，分配给他们的缓存也被保留下来，使其他程序不能使用服务器。尽管缓冲区中的数据包在没有应答超过一段时间（通常\n    3min ）就会被丢弃，但大量虚假请求的后果是用于建立会话的合法请求难以建立。\n\u003c/p\u003e\n\u003ch6\u003eTCP 会话劫持 \u003c/h6\u003e\n\u003cp\u003e 会话劫持的常用方法：使用源路由（ source Routed ） IP 数据包。 \u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ 其他 ✈︎✈︎ http 协议","title":"握手协议"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","其他","http 协议","握手协议"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","其他","http 协议","握手协议"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","其他","http 协议","握手协议"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

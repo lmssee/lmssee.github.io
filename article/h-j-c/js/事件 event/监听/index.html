@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>监听</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e注册 \u003c/h5\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eelement.addEventListener(String type,Function listener,Boolean useCapture);\u003c/span\u003e\n\u003c/code\u003e\n\u003cul\u003e\n    \u003cli\u003etype: 注册事件类型名 \u003c/li\u003e\n    \u003cli\u003elistener: 事件监听函数。默认传给它的唯一参数为 event\u003c/li\u003e\n    \u003cli\u003euseCapture: 布尔值：为 true 时，则在捕获阶段触发；为 false 时，则在冒泡阶段出发 \u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e注意　在 Firefox中注册多个事件时，先添加的监听事件先被调用。标准的 DOM监听函数是严格按顺序执行的。 \u003c/p\u003e\n\u003c/div\u003e\n\u003cp\u003e在 IE 事件模型中，使用 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003eattachEvent(etype,eventName);\u003c/span\u003e\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e使用 attachEvent() 注册事件时，其事件处理函数的调用对象不再是当前事件对象本身。而是 window 对象，因此此时事件函数指向的是 window ，而不再是当前对象。要获取当前对象，应该使用 event\n        的 srcElement 属性。 \u003c/p\u003e\n\u003c/div\u003e\n\u003ch5\u003e注销 \u003c/h5\u003e\n\u003cp\u003e要移除已注册的事件监听器，调用 element的 removeEventListener即可，参数不变。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003eelement.removeEventListener('click',observer,useCapture);\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e直接在 DOM节点上加事件。 \u003c/p\u003e\n\u003cp\u003eremoveEventListener() 方法只能删除 addEventListener() 方法注册的事件。 \u003c/p\u003e\n\u003cp\u003e当临时注册一个事件时，可以在处理完毕后立即删除它，这样可以节省系统资源。 \u003c/p\u003e\n\u003ch5\u003e内联事件处理器 \u003c/h5\u003e\n\u003cp\u003e不同的事件处理器对于各种 HTML标签有效。尽管 onclick可以插入到很多的 HTML标签中，但诸如 onload这样的事件处理器则只能用于 \u0026lt;body\u0026gt;和 \u0026lt;img\u0026gt;元素。 \u003c/p\u003e\n\u003ch5\u003e作为 DOM对象的属性的事件处理器 \u003c/h5\u003e\n\u003cp\u003e这种分配事件处理器的方法对于较小的示例也有效，但是它也有一些重要的缺点。最主要的一个缺点是，它将事物的外观（通常称为其表现层）和事物所做的事情混合到一起。这可能使得 Web页面成为一个难以维护和更新的梦魇。 \u003c/p\u003e\n\u003ch5\u003e使用 addEventListener()\u003c/h5\u003e\n\u003cp\u003e在所指定的任何 DOM节点上调用 addEventListener方法（而不只是页面元素上），并且当一个指定的事件发生时，触发所要执行的代码。通过添加多个这种类型的事件监听器，可以指定任意多个不同的事件。 \u003c/p\u003e\n\u003cp\u003e还有另一个函数 removeEventListener()，它将删除之前添加的一个监听器。 \u003csmall\u003e使用和任何当前注册的监听器都不匹配的参数来调用\n        removeEventListener()，并不会产生一个错误，但是这没有任何效果。 \u003c/small\u003e。\n\u003c/p\u003e\n\u003ch5\u003eevent对象 \u003c/h5\u003e\n\u003cp\u003eDOM提供了一个 event对象，其中包含了这种类型的信息。在一个事件处理函数中，可能会看到表示这个 event的一个参数（通常用一个诸如 event的名字来指定，或者直接用 e来指定，尽管可以选择任何名称）。这个\n    event对象将会自动传递给事件处理器。\n\u003c/p\u003e\n\u003cp\u003e\u003cmark\u003eevent对象有一个 keyCode属性，它表示按下了哪个键 \u003c/mark\u003e。 \u003c/p\u003e\n\u003cdetails\u003e\n    \u003csummary\u003e额 \u003c/summary\u003e\n    \u003cp\u003e在 IE浏览器中，事件对象是 Window对象的一个属性 event，并且 Event对象只能在事件发生时被访问，所有事件处理完后，该对象就消失了。而标准的 DOM中规定\n        event必须作为唯一的参数传给事件处理函数。故为了实现兼容性，通常采用下面的方法。\n    \u003c/p\u003e\n    \u003ccode class=\"c\"\u003e\n        \u003cspan class=\"p\"\u003efunction someHandle(event){\u003c/span\u003e\u003cspan class=\"p2\"\u003eif(window.event)\u003c/span\u003e\u003cspan\n            class=\"p2\"\u003eevent=window.event； \u003c/span\u003e\u003cspan class=\"p\"\u003e} \u003c/span\u003e\u003c/code\u003e\n    \u003cp\u003e在 IE中，事件的对象包含在 Event的 srcElement属性中，而在标准的 DOM浏览器中，对象包含在 target属性中。为了处理两种浏览器的兼容性，举例如下： \u003c/p\u003e\n    \u003ccode class=\"c\"\u003e\n            \u003cspan class=\"p\"\u003efunction handle(oEvent){\u003c/span\u003e\u003cspan class=\"p2\"\u003eif(window.event)oEvent=window.event;\u003cspan\n                    class=\"r\"\u003e//处理兼容性，获得事件对象 \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p4\"\u003evar oTarget;\u003c/span\u003e\u003cspan\n                class=\"p2\"\u003eif(oEvent.srcElement)\u003cspan class=\"r\"\u003e//处理兼容性，获取事件目标\n                \u003c/span\u003e\u003c/span\u003e\n            \u003cspan class=\"p4\"\u003eoTarget=oEvent.srcElement;\u003c/span\u003e\n     \n        \u003cspan class=\"p2\"\u003eelse\u003c/span\u003e\u003cspan class=\"p4\"\u003eoTarget=oEvent.target;\u003c/span\u003e\u003cspan\n            class=\"p2\"\u003ealert(oTarget.tagName);\u003cspan class=\"r\"\u003e//弹出目标的标记名称 \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan\n            class=\"p\"\u003ewindow.onload=function(){\u003c/span\u003e\u003cspan class=\"p2\"\u003evar\n            oImg=document.getElementsByTagName(\"img\")[0];\u003c/span\u003e\n        \u003cspan class=\"p2\"\u003eoImg.onclick=handle;\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan class=\"p\"\u003e\u003c/span\u003e\n    \u003c/code\u003e\n\u003c/details\u003e\n\u003cul\u003e\n    \u003cli\u003e阻止默认行为 preventDefault()方法 \u003c/li\u003e\n    \u003cli\u003ee.stopPropagation(); // 阻止进一步冒泡 \u003c/li\u003e\n\u003c/ul\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ 事件 event","title":"监听"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","事件 event","监听"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","js","事件 event","监听"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","事件 event","监听"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

@@ -1,1 +1,0 @@
-{"pageProps":{"data":"<h5>继承</h5>\n<p>继承可以使用 extends 和 implements 两个关键字实现。</p>\n<p>implements 可以使类继承多个接口类。</p>\n<div class=\"note\">\n<p>final 关键字的类不支持被继承。</p>\n</div>\n<h5>super</h5>\n<p>显示调用父类的构造器。</p>","pageTitle":"java ✈︎✈︎ java ✈︎✈︎ 对象","title":"继承"},"__N_SSG":true}

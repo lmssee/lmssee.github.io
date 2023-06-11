@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>监听</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eWeb Storage 事件监测\u003c/h5\u003e\n\u003cp\u003e某些复杂情况下，多个网页、标签页或者 Worker 都需要访问存储的数据。此时，应用程序可能会在存储数据被修改后触发一系列操作。对于这种情况， Web Storage\n    内建立了一套事件通知机制，它可以将数据更新通知发送给监听者。无论监听窗口本身是否存储过数据，与执行存储操作的窗口同源的每个窗口的 window 对象上都会触发 Web Storage 事件。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003ewindow.addEventListener(\"storage\", displayStorageEvent, true); \u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e其中事件类型参数是 storage ，这样只要有同源的 Storage 事件发生（包括 SessionStorage 和 LocalStorage 触发的事件），已注册的所有事件侦听器作为事件处理程序都会接收到相应的\n    Storage 事件。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003einterface StorageEvent : Event { \u003c/span\u003e\u003cspan class=\"p2\"\u003ereadonly attribute DOMString\n        key; \u003c/span\u003e\u003cspan class=\"p2\"\u003ereadonly attribute any oldValue; \u003c/span\u003e\u003cspan class=\"p2\"\u003ereadonly attribute any\n        newValue; \u003c/span\u003e\u003cspan class=\"p2\"\u003ereadonly attribute DOMString url; \u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ereadonly attribute Storage storageArea; \u003c/span\u003e\u003cspan class=\"p2\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003eStorageEvent 对象是传入事件处理程序的第一个对象，包含了与存储变化有关的所有必要信息。\u003c/p\u003e\n\u003cp\u003ekey 属性包含了存储中被更新或删除的键。 oldValue 属性包含了更新前键对应的数据， newValue 属性包含更新后的数据。如果是新添加的数据，则 oldValue 属性值为 null ，如果是被删除的数据，\n    newValue 属性值为 null 。 url 属性指向 Storage 事件发生的源。 storageArea 属性是一个引用，它指向值发生改变的 1ocalStorage 或 sessionStorage\n    对象，如此一来，处理程序就可以方便地查询到 Storage 中的当前值，或基于其它\n    Storage 的改变而执行其它操作。\u003c/p\u003e\n\u003ch5\u003e事件\u003c/h5\u003e\n\u003cp\u003e使用的存储区域发生变化时还可能触发 storage 事件，使用 window.onstorage 可以捕捉该事件。例如下面的代码：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003e// 定义事件函数，监听存储区域变化\u003c/span\u003e\u003cspan class=\"p2\"\u003efunction storageHandler(event)\n        { \u003c/span\u003e\u003cspan class=\"p4\"\u003evar myDiv = document.getElementById(\"myDiv\"); \u003c/span\u003e\u003cspan class=\"p4\"\u003emyDiv.innerHTML\n        = \" 存储发生了变化： \u0026lt;br /\u0026gt;\u0026lt;b\u0026gt; \" + \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003eevent.key + \"\u0026lt;/b\u0026gt;键改变了 \u0026lt;br /\u0026gt; 旧值 \u0026lt;b\u0026gt; \" + \u003c/span\u003e\u003cspan class=\"p4\"\u003eevent.oldValue +\n        \"\u0026lt;/b\u0026gt;被改变为新值 \u0026lt;b\u0026gt; \" + \u003c/span\u003e\u003cspan class=\"p4\"\u003eevent.newValue +\n        \"\u0026lt;/b\u0026gt; \u0026lt;br /\u0026gt; 发生更改所在的网址： \u0026lt;b\u0026gt; \" + \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003eevent.url + \"\u0026lt;/b\u0026gt; \"; \u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p2\"\u003ewindow.onstorage = storageHandler;\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e如果目标文档当前不处于活动状态，那么该事件不会被触发。 Storage.setItem() 、 Storage.removeItem() 和 Storage.clear() 方法都可以触发该事件。\u003c/p\u003e\n\u003cp\u003e事件对象可以获取如下属性：\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e属性 key ，表示被更改的键\u003c/li\u003e\n    \u003cli\u003e属性 oldValue ，表示被更改的键的旧值\u003c/li\u003e\n    \u003cli\u003e属性 newValue ，表示被更改的键的新值\u003c/li\u003e\n    \u003cli\u003e属性 url ，表示发生更改所在的网址\u003c/li\u003e\n    \u003cli\u003e属性 storageArea ，表示发生更改所在的 Storage 对象\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e技巧与提示。\u003c/p\u003e\n\u003cp\u003eIE 使用 storageCommit 事件代替 storage 事件，它使用 XML 文件存储 localStorage ，当 localStorage 被写到磁盘时，该事件被触发。 Storage.setItem() 、\n    Storage.removeItem() 和 Storage.clear() 方法都可以触发该事件。为了提高性能， localStorage 是异步进行的，该事件可以用来判断磁盘存储空间是否被更新。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ storage","title":"监听"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","storage","监听"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","html","storage","监听"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","storage","监听"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

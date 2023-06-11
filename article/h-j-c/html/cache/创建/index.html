@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>创建</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e创建离线应用\n\u003c/h5\u003e\n\u003cp\u003eHTML 5 中创建离线缓存网页时非常简单，以下是 5 步快速创建离线应用程序缓存的步骤。\n\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e创建一个有效的 HTML 5 文件。 HTML 5 中直接使用 DOCType 创建 index.html 页面文件比 HTML 4 中使用 xhtml 创建文件时更加易于识记\n    \u003c/li\u003e\n    \u003cli\u003e新增加对 .htaccess 的支持。 一个 manifest 文件需要被正确的 MIME-TYPe 支持，这种文件类型为\" text/cache-manifest \"，必须在服务器中进行配置。假设所使用的服务器是\n        Apache ，那么在创建文件之前，需要向 .htaccess 文件中新增加一个指令\n    \u003c/li\u003e\n    \u003cli\u003e创建 .manifest 文件\n    \u003c/li\u003e\n    \u003cli\u003e将 manifest 文件链接到 HTML 文档中。 为了启动应用缓存，需要在网页的 \u0026lt;html\u0026gt;\u0026lt;/html\u0026gt; 标记中添加 manifest 属性，将该属性的值指定为 .manifest\n        文件\n    \u003c/li\u003e\n    \u003cli\u003e在多个浏览器中进行测试\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e\n        xhtaccess 文件被称作分布式配置文件，是 Apache 服务器中的一个配置文件，它提供了针对目录改变配置的方法，负责相关目录下的网页配置。 htaccess 文件可以帮助我们实现：重定向、自定义错误页面。\n    \u003c/p\u003e\n\u003c/div\u003e\n\u003ch5\u003e离线 Web 网页或应用\n\u003c/h5\u003e\n\u003cp\u003eHTML 5 的离线 Web 应用允许我们在脱机时与网站进行交互。这在提高网站的访问速度和制作一款 Web 离线应用上有很大的使用价值。\n\u003c/p\u003e\n\u003cp\u003e如果没有特殊设置，浏览器会主动保存自己的缓存文件以加快网站加载速度。但是要实现浏览器缓存必须要满足一个前提，那就是网络必须要保持连接。如果网络没有连接，即使浏览器启用了对一个站点的缓存，依然无法打开这个站点。而使用离线 Web\n    应用，我们可以主动告诉浏览器应该从网站服务器中获取或缓存哪些文件，并且在网络离线状态下依然能够访问这个网站。\n\u003c/p\u003e\n\u003cp\u003e实现 HTML 5 应用程序缓存需要告诉浏览器需要离线缓存的文件，并对服务器和网页做一些简单的设置即可实现。\n\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003e首先创建一个 cache.manifest 文件中 CACHE: 之后的部分为列出我们需要缓存的文件。 NETWORK:\n        之后可以指定在线白名单，即列出不希望离线存储的文件，因为通常它们的内容需要互联网访问才有意义。另外，在此部分我们可以使用快捷方式：通配符 * 。这将告诉浏览器，应用服务器中获取没有在显示部分中提到的任何文件或 URL\n        。\n    \u003c/li\u003e\n    \u003cli\u003e接下来需要在服务器上设置内容类型\n    \u003c/li\u003e\n    \u003cli\u003e最后需要将 HTML 页面指向清单文件。通过设置每一个页面中 HTML 元素的 manifest 属性来完成这一步\n    \u003c/li\u003e\n\u003c/ol\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ cache","title":"创建"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","cache","创建"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","html","cache","创建"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","cache","创建"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

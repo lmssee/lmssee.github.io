@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>定位</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eposition\u003c/h5\u003e\n\u003col\u003e\n    \u003cli\u003e默认情况下，固定定位元素和绝对定位元素的位置是相对于浏览器而言，而相对定位元素的位置是相对原始位置而言。这里注意一个前提——默认情况下\u003c/li\u003e\n    \u003cli\u003eposition 属性一般配合 top 、 bottom 、 left 和 right 来使用。只有元素定义 position 属性（除了 static ）之后， top 、 bottom 、 left 和\n        right 才生效\u003c/li\u003e\n    \u003cli\u003etop 、 bottom 、 left 和 right 这四个属性不一定全部都用到\u003c/li\u003e\n    \u003cli\u003e\" position:absolute \"会将元素转换为块元素\u003c/li\u003e\n\u003c/ol\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003eposition: static | relative | absolute | fixed \u003c/span\u003e\u003c/code\u003e\n\u003cul\u003e\n    \u003cli\u003estatic: 默认值，每个元素的位置由文档结构中的位置决定\u003c/li\u003e\n    \u003cli\u003erelative: 对象参照自身在文档流中的位置，通过 left 、 right 、 top 、 bottom\n        进行位移，且不影响其它元素。相对定位是在静态定位和绝对定位之间的一个平衡点，让定位对象既不脱离文档流，又可以偏离原始位置\u003c/li\u003e\n    \u003cli\u003eabsolute: 对象脱离文档流，此时参照自身最近的定位的祖先元素，若没有，则参照 body ，其偏移不影响其它元素\u003c/li\u003e\n    \u003cli\u003efixed ： 与 absolute 一致，但元素以窗口为参考，元素相对窗口固定\u003c/li\u003e\n\u003c/ul\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003eposition: center | page | sticky\u003c/span\u003e\u003c/code\u003e\n\u003cul\u003e\n    \u003cli\u003ecenter ： 与 absolute 一致，但偏移位置在盒子中心，盒子在其包容容器垂直水平居中\u003c/li\u003e\n    \u003cli\u003epage ： 与 absolute 类似。元素在分页媒体或者区域块中，元素的定位包含框始终是初始包含框\u003c/li\u003e\n    \u003cli\u003esticky: 粘连\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e想要实现子元素相对父元素定位，是给父元素定义\" position:relative; \"，然后给子元素定义\" position:absolute; \"，之后配合 top 、 bottom 、 left 和 right 来定位。\n\u003c/p\u003e\n\u003ch5\u003e定位包含框\u003c/h5\u003e\n\u003cp\u003e当包含框设置了 position 为 absolute 、 relative 、 fixed 时，则该包含框具有了定位参照功能。当一个定位对象被多层包含框包裹时，则以最近的（内层）定位包含框为参照。\u003c/p\u003e\n\u003ch5\u003e层叠顺序\u003c/h5\u003e\n\u003cspan class=\"p\"\u003ez-index: zuto | integer\u003c/span\u003e\n\u003cp\u003e默认情况下，元素 z-index 属性值为 auto 。 z-index 值为正数的元素在 z-index 值为 0 的上面， z-index 值为负数的元素在 z-index 值为 0 的下面。无论是正数还是负数，\n    z-index 值较大的元素会叠加在 z-index 值较小的元素之上。如果 z-index 值相同，则遵循\"后来者居上\"规则来叠加。\u003c/p\u003e\n\u003ch5\u003e层叠上下文\u003c/h5\u003e\n\u003cp\u003e元素排序。\u003c/p\u003e\n\u003ch5\u003ecalc 方法\u003c/h5\u003e\n\u003cp\u003e通过使用该方法来自动计算元素的宽度、高度等数值类型的样式属性值。\u003c/p\u003e\n\u003cp\u003ecalc （）方法的另一个妙用是可以用来对各种不同的计数单位进行混合运算。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ 布局","title":"定位"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","布局","定位"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","css","布局","定位"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","布局","定位"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

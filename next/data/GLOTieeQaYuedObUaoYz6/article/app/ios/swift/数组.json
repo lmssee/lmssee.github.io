@@ -1,1 +1,0 @@
-{"pageProps":{"data":"<h5>arrays</h5>\n<p>数组使用有序列表储存同一类型的多个值。</p>\n<h5>定义</h5>\n<code class=\"c\">\n<span class=\"p\">var aArray: [Int] = []</span>\n<span class=\"p\">var aArray: [Double] = Array(repeating: 0.0,count: 3)</span>\n</code>\n<h5></h5>","pageTitle":"app ✈︎✈︎ ios ✈︎✈︎ swift","title":"数组"},"__N_SSG":true}

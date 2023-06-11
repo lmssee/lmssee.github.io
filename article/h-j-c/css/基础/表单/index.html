@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>表单</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e表单字体样式 \u003c/h5\u003e\n\u003ch5\u003e单选框 /复选框 \u003c/h5\u003e\n\u003cp\u003e单选框或复选框与文字默认情况下是以 vertical-align:baseline的方式对齐的，这也是导致单选框或复选框与文字在垂直方向不居中对齐的原因。因此，我们可以使用 vertical-align属性来解决。 \u003c/p\u003e\n\u003cp\u003evertical-align:像素值 ; \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e当文字大小为 12px时，我们给单选框或复选框定义\" vertical-align:-3px\"即可解决对齐问题 \u003c/li\u003e\n    \u003cli\u003e当文字大小为 14px时，我们给单选框或复选框定义\" vertical-align:-2px\"即可解决对齐问题 \u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003etextarea\u003c/h5\u003e\n\u003cul\u003e\n    \u003cli\u003e固定大小，禁用拖动\n        \u003cul\u003e\n            \u003cli\u003e使用 min-width和 min-height来定义 textarea的最小宽度和最大高度，也可以使用 max-width和 max-height来定义 textarea的最大宽度和最大高度\n            \u003c/li\u003e\n            \u003cli\u003e将 max-width与 width定义相同值，并且将 max-height与 height定义相同值 \u003c/li\u003e\n            \u003cli\u003e想要彻底禁止用户拖动小三角来改变 textarea元素大小，可以使用 CSS中的 resize属性来实现\" resize:none\"表示禁用 textarea元素的拖动功能，此时\n                textarea元素右下方的小三角会消失 \u003c/li\u003e\n        \u003c/ul\u003e\n    \u003c/li\u003e\n    \u003cli\u003e在 chrome、 Firefox和 IE实现相同的外观\n        \u003cul\u003e\n            \u003cli style=\"list-style:none\"\u003etextarea元素有 cols和 rows两个属性，其中 cols用来控制列数（也就是每行文字个数）， rows用来控制行数。但是如果使用 cols和\n                rows属性来控制 textarea的外观大小，我们会发现以下两个特点 \u003c/li\u003e\n            \u003cli\u003eChrome（或 Firefox）和 IE下，每行字数和文字的列数是不相同的 \u003c/li\u003e\n            \u003cli\u003e默认情况下， IE是有滚动条的，而 Chrome（或 Firefox）是没有滚动条的 \u003c/li\u003e\n            \u003cli style=\"list-style: none;\"\u003e怎么使得 textarea在 Chrome（或 Firefox）和 IE下具有相同的外观效果 \u003c/li\u003e\n            \u003cli\u003e使用 CSS的 width和 height来定义 textarea的大小 \u003c/li\u003e\n            \u003cli\u003e使用\" overflow:auto\"来定义 textarea的滚动条自适应 \u003c/li\u003e\n        \u003c/ul\u003e\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e表单对齐 \u003c/h5\u003e\n\u003col\u003e\n    \u003cli\u003e每一行表单分为左栏加若干右栏。所有行的左栏长度相等，所有行的右栏所有盒子长度之和相等。左栏一般是一个 label，右栏是若干个文本框 \u003c/li\u003e\n    \u003cli\u003e所有左栏盒子和右栏盒子都设置为左浮动 \u003c/li\u003e\n    \u003cli\u003e左栏 text-align属性定义为 right，使得文字右对齐 \u003c/li\u003e\n    \u003cli\u003e每一行中左栏长度和右栏所有盒子的总长度之和等于行宽。这里的盒子是包括 width、 padding、 border和 margin的 \u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n    \u003cli\u003eChrome（或 Firefox）和 IE下，每行字数和文字的列数是不相同的\u003c/li\u003e\n    \u003cli\u003e默认情况下， IE是有滚动条 的，而 Chrome（或 Firefox）是没有滚动条的\u003c/li\u003e\n    \u003cli style=\"list-style: none;\"\u003e怎么使得 textarea在 Chrome（或 Firefox）和 IE下具有相同的外观效果\u003c/li\u003e\n    \u003cli\u003e使用 CSS的 width和 height来定义 textarea的大小\u003c/li\u003e\n    \u003cli\u003e使用\" overflow:au to\"来定义 textarea的滚动条自适应\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e表单对齐\u003c/h5\u003e\n\u003col\u003e\n    \u003cli\u003e每一行表单分为左栏加若干右栏。所有行的左栏长度相等，所有行的右栏所有盒子长度之和相等。左栏一般是一个 label，右栏是若干个文本框\u003c/li\u003e\n    \u003cli\u003e所有左栏盒子和右栏盒子都设置为左浮动\u003c/li\u003e\n    \u003cli\u003e左栏 text-align属性定义为 right，使得文字右对齐\u003c/li\u003e\n    \u003cli\u003e每一行中左栏长度和右栏所有盒子的总长度之和等于行宽。这里的盒子是包括 width、 padding、 border和 margin的\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch5\u003ecaret-color\u003c/h5\u003e\n\u003cp\u003e设置元素内光标的样式：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003ecaret-color : auto | color\u003c/span\u003e\u003c/code\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ 基础","title":"表单"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","基础","表单"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","css","基础","表单"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","基础","表单"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

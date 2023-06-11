@@ -1,1 +1,0 @@
-{"pageProps":{"data":"<h5>左侧侧边栏</h5>\n<p>使用 Scaffold 组件的 drawer 命名参数搭配 Drawer 组件可召唤左侧侧边栏。</p>\n<h5>右侧侧边栏</h5>\n<p>使用 SCaffold 组件的 endDrawer 命名参数搭配 Drawer 组件可召唤右侧侧边栏。</p>\n<h5>成型侧边栏头部</h5>\n<p>使用 UserAccountsDrawerHeader 组件可快速搭建侧边栏头部展示。</p>","pageTitle":"flutter ✈︎✈︎ flutter ✈︎✈︎ 结构组件","title":"侧边栏"},"__N_SSG":true}

@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>参数</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e参数\u003c/h5\u003e\n\u003cp\u003e参数包括两种 ,形参和实参。形参就是函数声明的参数变量，仅在函数体内可见，实参是实际传递的值。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e可包含一个或多个参数\u003c/li\u003e\n    \u003cli\u003e参数个数可用 length 获取\u003c/li\u003e\n    \u003cli\u003e实参数少于形参，多出来默认 undefined\u003c/li\u003e\n    \u003cli\u003e实参数多余形参，默认忽略\u003c/li\u003e\n    \u003cli\u003e形参与函数内 var 语句声明发生冲突， var 声明有最大优先权\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e设置默认参数\u003c/h5\u003e\n\u003cp\u003e有时候，当没有给定参数时，让函数给参数指定一个默认的值是很有用的。\u003c/p\u003e\n\u003ch5\u003earguments\u003c/h5\u003e\n\u003cp\u003earguments 对象表示函数的实参集合，它是一个伪数组，拥有与数组类似的结构，可以通过数组的下标的形式访问函数实参值。仅能够在函数体内可见，并直接访问。\u003c/p\u003e\n\u003cp\u003earguments是一个伪数组，不能够继承 Array的原型方法。可以使用数组的下标进行访问每一个实参，如 arguments[1] 表示第二个参数。之中， length 是 arguments\n    的属性。表示函数包含的实参个数。同时， arguments 对象可以允许更新其包含的实参数。\u003c/p\u003e\n\u003cp\u003e可通过修改 arguments 对象的 length 属性值，也可以达到改变实参个数的目的。当 length 属性值增大时，则增多的实参值为 undefined 。\u003c/p\u003e\n\u003ch5\u003ecallee\u003c/h5\u003e\n\u003cp\u003ecallee 是 arguments 对象的属性，它引用当前的 arguments 对象所在的函数。使用该属性可以在函数体内调用自身。在匿名函数内 callee 比较有用，例如，利用它可以设计递归调用。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003earguments.length 表示实参个数 ; arguments.callee.length 表示形参个数\u003c/li\u003e\n    \u003cli\u003e匿名函数 ,arguments.callee 表示函数本身\u003c/li\u003e\n    \u003cli\u003e非匿名函数 ,arguments.callee 代表函数名即 f.length == arguments.callee.length \u003c/li\u003e\n\u003c/ul\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003efunction f(x ,y , z){\u003c/span\u003e\u003cspan class=\"p2\"\u003evar a = arguments.length;\n        //获取函数实参的个数\u003c/span\u003e\u003cspan class=\"p2\"\u003evar b = arguments.callee.length; //获取函数形参的个数\u003c/span\u003e\u003cspan class=\"p2\"\u003eif(a\n        != b){ \u003cspan class=\"r\"\u003e//如果形参与实参不相等，则提示错误\u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p4\"\u003ethrow new Error(\"传递的参数不匹配 \")；\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e}\u003c/span\u003e\u003cspan class=\"p2\"\u003eelse{\u003c/span\u003e\u003cspan class=\"p4\"\u003ereturn x + y + z; //\n        如果实参和形参数目相同，则返回它们的和\u003c/span\u003e\u003cspan class=\"p2\"\u003e}\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan\n        class=\"p\"\u003econsole.log(f(3,4,5));\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003earguments.callee 相当于函数名。\u003c/p\u003e\n\u003ch5\u003earguments 对象\u003c/h5\u003e\n\u003cp\u003eargument 对象不是数组，他有一个 length 属性，可以通过 [] 来获取实参值，但是 argument 没有数组的 pop、push、shift、unshift、splice 等方法。其原因是 arguments\n    对象的 prototype 指向 Object.prototype ，而不是 Array.prototype 。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003efunction fibonacci(num) { \u003c/span\u003e\u003cspan class=\"p4\"\u003ereturn (function(num) {\n    \u003c/span\u003e\u003cspan class=\"p6\"\u003eif (typeof num !== \"number\") return -1; \u003c/span\u003e\u003cspan class=\"p6\"\u003enum = parseInt(num);\n    \u003c/span\u003e\u003cspan class=\"p6\"\u003eif (num \u0026lt; 1) return -1; \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003eif (num == 1 || num == 2) \u003c/span\u003e\u003cspan class=\"p8\"\u003ereturn 1; \u003c/span\u003e\u003cspan class=\"p6\"\u003ereturn\n        arguments.callee(num - 1) + arguments.callee(num - 2); \u003c/span\u003e\u003cspan class=\"p4\"\u003e})(num); \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(fibonacci(100));\u003c/span\u003e\n\u003c/code\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ 函数","title":"参数"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","函数","参数"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","js","函数","参数"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","函数","参数"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

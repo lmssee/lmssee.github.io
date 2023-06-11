@@ -1,1 +1,0 @@
-{"pageProps":{"data":"<h5>组织表单结构</h5>\n<p>使用 &lt;filedset&gt; 标签可组织结构，为表单对表单对象进行分组，这样表单更容易理解。默认状态下，分组的表单对象外面会显示一个包围框。</p>\n<p>使用 &lt;legend&gt; 标签可以定义每组的标题，描述每组的目的，有时这个描述可以用 h1~h6 标题。默认显示在 &lt;fieldset&gt; 的左上角。</p>","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 表单","title":"fieldset"},"__N_SSG":true}

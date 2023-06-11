@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>拉取</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003efetch\u003c/h5\u003e\n\u003cp\u003e从另一个储存库下载对象或引用：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003egit fetch origin\u003cspan class=\"r\"\u003e// 更新远程跟踪\u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003epull\u003c/h5\u003e\n\u003cp\u003e从远端拉取代码某个分支的更新，再与本地的指定的分支合并：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e git pull {远程主机名} {远程分支名}:{本地分支名} \u003cspan class=\"r\"\u003e// 要合并到当前分支可省略冒号后面的\u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003egit pull 使用指定的参数运行 git fetch ，并调用 git merge 将检索到的分支头合并到当前分支中。使用 --rebase ，将运行 git rebase 而不是 git merge\u003c/p\u003e\n    \u003ccode class=\"c\"\u003e\n        \u003cspan class=\"p\"\u003egit pull origin newMain \u003cspan class=\"r\"\u003e// 等同于\u003c/span\u003e\u003c/span\u003e\n    \u003c/code\u003e\n    \u003cp\u003e等同于：\u003c/p\u003e\n    \u003ccode class=\"c\"\u003e\n        \u003cspan class=\"p\"\u003egit fetch origin\u003c/span\u003e\n        \u003cspan class=\"p\"\u003egit merge origin/newMain\u003c/span\u003e\n    \u003c/code\u003e\n\u003c/div\u003e\n\u003cp\u003e在没有参数的情况下， pull 命令只在克隆版本库中能发挥作用，因为只有该克隆体中有默认的原版本库的连接。当我们执行 pull 操作时，也可以用参数来指定任意版本库的路径，以便从某一特定开发分支中提取相关修改。\u003c/p\u003e\n\u003cp\u003eGit 允许开发者自由地命名本地分支。必须要在使用 fetch、pull 或 push 时在参数中用冒号来指定它们。用冒号之前的单词指定源分支，而冒号之后的单词则用于指定目标后支。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003egit pull clone organ:local\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e建立追踪关系\u003c/h5\u003e\n\u003cp\u003e在 git clone 的时候，会自动创建追踪关系。也就是说，本地的 newMain 分支自动追踪 origin/newMain 分支。\u003c/p\u003e\n\u003cp\u003e手动创建追踪关系：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e git branch --set-upstream-to=origin/{分支} {本地分支}\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e当存在绑定关系后，git pull 可以省略远程分支名：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003egit pull origin\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e如果仅存在一个追踪分支，则：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003egit pull\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e配置别名\u003c/h5\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003egit config --global alias.{别名} 'git 命令，但是不能带 git' \u003cspan class=\"r\"\u003e// git 大法好呀\u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e","pageTitle":"computer ✈︎✈︎ some ✈︎✈︎ git","title":"拉取"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["computer","some","git","拉取"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["computer","some","git","拉取"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["computer","some","git","拉取"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

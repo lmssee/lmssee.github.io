@@ -1,1 +1,0 @@
-{"pageProps":{"data":"<h5>枚举</h5>\n<p>枚举是一个特殊类，一般表示为一组常量。</p>\n<h5>方法</h5>\n<ul>\n    <li>hasMoreElements 是否有更多元素</li>\n    <li>nextElement 枚举下一个元素</li>\n</ul>","pageTitle":"java ✈︎✈︎ java ✈︎✈︎ 数据结构","title":"enum"},"__N_SSG":true}

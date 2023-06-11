@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>页面重构</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003eJavaScript 的一个很重要的作用就是对 DOM 进行操作，但是对 DOM 的操作是非常占用资源的，因为这会导致浏览器执行 DOM Reflow 和 Repaint\n    操作。而执行了过多的页面重构操作，就会使网页变得越来越慢。 \u003c/p\u003e\n\u003ch5\u003e 关于 DOM Reflow 和 Repaint\u003c/h5\u003e\n\u003cp\u003e 一个 HTML 网页被加载进浏览器中后，被解析为 DOM ，然后再应用样式来呈现，因此该页面的最终呈现通过两个步骤来完成： \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eDOM ：描述该页面的结构 \u003c/li\u003e\n    \u003cli\u003e 渲染：描述 DOM 在页面上如何呈现 \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e 当 DOM 元素的属性（如 color ）发生变化时，浏览器会通知渲染引擎重新描绘相应的元素，此过程称为 Repaint 。 \u003c/p\u003e\n\u003cp\u003e 如果变化涉及元素布局，浏览器则抛弃原有属性，重新计算并把结果传递给渲染引擎以重新描绘页面元素，此过程称为 Reflow 。 \u003c/p\u003e\n\u003cp\u003e 这两个步骤是最耗费资源的，每次对元素的操作都会发生 Repaint 或 Reflow ，因此编写 DOM 交互时如果不注意就会导致页面性能低下。 \u003c/p\u003e\n\u003cp\u003e 除了在首次加载页面时必然要经历以上这两个步骤之外，还有以下行为会触发这个行为： \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eDOM 元素的添加、修改、删除，此时 Reflow 和 Repaint 都会发生 \u003c/li\u003e\n    \u003cli\u003e 改变窗体大小、滚动页面、添加或移除样式、内容改变、 CSS 伪类被触发、更改元素的 className 、获取一个必须经过计算的尺寸值（如读取元素的 offsetLeft 、 offsetTop 、\n        offsetHeight 、 offsetWidth 、 scrollTop/Left/Width/Height 、 clientTop/Left/Width/ Height 、 getComputedStyle()\n        、 currentStyle 属性或者其它需要经过计算的 CSS 值），都会导致\n        Repaint 发生\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e 在兼容 DOM 的浏览器中，可以通过 getComputedStyle() 方法获取样式的计算值。在 IE 中，可以通过 currentStyle 属性获取计算值。 \u003c/p\u003e\n\u003cp\u003e 此时只有 Repaint ，因为不需要调整布局。 \u003c/p\u003e\n\u003ch5\u003e 优化 DOM Reflow\u003c/h5\u003e\n\u003cp\u003e 可通过以下方法优化 DOM Reflow ： \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e 能直接使用 innerHTML 的就不要用 DOM ， DOM 要比直接生成代码慢很多 \u003c/li\u003e\n    \u003cli\u003e 将元素从 document 中删除，完成修改后再把元素放回原来的位置 \u003c/li\u003e\n    \u003cli\u003e 将元素的 display 设置为 none ，完成修改后再把 display 修改为原来的值 \u003c/li\u003e\n    \u003cli\u003e 在使用 DOM 时，可以使用文档片段（ document.createDocumentFragment() ）缓存过程中的 DOM 元素 \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e 例如，在游戏的一个场景中，如果要为一个 Player 加血，并假定是 5 格血，就会是 5 个能量值来呈现，因此可能会使用下面的方法： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003efor (var i=0; i\u0026lt;5; i++){\u003c/span\u003e\u003cspan class=\"p2\"\u003evar powerCell = new PowerCell();\n        \u003cspan class=\"r\"\u003e// 一个 PowerCell 代表一格血 \u003c/span\u003e\u003c/span\u003e\u003cspan\n        class=\"p2\"\u003edocument.body.appendChild(powerCell);\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e 问题出现了，我们的目的是希望能同时出现 5 格血，这里，如果循环将 5 个 PowerCell 对象添加到 body ，会导致一个结果：浏览器对 DOM 树重构了 5 次（ DOM 树重构术语被称为 Reflow ）。\n\u003c/p\u003e\n\u003cp\u003e 这里就可以使用文档片段，先把 5 格血封装为一个 DocumentFragment ，然后，再一次性添加到 body 中，这样就只会 Reflow 一次，从而大大提高性能。例如下面的代码： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003evar df = document.createDocumentFragment();\u003c/span\u003e\u003cspan class=\"p\"\u003efor (var i=0;\n        i\u0026lt;5; i++){\u003c/span\u003e\u003cspan class=\"p2\"\u003evar powerCell = new PowerCell();\u003c/span\u003e\u003cspan\n        class=\"p2\"\u003edf.appendChild(powerCell);\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\n    \u003cspan class=\"p\"\u003edocument.body.appendChild(df);\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e 优化 Repaint\u003c/h5\u003e\n\u003cp\u003eRepaint 其实就是 CSS 导致的，因此，要注意以下事项： \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e 尽可能少地修改元素 style 上的属性，尽量通过修改 className 来修改样式 \u003c/li\u003e\n    \u003cli\u003e 通过 cssText 属性一次性将样式值设置到对象 \u003c/li\u003e\n    \u003cli\u003e 避免设置过多的行内样式 \u003c/li\u003e\n    \u003cli\u003e 避免使用表格来布局 \u003c/li\u003e\n\u003c/ul\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ 优化","title":"页面重构"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","优化","页面重构"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","js","优化","页面重构"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","优化","页面重构"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>

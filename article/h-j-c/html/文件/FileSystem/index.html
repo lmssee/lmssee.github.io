@@ -17,15 +17,15 @@
   <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
   <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/webpack-76a965e69109e979.js" defer=""></script>
   <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
   <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
   <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
   <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
   <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
-  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
-  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-c1f98b25149a8960.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/buildManifest.js" defer=""></script>
+  <script src="/next/static/v_WK0777NH6UFM0vY6Eyi/ssgManifest.js" defer=""></script>
   <style id="__jsx-a4447eaa0ca7cb3f">
     p.jsx-a4447eaa0ca7cb3f {
       color: "#ff0"
@@ -53,7 +53,7 @@
       </noscript>
       <div class="PageLayout_tabBar__qHep4" style="height:3rem">
         <div class="articleTitle">
-          <div>FileSystem</div>
+          <div></div>
           <div>双击页面可关闭</div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     </div>
   </div>
   <script id="__NEXT_DATA__"
-    type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003eHTML 5 新增 FileSteam API ，使用该 API 可以将数据存储到用户磁盘的文件系统中。实现 Web 数据的永久保存。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eHTML 5 支持跨域通信，但是每一个域的文件系统只能被该域专用，不能被其它域访问\u003c/li\u003e\n    \u003cli\u003e文件系统中存储的数据是永久的，不被浏览器所删除。但是在临时文件系统中的数据可以被浏览器自行删除\u003c/li\u003e\n    \u003cli\u003e当 Web 应用连续发出多次对文件系统的操作请求时，每一个请求都应得到响应，同时第一个请求中保存的数据可以被之后的请求立即得到\u003c/li\u003e\n\u003c/ul\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003ewindow.requestFileSystem = window.requestFileSystem ||\n        window.webkitRequestFileSystem; \u003c/span\u003e\u003cspan class=\"p2\"\u003ewindow.requestFileSystem(type, size,\n        successCallback, opt_errorCallback);\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e访问文件系统\u003c/h5\u003e\n\u003cp\u003eFileSystem API 包括两部分：一部分内容为除后台线程之外的任何场所使用的异步 API ,另一部分内容为后台线程中专用的 同步 API 。\u003c/p\u003e\n\u003cp\u003e使用 window 对象的 requestFileSystem() 方法可以请求受到浏览器沙箱保护的本地文件系统：\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003etype∶设置请求访问的文件系统使用的文件存储空间的类型，取值包括 window.TEMPORARY 和 window.PERSISTENT 。当值为 window.TEMPORARY\n        时，表示请求临时的存储空间，存储在临时存储空间中的数据可以被浏览器自行删除;当值为 window.PERSISTENT\n        时，表示请求永久存储空间，存储在该空间的数据不能被浏览器在用户不知情的情况下将其清除，只能通过用户或应用程序来清除，请求永久存储空间需要用户为应用程序指定一定的磁盘配额\u003c/li\u003e\n    \u003cli\u003esize∶ 设置请求的文件系统使用的文件存储空间的大小，尺寸为 byte\u003c/li\u003e\n    \u003cli\u003esuccessCallback∶设置请求成功时执行的回调函数，该回调函数的参数为一个 FileSystem 对象 ，表示请求访问的文件系统对象\u003c/li\u003e\n    \u003cli\u003eopt_errorCallback∶ 可选参数，设置请求失败时执行的回调函数，该回调函数的参数为一个 FileError 对象，其中存放了请求失败时的各种信息\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eFileError 对象包含一个 code 属性，其属性值为 FileSystemAPI中预定义的常量值，说明如下\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eFileErrorQUOTA_EXCEEDED_ERR∶ 文件系统所使用的存储空间的尺寸超过磁盘配额控制中指定的空间尺寸\u003c/li\u003e\n    \u003cli\u003eFileError.NOT_FOUND_ERR∶ 未找到文件或目录\u003c/li\u003e\n    \u003cli\u003eFileError.SECURITY_ERR∶ 操作不当引起安全性错误\u003c/li\u003e\n    \u003cli\u003eFileError.INVALID_MODIFICATION_ERR∶对文件或目录所指定的操作（如文件复制、删除、目录复制、目录删除等处理）不能被执行\u003c/li\u003e\n    \u003cli\u003eFileError.INVALID_STATE_ERR∶ 指定的状态无效\u003c/li\u003e\n    \u003cli\u003eFileError.ABORT_ ERR∶ 当前操作被终止\u003c/li\u003e\n    \u003cli\u003eFileError.NOT_READABLE_ERR∶指定的目录或文件不可读\u003c/li\u003e\n    \u003cli\u003eFileError.ENCODING_ERR∶ 文字编码错误\u003c/li\u003e\n    \u003cli\u003eFileError.TYPE_MISMATCH_ERR∶用户企图访问目录或文件，但是用户访问的目录事实上一个文件或用户访问的文件事实上是一个目录\u003c/li\u003e\n    \u003cli\u003eFileError.PATH_EXISTS_ERR∶ 用户指定的路径中不存在需要访问的目录或文件\u003c/li\u003e\n\u003c/ul\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003ewindow.requestFileSystem = window.requestFileSystem ||\n        window.webkitRequestFileSystem; \u003c/span\u003e\u003cspan class=\"p2\"\u003evar fs = null; \u003c/span\u003e\u003cspan class=\"p2\"\u003eif\n        (window.requestFileSystem) { \u003c/span\u003e\u003cspan class=\"p4\"\u003ewindow.requestFileSystem(window.TEMPORARY, 1024 * 1024,\n    \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003efunction(filesystem) { \u003c/span\u003e\u003cspan class=\"p8\"\u003efs = filesystem; \u003c/span\u003e\u003cspan class=\"p6\"\u003e},\n        errorHandler); \u003c/span\u003e\u003cspan class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p2\"\u003efunction errorHandler(e) { \u003c/span\u003e\u003cspan\n        class=\"p4\"\u003eswitch (e.code) { \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003ecase FileError.QUOTA_EXCEEDED_ERR: \u003c/span\u003e\n    \u003cspan class=\"p8\"\u003econsole.log('文件系统所使用的存储空间的尺寸超过磁盘限额控制中指定的空间尺寸'); \u003c/span\u003e\u003cspan class=\"p8\"\u003ebreak; \u003c/span\u003e\u003cspan\n        class=\"p6\"\u003ecase FileError.NOT_FOUND_ERR: \u003c/span\u003e\u003cspan class=\"p8\"\u003econsole.log('未找到文件或目录'); \u003c/span\u003e\u003cspan\n        class=\"p8\"\u003ebreak; \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003ecase FileError.SECURITY_ERR: \u003c/span\u003e\n    \u003cspan class=\"p8\"\u003econsole.log('操作不当引起安全性错误'); \u003c/span\u003e\u003cspan class=\"p8\"\u003ebreak; \u003c/span\u003e\u003cspan class=\"p6\"\u003ecase\n        FileError.INVALID_MODIFICATION_ERR: \u003c/span\u003e\u003cspan class=\"p8\"\u003econsole.log('对文件或目录所指定的操作不能被执行'); \u003c/span\u003e\u003cspan\n        class=\"p8\"\u003ebreak; \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003ecase FileError.INVALID_STATE_ERR: \u003c/span\u003e\n    \u003cspan class=\"p8\"\u003econsole.log('指定的状态无效'); \u003c/span\u003e\u003cspan class=\"p4\"\u003e}; \u003c/span\u003e\u003cspan class=\"p2\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e申请配额\u003c/h5\u003e\n\u003cp\u003ewebkit 才需要？不懂，后期补上吧。\u003c/p\u003e\n\u003ch5\u003e创建文件\u003c/h5\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 文件","title":"FileSystem"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","文件","FileSystem"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+    type="application/json">{"props":{"pageProps":{"id":["h-j-c","html","文件","FileSystem"]},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","文件","FileSystem"]},"buildId":"v_WK0777NH6UFM0vY6Eyi","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
 </body>
 
 </html>
