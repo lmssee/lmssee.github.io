@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>创建</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e创建 Web Workers\u003c/h5\u003e\n\u003cp\u003e调用 Worker 构造函数就可以简单创建一个 Worker 。 Web Workers 在初始化时会接受一个 JavaScript 文件的 URL 地址，参数 URI 表示要执行的脚本文件地址。其中包含了供 Worker\n    执行的代码。这段代码会设置事件监听器，并与生成 Worker 的容器进行通信。 JavaScript 文件的 URL 可以是相对或者绝对路径，只要是相同的协议、主机和端口即可。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003eworker = new Worker(\"echoWorker.js\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e如果想获取 Worker 进程的返回值，可以通过 onmessage 属性来绑定一个事件处理程序。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003evar myWorker = new Worker(\"easyui.js\");\u003c/span\u003e\u003cspan class=\"p\"\u003emyWorker.onmessage =\n        function(event){\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(\"Called back by the worker!\");\u003c/span\u003e\u003cspan class=\"p\"\u003e};\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e第一行用来创建和运行 Worker 进程，第 2 行设置 Worker 的 onmessage 属性用来绑定指定的事件处理程序，当 Worker 的 postMessage() 方法被调用时，这个被绑定的程序就会被触发。\n\u003c/p\u003e\n\u003ch6\u003eimportScripts\u003c/h6\u003e\n\u003cp\u003e对于由多个 Javascript 文件组成的 应用程序来说，可以通过 包含 script 的形式，在页面加载的时候同步加载 JavaScript 文件。由于 Web Workers 没有访问 document\n    的权限，所以只有用 importScript() 方法导入其它 JavaScript 文件。\u003c/p\u003e\n\u003cp\u003eimportScripts() 函数可以接受空的参数或多个脚本 URL 参数，下面这些形式都是合法的。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eimportScripts();\u003c/span\u003e\u003cspan class=\"p\"\u003eimportScripts(\"foo.js\");\u003c/span\u003e\u003cspan\n        class=\"p\"\u003eimportScripts(\"foo.js\",\"bar.js\");\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003eJavaScript 会加载列出的每一个脚本文件，然后运行并初始化。这些脚本中的任何全局对象都可以被 worker 使用。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003eimportScripts 下载脚本顺序可能不一样，但执行的顺序一定是按 importScripts 中列出的顺序进行，而且是同步的，在所有脚本加载完并运行结束后 importScripts 才会返回。\u003c/p\u003e\n\u003c/div\u003e\n\u003cp\u003eWeb Workers 能够嵌套使用，以创建子 Worker 。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar subWorker = new Worker(\"subWorker.js\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e用户可以创建多个 Workers 。子 Worker 必须存在于同一个父页面下，且它的 URL 必须与父 Worker 的地址同源，这样可以很好地维持它们的依赖关系。\u003c/p\u003e\n\u003cp\u003eWeb Workers 可以使用 setTimeout 和 setInterval 。如果希望 Web Workers 进程周期性地运行，而不是不停地循环下去的话，这两个方法非常有用。\u003c/p\u003e\n\u003ch5\u003e处理运行时错误\u003c/h5\u003e\n\u003cp\u003eWeb Workers 发生错误时，会触发 error 事件，使用 error 事件处理函数可以处理，事件处理函数可以定义一个参数，该参数是一个 ErrorEvent 对象，有 3 个属性： message 表示是错误讯息；\n    filename 是 Worker 执行的 JavaScript 文件名； lineno 则是发生错误的行号。例如可以定义如下代码：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eworker.onerror = function(e){\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(\" 于第 [\"+ e.lineno +\"]\n        行发生错误 : \" + e.message);\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\n\u003c/code\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 线程","title":"创建"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","线程","创建"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+  <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>创建</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e创建 Web Workers\u003c/h5\u003e\n\u003cp\u003e调用 Worker 构造函数就可以简单创建一个 Worker 。 Web Workers 在初始化时会接受一个 JavaScript 文件的 URL 地址，参数 URI 表示要执行的脚本文件地址。其中包含了供 Worker\n    执行的代码。这段代码会设置事件监听器，并与生成 Worker 的容器进行通信。 JavaScript 文件的 URL 可以是相对或者绝对路径，只要是相同的协议、主机和端口即可。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003eworker = new Worker(\"echoWorker.js\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e如果想获取 Worker 进程的返回值，可以通过 onmessage 属性来绑定一个事件处理程序。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003evar myWorker = new Worker(\"easyui.js\");\u003c/span\u003e\u003cspan class=\"p\"\u003emyWorker.onmessage =\n        function(event){\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(\"Called back by the worker!\");\u003c/span\u003e\u003cspan class=\"p\"\u003e};\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e第一行用来创建和运行 Worker 进程，第 2 行设置 Worker 的 onmessage 属性用来绑定指定的事件处理程序，当 Worker 的 postMessage() 方法被调用时，这个被绑定的程序就会被触发。\n\u003c/p\u003e\n\u003ch6\u003eimportScripts\u003c/h6\u003e\n\u003cp\u003e对于由多个 Javascript 文件组成的 应用程序来说，可以通过 包含 script 的形式，在页面加载的时候同步加载 JavaScript 文件。由于 Web Workers 没有访问 document\n    的权限，所以只有用 importScript() 方法导入其它 JavaScript 文件。\u003c/p\u003e\n\u003cp\u003eimportScripts() 函数可以接受空的参数或多个脚本 URL 参数，下面这些形式都是合法的。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eimportScripts();\u003c/span\u003e\u003cspan class=\"p\"\u003eimportScripts(\"foo.js\");\u003c/span\u003e\u003cspan\n        class=\"p\"\u003eimportScripts(\"foo.js\",\"bar.js\");\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003eJavaScript 会加载列出的每一个脚本文件，然后运行并初始化。这些脚本中的任何全局对象都可以被 worker 使用。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003eimportScripts 下载脚本顺序可能不一样，但执行的顺序一定是按 importScripts 中列出的顺序进行，而且是同步的，在所有脚本加载完并运行结束后 importScripts 才会返回。\u003c/p\u003e\n\u003c/div\u003e\n\u003cp\u003eWeb Workers 能够嵌套使用，以创建子 Worker 。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar subWorker = new Worker(\"subWorker.js\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e用户可以创建多个 Workers 。子 Worker 必须存在于同一个父页面下，且它的 URL 必须与父 Worker 的地址同源，这样可以很好地维持它们的依赖关系。\u003c/p\u003e\n\u003cp\u003eWeb Workers 可以使用 setTimeout 和 setInterval 。如果希望 Web Workers 进程周期性地运行，而不是不停地循环下去的话，这两个方法非常有用。\u003c/p\u003e\n\u003ch5\u003e处理运行时错误\u003c/h5\u003e\n\u003cp\u003eWeb Workers 发生错误时，会触发 error 事件，使用 error 事件处理函数可以处理，事件处理函数可以定义一个参数，该参数是一个 ErrorEvent 对象，有 3 个属性： message 表示是错误讯息；\n    filename 是 Worker 执行的 JavaScript 文件名； lineno 则是发生错误的行号。例如可以定义如下代码：\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003eworker.onerror = function(e){\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(\" 于第 [\"+ e.lineno +\"]\n        行发生错误 : \" + e.message);\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\n\u003c/code\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 线程","title":"创建"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","线程","创建"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

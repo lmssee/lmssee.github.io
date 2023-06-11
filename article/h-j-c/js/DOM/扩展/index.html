@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>扩展</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eHTMLDocument 扩展\u003c/h5\u003e\n\u003cp\u003eHTML5 扩展了 HTMLDocument 类型，增加了更多功能。与其它 HTML5 定义的 DOM 扩展一样， 这些变化同样基于所有浏览器事实上都已经支持的专有扩展。为此，即使这些扩展的标准化相对较晚，\n    很多浏览器也早就实现了相应的功能。\n\u003c/p\u003e\n\u003ch6\u003ereadyState 属性\u003c/h6\u003e\n\u003cp\u003ereadyState 是 IE4 最早添加到 document 对象上的属性，后来其它浏览器也都依葫芦画瓢地支持 这个属性。最终，HTML5 将这个属性写进了标准。\u003c/p\u003e\n\u003cp\u003edocument.readyState 属性有两个可能的值：\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eloading，表示文档正在加载\u003c/li\u003e\n    \u003cli\u003ecomplete，表示文档加载完成\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e实际开发中，最好是把 document.readState 当成一个指示器，以判断文档是否加载完毕。在这 个属性得到广泛支持以前，通常要依赖 onload 事件处理程序设置一个标记，表示文档加载完了。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003eif (document.readyState == \"complete\") { \u003c/span\u003e\u003cspan class=\"p4\"\u003e\u003cspan class=\"r\"\u003e//\n            执行操作\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003ecompatMode\u003c/h6\u003e\n\u003cp\u003e自从 IE6 提供了以标准或混杂模式渲染页面的能力之后，检测页面渲染模式成为一个必要的需求。 IE 为 document 添加了 compatMode 属性，这个属性唯一的任务是指示浏览器当前处于什么渲染模式。\n    如下面的例子所示，标准模式下 document.compatMode 的值是\"CSS1Compat\"，而在混杂模式下， document.compatMode 的值是\"BackCompat\"。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003eif (document.compatMode == \"CSS1Compat\") { \u003c/span\u003e\u003cspan class=\"p4\"\u003econsole.log(\"Standards mode\");\n    \u003c/span\u003e\u003cspan class=\"p2\"\u003e} else { \u003c/span\u003e\u003cspan class=\"p4\"\u003econsole.log(\"Quirks mode\"); \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003ehead 属性\u003c/h6\u003e\n\u003cp\u003e作为对 document.body（指向文档的\u0026lt;body\u0026gt;元素）的补充，HTML5 增加了 document.head 属 性，指向文档的\u0026lt;head\u0026gt;元素。\u003c/p\u003e\n\u003ch5\u003e字符集属性\u003c/h5\u003e\n\u003cp\u003eHTML5 增加了几个与文档字符集有关的新属性。其中，characterSet 属性表示文档实际使用的 字符集，也可以用来指定新字符集。这个属性的默认值是\"UTF-16\"，但可以通过\u0026lt;meta\u0026gt;元素或响应头，\n    以及新增的 characterSeet 属性来修改。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003econsole.log(document.characterSet); \u003cspan class=\"r\"\u003e// \"UTF-16\" \u003c/span\u003e\u003c/span\u003e\u003cspan\n        class=\"p2\"\u003edocument.characterSet = \"UTF-8\";\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003escrollIntoView()\u003c/h5\u003e\n\u003cp\u003escrollIntoView()方法存在于所有 HTML 元素上，可以滚动浏览器窗口或容器元素以便包含元 素进入视口。\n\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003ealignToTop 是一个布尔值\n        \u003cul\u003e\n            \u003cli\u003etrue：窗口滚动后元素的顶部与视口顶部对齐\u003c/li\u003e\n            \u003cli\u003e false：窗口滚动后元素的底部与视口底部对齐\u003c/li\u003e\n        \u003c/ul\u003e\n    \u003c/li\u003e\n    \u003cli\u003e scrollIntoViewOptions 是一个选项对象\n        \u003cul\u003e\n            \u003cli\u003ebehavior：定义过渡动画，可取的值为\"smooth\"和\"auto\"，默认为\"auto\"\u003c/li\u003e\n            \u003cli\u003eblock：定义垂直方向的对齐，可取的值为\"start\"、\"center\"、\"end\"和\"nearest\"，默 认为 \"start\"\u003c/li\u003e\n            \u003cli\u003einline：定义水平方向的对齐，可取的值为\"start\"、\"center\"、\"end\"和\"nearest\"，默 认为 \"nearest\"\u003c/li\u003e\n        \u003c/ul\u003e\n    \u003c/li\u003e\n    \u003cli\u003e不传参数等同于 alignToTop 为 true\u003c/li\u003e\n\u003c/ul\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003e\u003cspan class=\"r\"\u003e// 确保元素可见\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003edocument.forms[0].scrollIntoView();\n    \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u003cspan class=\"r\"\u003e//\n            同上\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003edocument.forms[0].scrollIntoView(true); \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003edocument.forms[0].scrollIntoView({ \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003eblock: 'start' \u003c/span\u003e\u003cspan class=\"p2\"\u003e}); \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u003cspan class=\"r\"\u003e//\n            尝试将元素平滑地滚入视口\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003edocument.forms[0].scrollIntoView({ \u003c/span\u003e\u003cspan\n        class=\"p4\"\u003ebehavior: 'smooth', \u003c/span\u003e\u003cspan class=\"p4\"\u003eblock: 'start' \u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e});\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e专有扩展\u003c/h5\u003e\n\u003ch6\u003echildren 属性\u003c/h6\u003e\n\u003cp\u003eIE9 之前的版本与其它浏览器在处理空白文本节点上的差异导致了 children 属性的出现。 children 属性是一个 HTMLCollection，只包含元素的 Element 类型的子节点。\u003c/p\u003e\n\u003ch6\u003econtains()方法\u003c/h6\u003e\n\u003cp\u003eDOM 编程中经常需要确定一个元素是不是另一个元素的后代。IE 首先引入了 contains()方法， 让开发者可以在不遍历 DOM 的情况下获取这个信息。contains()方法应该在要搜索的祖先元素上调\n    用，参数是待确定的目标节点。\n\u003c/p\u003e\n\u003cp\u003e如果目标节点是被搜索节点的后代，contains()返回 true，否则返回 false。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ DOM","title":"扩展"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","DOM","扩展"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+  <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>扩展</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003eHTMLDocument 扩展\u003c/h5\u003e\n\u003cp\u003eHTML5 扩展了 HTMLDocument 类型，增加了更多功能。与其它 HTML5 定义的 DOM 扩展一样， 这些变化同样基于所有浏览器事实上都已经支持的专有扩展。为此，即使这些扩展的标准化相对较晚，\n    很多浏览器也早就实现了相应的功能。\n\u003c/p\u003e\n\u003ch6\u003ereadyState 属性\u003c/h6\u003e\n\u003cp\u003ereadyState 是 IE4 最早添加到 document 对象上的属性，后来其它浏览器也都依葫芦画瓢地支持 这个属性。最终，HTML5 将这个属性写进了标准。\u003c/p\u003e\n\u003cp\u003edocument.readyState 属性有两个可能的值：\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eloading，表示文档正在加载\u003c/li\u003e\n    \u003cli\u003ecomplete，表示文档加载完成\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e实际开发中，最好是把 document.readState 当成一个指示器，以判断文档是否加载完毕。在这 个属性得到广泛支持以前，通常要依赖 onload 事件处理程序设置一个标记，表示文档加载完了。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003eif (document.readyState == \"complete\") { \u003c/span\u003e\u003cspan class=\"p4\"\u003e\u003cspan class=\"r\"\u003e//\n            执行操作\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003ecompatMode\u003c/h6\u003e\n\u003cp\u003e自从 IE6 提供了以标准或混杂模式渲染页面的能力之后，检测页面渲染模式成为一个必要的需求。 IE 为 document 添加了 compatMode 属性，这个属性唯一的任务是指示浏览器当前处于什么渲染模式。\n    如下面的例子所示，标准模式下 document.compatMode 的值是\"CSS1Compat\"，而在混杂模式下， document.compatMode 的值是\"BackCompat\"。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003eif (document.compatMode == \"CSS1Compat\") { \u003c/span\u003e\u003cspan class=\"p4\"\u003econsole.log(\"Standards mode\");\n    \u003c/span\u003e\u003cspan class=\"p2\"\u003e} else { \u003c/span\u003e\u003cspan class=\"p4\"\u003econsole.log(\"Quirks mode\"); \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\n\u003ch6\u003ehead 属性\u003c/h6\u003e\n\u003cp\u003e作为对 document.body（指向文档的\u0026lt;body\u0026gt;元素）的补充，HTML5 增加了 document.head 属 性，指向文档的\u0026lt;head\u0026gt;元素。\u003c/p\u003e\n\u003ch5\u003e字符集属性\u003c/h5\u003e\n\u003cp\u003eHTML5 增加了几个与文档字符集有关的新属性。其中，characterSet 属性表示文档实际使用的 字符集，也可以用来指定新字符集。这个属性的默认值是\"UTF-16\"，但可以通过\u0026lt;meta\u0026gt;元素或响应头，\n    以及新增的 characterSeet 属性来修改。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003econsole.log(document.characterSet); \u003cspan class=\"r\"\u003e// \"UTF-16\" \u003c/span\u003e\u003c/span\u003e\u003cspan\n        class=\"p2\"\u003edocument.characterSet = \"UTF-8\";\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003escrollIntoView()\u003c/h5\u003e\n\u003cp\u003escrollIntoView()方法存在于所有 HTML 元素上，可以滚动浏览器窗口或容器元素以便包含元 素进入视口。\n\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003ealignToTop 是一个布尔值\n        \u003cul\u003e\n            \u003cli\u003etrue：窗口滚动后元素的顶部与视口顶部对齐\u003c/li\u003e\n            \u003cli\u003e false：窗口滚动后元素的底部与视口底部对齐\u003c/li\u003e\n        \u003c/ul\u003e\n    \u003c/li\u003e\n    \u003cli\u003e scrollIntoViewOptions 是一个选项对象\n        \u003cul\u003e\n            \u003cli\u003ebehavior：定义过渡动画，可取的值为\"smooth\"和\"auto\"，默认为\"auto\"\u003c/li\u003e\n            \u003cli\u003eblock：定义垂直方向的对齐，可取的值为\"start\"、\"center\"、\"end\"和\"nearest\"，默 认为 \"start\"\u003c/li\u003e\n            \u003cli\u003einline：定义水平方向的对齐，可取的值为\"start\"、\"center\"、\"end\"和\"nearest\"，默 认为 \"nearest\"\u003c/li\u003e\n        \u003c/ul\u003e\n    \u003c/li\u003e\n    \u003cli\u003e不传参数等同于 alignToTop 为 true\u003c/li\u003e\n\u003c/ul\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003e\u003cspan class=\"r\"\u003e// 确保元素可见\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003edocument.forms[0].scrollIntoView();\n    \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u003cspan class=\"r\"\u003e//\n            同上\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003edocument.forms[0].scrollIntoView(true); \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003edocument.forms[0].scrollIntoView({ \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003eblock: 'start' \u003c/span\u003e\u003cspan class=\"p2\"\u003e}); \u003c/span\u003e\u003cspan class=\"p2\"\u003e\u003cspan class=\"r\"\u003e//\n            尝试将元素平滑地滚入视口\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003edocument.forms[0].scrollIntoView({ \u003c/span\u003e\u003cspan\n        class=\"p4\"\u003ebehavior: 'smooth', \u003c/span\u003e\u003cspan class=\"p4\"\u003eblock: 'start' \u003c/span\u003e\n    \u003cspan class=\"p2\"\u003e});\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e专有扩展\u003c/h5\u003e\n\u003ch6\u003echildren 属性\u003c/h6\u003e\n\u003cp\u003eIE9 之前的版本与其它浏览器在处理空白文本节点上的差异导致了 children 属性的出现。 children 属性是一个 HTMLCollection，只包含元素的 Element 类型的子节点。\u003c/p\u003e\n\u003ch6\u003econtains()方法\u003c/h6\u003e\n\u003cp\u003eDOM 编程中经常需要确定一个元素是不是另一个元素的后代。IE 首先引入了 contains()方法， 让开发者可以在不遍历 DOM 的情况下获取这个信息。contains()方法应该在要搜索的祖先元素上调\n    用，参数是待确定的目标节点。\n\u003c/p\u003e\n\u003cp\u003e如果目标节点是被搜索节点的后代，contains()返回 true，否则返回 false。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ DOM","title":"扩展"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","DOM","扩展"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

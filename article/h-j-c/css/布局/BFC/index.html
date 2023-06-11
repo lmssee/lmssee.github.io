@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>BFC</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e使用 BFC 解决父元素高度塌陷问题\u003c/h5\u003e\n\u003cp\u003e块级格式上下文（ Block Formatting Context ， BFC ）为元素提供了一个独立的布局环境，环境中的内容不会影响到环境外的布局，环境外的布局也不会影响到环境中的内容。 BFC\n    就像是一个围城的围墙，使得围墙里的东西出不去，围墙外的东西也进不来。\u003c/p\u003e\n\u003cp\u003eBFC （ Block Formatting Context ）即块格式化上下文，它既不是一个 CSS 属性，也不是一段代码，而是 CSS2.1 规范中的一个概念，决定元素的内容如何渲染以及与其它元素的关系和交互。可以将\n    BFC 想象成一个箱子， BFC 中的内容就相当于箱子中的物品，将物品摆放在箱子中，能避免与其它箱子中的物品混淆，还能保护它们不被破坏。接下来简单概括一下 BFC 的 5 条规则。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eBFC 有隔离作用，内部元素不会受外部元素的影响\u003c/li\u003e\n    \u003cli\u003e一个元素只能存在于一个 BFC 中，如果能同时存在于两个 BFC 中，那么就违反了 BFC 的隔离规则\u003c/li\u003e\n    \u003cli\u003eBFC 内的元素按正常流排列，元素之间的间隙由元素的外边距（ margin ）控制\u003c/li\u003e\n    \u003cli\u003eBFC 中的内容不会与外面的浮动元素重叠\u003c/li\u003e\n    \u003cli\u003e计算 BFC 的高度，需要包括 BFC 内的浮动子元素的高度\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch6\u003e创建 BFC\u003c/h6\u003e\n\u003cp\u003e如果要创建 BFC ，那么必须满足下列条件中的一个 :\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e根元素，也就是 html 元素\u003c/li\u003e\n    \u003cli\u003efloat 属性不为 none 的浮动元素\u003c/li\u003e\n    \u003cli\u003eposition 属性是 absolute 或 fixed 的定位元素\u003c/li\u003e\n    \u003cli\u003edisplay 属性为 inline-block 、 table-cell （相当于 td 或 th 元素）、 table-caption （相当于 caption 元素）或伸缩盒（ flex 和\n        inline-flex ）的元素\u003c/li\u003e\n    \u003cli\u003eoverflow 属性不为 visible 的块级元素\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch6\u003eBFC 的用途\u003c/h6\u003e\n\u003cp class=\"p4\"\u003e清除浮动\u003c/p\u003e\n\u003cp class=\"p4\"\u003e解决外边距塌陷\u003c/p\u003e\n\u003cp class=\"p4\"\u003e宽度自适应的两栏布局\u003c/p\u003e\n\u003ch6\u003einline-block 触发 BFC\u003c/h6\u003e\n\u003cp\u003e当将一个元素设置为行内块元素时会触发 BFC ，此时该元素内部发生的任何变化都只局限于元素内部。因为触发了 BFC\n    ，所以每一个行内块元素都具有\"包裹性\"，当其中存在浮动元素时，行内块元素的\"包裹性\"就能包住浮动元素，从而起到了清除浮动的作用。当元素不是行内块元素时，可以通过 display:inline-block\n    的样式代码使之转化为行内块元素，以此来触发元素的 BFC 。\u003c/p\u003e\n\u003ch6\u003e给父元素设置浮动触发 BFC\u003c/h6\u003e\n\u003cp\u003e如果浮动元素的父元素也有浮动属性，此时也能触发父元素的 BFC 机制，从而包含住浮动元素。\u003c/p\u003e\n\u003cp\u003e如果想让子级与父级的中心点重合，则需要子级的位置向上移动本身高度的一半，和向左移动本身宽度的一半。\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003e根据父级进行绝对定位，如果在浏览器中水平垂直居中，那么父级就是 html 元素\u003c/li\u003e\n    \u003cli\u003etop 值和 left 值为父级的 50%\u003c/li\u003e\n    \u003cli\u003einline-block 触发 BFC\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch5\u003ehasLayout\u003c/h5\u003e\n\u003cp\u003ehasLayout 是微软的一个私有概念，类似于 BFC ，能够运行在早期的 IE6 和 IE7 中，但在 IE8 及之后的版本中已经被抛弃。在早期的 IE 浏览器中，元素会被分为拥有布局（ has layout\n    ）和没有布局，拥有布局的元素可以控制自己内容的尺寸和位置，而没有布局的元素需要由最近的拥有布局的祖先元素代劳。 IE6 中的很多 BUG 都是由于元素没有布局所引起的，例如浮动元素会引起双倍外边距（即 10px\n    的外边距会变成 20px ）。可以通过定义特定的 CSS 属性来触发\n    hasLayout ，使得这个元素拥有布局。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ 布局","title":"BFC"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","布局","BFC"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+  <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>BFC</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e使用 BFC 解决父元素高度塌陷问题\u003c/h5\u003e\n\u003cp\u003e块级格式上下文（ Block Formatting Context ， BFC ）为元素提供了一个独立的布局环境，环境中的内容不会影响到环境外的布局，环境外的布局也不会影响到环境中的内容。 BFC\n    就像是一个围城的围墙，使得围墙里的东西出不去，围墙外的东西也进不来。\u003c/p\u003e\n\u003cp\u003eBFC （ Block Formatting Context ）即块格式化上下文，它既不是一个 CSS 属性，也不是一段代码，而是 CSS2.1 规范中的一个概念，决定元素的内容如何渲染以及与其它元素的关系和交互。可以将\n    BFC 想象成一个箱子， BFC 中的内容就相当于箱子中的物品，将物品摆放在箱子中，能避免与其它箱子中的物品混淆，还能保护它们不被破坏。接下来简单概括一下 BFC 的 5 条规则。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eBFC 有隔离作用，内部元素不会受外部元素的影响\u003c/li\u003e\n    \u003cli\u003e一个元素只能存在于一个 BFC 中，如果能同时存在于两个 BFC 中，那么就违反了 BFC 的隔离规则\u003c/li\u003e\n    \u003cli\u003eBFC 内的元素按正常流排列，元素之间的间隙由元素的外边距（ margin ）控制\u003c/li\u003e\n    \u003cli\u003eBFC 中的内容不会与外面的浮动元素重叠\u003c/li\u003e\n    \u003cli\u003e计算 BFC 的高度，需要包括 BFC 内的浮动子元素的高度\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch6\u003e创建 BFC\u003c/h6\u003e\n\u003cp\u003e如果要创建 BFC ，那么必须满足下列条件中的一个 :\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e根元素，也就是 html 元素\u003c/li\u003e\n    \u003cli\u003efloat 属性不为 none 的浮动元素\u003c/li\u003e\n    \u003cli\u003eposition 属性是 absolute 或 fixed 的定位元素\u003c/li\u003e\n    \u003cli\u003edisplay 属性为 inline-block 、 table-cell （相当于 td 或 th 元素）、 table-caption （相当于 caption 元素）或伸缩盒（ flex 和\n        inline-flex ）的元素\u003c/li\u003e\n    \u003cli\u003eoverflow 属性不为 visible 的块级元素\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch6\u003eBFC 的用途\u003c/h6\u003e\n\u003cp class=\"p4\"\u003e清除浮动\u003c/p\u003e\n\u003cp class=\"p4\"\u003e解决外边距塌陷\u003c/p\u003e\n\u003cp class=\"p4\"\u003e宽度自适应的两栏布局\u003c/p\u003e\n\u003ch6\u003einline-block 触发 BFC\u003c/h6\u003e\n\u003cp\u003e当将一个元素设置为行内块元素时会触发 BFC ，此时该元素内部发生的任何变化都只局限于元素内部。因为触发了 BFC\n    ，所以每一个行内块元素都具有\"包裹性\"，当其中存在浮动元素时，行内块元素的\"包裹性\"就能包住浮动元素，从而起到了清除浮动的作用。当元素不是行内块元素时，可以通过 display:inline-block\n    的样式代码使之转化为行内块元素，以此来触发元素的 BFC 。\u003c/p\u003e\n\u003ch6\u003e给父元素设置浮动触发 BFC\u003c/h6\u003e\n\u003cp\u003e如果浮动元素的父元素也有浮动属性，此时也能触发父元素的 BFC 机制，从而包含住浮动元素。\u003c/p\u003e\n\u003cp\u003e如果想让子级与父级的中心点重合，则需要子级的位置向上移动本身高度的一半，和向左移动本身宽度的一半。\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003e根据父级进行绝对定位，如果在浏览器中水平垂直居中，那么父级就是 html 元素\u003c/li\u003e\n    \u003cli\u003etop 值和 left 值为父级的 50%\u003c/li\u003e\n    \u003cli\u003einline-block 触发 BFC\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch5\u003ehasLayout\u003c/h5\u003e\n\u003cp\u003ehasLayout 是微软的一个私有概念，类似于 BFC ，能够运行在早期的 IE6 和 IE7 中，但在 IE8 及之后的版本中已经被抛弃。在早期的 IE 浏览器中，元素会被分为拥有布局（ has layout\n    ）和没有布局，拥有布局的元素可以控制自己内容的尺寸和位置，而没有布局的元素需要由最近的拥有布局的祖先元素代劳。 IE6 中的很多 BUG 都是由于元素没有布局所引起的，例如浮动元素会引起双倍外边距（即 10px\n    的外边距会变成 20px ）。可以通过定义特定的 CSS 属性来触发\n    hasLayout ，使得这个元素拥有布局。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ css ✈︎✈︎ 布局","title":"BFC"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","css","布局","BFC"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

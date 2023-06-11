@@ -1,1 +1,240 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>排序演示</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><meta name="next-head-count" content="11"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><link rel="preload" href="/next/static/css/c1eebdb32de9da73.css" as="style"/><link rel="stylesheet" href="/next/static/css/c1eebdb32de9da73.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/927-cbfaebbfe67b92fc.js" defer=""></script><script src="/next/static/chunks/560-4435cd29deedbb86.js" defer=""></script><script src="/next/static/chunks/124-04b11df73a66a93d.js" defer=""></script><script src="/next/static/chunks/pages/sort-5257572cfdaaacd5.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="PageLayout_tabBar__qHep4"><div class="inlineBlock"></div> <ul class="flexRowOneLineInline  tabBar_ul__dxMUg  undefined" style="width:96%;overflow:hide;box-shadow:none"><li class="tabBar_activeItem__2wWUf tabBar_li__NYtiJ  textInOneLine" style="width:16%" data-index="0"> <a data-index="0" href="/collection/">收藏网址</a></li><li class=" tabBar_li__NYtiJ  textInOneLine" style="width:16%" data-index="1"> <a data-index="1" href="/">自典</a></li><li class=" tabBar_li__NYtiJ  textInOneLine" style="width:16%" data-index="2"> <a data-index="2" href="/interView/">一些</a></li><li class=" tabBar_li__NYtiJ  textInOneLine" style="width:16%" data-index="3"> <a data-index="3" href="/sort/">排序</a></li></ul></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div style="position:sticky;width:120%;top:0px;padding:10px;z-index:3;background-color:var(--mi-background-color)"><div>原始数据： [<!-- -->]</div><div>数据长度 <div class="ant-slider inlineBlock css-w8mnev ant-slider-horizontal" style="width:60%"><div class="ant-slider-rail"></div><div class="ant-slider-track" style="left:0%;width:30.555555555555557%"></div><div class="ant-slider-step"></div><div class="ant-slider-handle" style="left:30.555555555555557%;transform:translateX(-50%)" tabindex="0" role="slider" aria-valuemin="4" aria-valuemax="40" aria-valuenow="15" aria-disabled="false"></div></div></div><div>倒<!-- -->序： <button type="button" role="switch" aria-checked="true" class="ant-switch css-w8mnev ant-switch-checked"><div class="ant-switch-handle"></div><span class="ant-switch-inner"><span class="ant-switch-inner-checked"></span><span class="ant-switch-inner-unchecked"></span></span></button>  当前<!-- -->正<!-- -->序</div></div><div class="sort_page__RRm32"><div>计数排序</div><div id="sort-0-" class="sort_chartDiv__0PfPa"></div><div><div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button style="background-color:var(--mi-background-color)" type="button" class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div><div><div>计数排序就是统计每一个元素的个数，然后再重新排列。</div><div>时间复杂度 O(n + k)，空间复杂度 --；最优 -- ，最差 -- ;</div><div>当 O(k) &gt; O(n*log(n)) 的时候效率不如基于比较（如归并排序、推排序）的比较的排序。其他时候优于任何比较算法。</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>归并排序</div><div id="sort-1-" class="sort_chartDiv__0PfPa"><div class="sort_noChar__u9onD"><code class="c"><span class="p">/** 归并排序 */</span><span class="p">function mergeSortFunction(arr: any, cumNum: number = 0): any <!-- -->{</span><span class="p2">let cum = <!-- -->{<!-- --> cum: cumNum <!-- -->}<!-- -->; // 计数器</span><span class="p2">if (arr.length &lt; 2) // 当分到最后，直接返回元素本身</span><span class="p4">return [0, arr];</span><span class="p2">var middle = Math.floor(arr.length / 2), // 数值中值</span><span class="p4">left = arr.slice(0, middle), // 数组左一半</span><span class="p4">right = arr.slice(middle); //  数组右一半</span><span class="p2">const result = [], [leftCum, leftTemp] = mergeSortFunction(left, cum.cum), [rightCum, rightTemp] = mergeSortFunction(right, cum.cum); // 每次的结果</span><span class="p2">cum.cum = cum.cum + leftCum + rightCum; // 计数器 </span><span class="p2">while (leftTemp.length &gt; 0 &amp;&amp; rightTemp.length &gt; 0)  // 两个数组必须都有元素才可以比对</span><span class="p4">result.push(leftTemp[0] &lt; rightTemp[0] ? leftTemp.shift() : rightTemp.shift()) // 排序交换数据</span><span class="p6">, cum.cum++; // 计数器自增</span><span class="p2">arr = result.concat(leftTemp).concat(rightTemp); // 给数组复制</span><span class="p2">return [cum.cum, arr]; // 返回计数器和数组</span><span class="p">}</span></code></div></div><div><div><div>归并排序就是采用分治法。</div><div>时间复杂度 O(n*log(n))，空间复杂度 O(n)</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>选择排序</div><div id="sort-2-" class="sort_chartDiv__0PfPa"></div><div><div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button style="background-color:var(--mi-background-color)" type="button" class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div><div><div>选择排序就是每一趟找出最值，然后下一趟，直到结束</div><div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n<sup>2</sup>) ，最差 O(n<sup>2</sup>)</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>冒泡排序</div><div id="sort-3-" class="sort_chartDiv__0PfPa"></div><div><div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button style="background-color:var(--mi-background-color)" type="button" class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div><div><div>冒泡排序就是把每一个元素与后面的元素进行比较，选出此轮最大元素，然后循环得到最后排序</div><div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n) ，最差 O(n<sup>2</sup>)</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>希尔排序</div><div id="sort-4-" class="sort_chartDiv__0PfPa"></div><div><div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button style="background-color:var(--mi-background-color)" type="button" class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div><div><div>比较相距一定距离的元素进行排序，各趟比较所用的距离随着算法而减少，直到比较相邻的最后一趟</div><div>一种插入排序的优化版本，时间复杂度 O(n<sup>1.3-2</sup>)，空间复杂度 O(1)；表现一般。</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>基数排序</div><div id="sort-5-" class="sort_chartDiv__0PfPa"><div class="sort_noChar__u9onD"><code class="c"><span class="p">function radixSortFunction(arr: any) <!-- -->{</span><span class="p2">let cum = 0, length = arr.length - 1, minEle = arr[0],</span><span class="p4">maxEle = arr[length], minEleLength = 0, maxEleLength;</span><span class="p2">if (length &lt; 1) return cum; // 仅有一个元素或没有元素则直接返回</span><span class="p2">for (let i of arr) <!-- -->{</span><span class="p4">if (i) <!-- -->{</span><span class="p6">if (i &lt; minEle) minEle = i; // 找出最小值</span><span class="p6">else if (i &gt; maxEle) maxEle = i; // 找到最大值</span><span class="p4">}</span><span class="p2">}</span><span class="p2">if (minEle == maxEle) return cum; // 如果数组内所有的值都相等</span><span class="p2">minEleLength = minEle.toString().length; // 初始化最小值长度</span><span class="p2">maxEleLength = maxEle.toString().length; // 初始化最大值长度</span><span class="p2">const _sort = (arr: any, digit: number) =&gt; <!-- -->{</span><span class="p4">const _tempArr: any = []; // 设定临时长度的</span><span class="p4">let _result: any = []; // 结果数组</span><span class="p4">for (let i = 10; i--;)</span><span class="p6">_tempArr.push([]); // 初始化临时数组</span><span class="p4">for (let i of arr)</span><span class="p6">_tempArr[_getNum(i, digit)].push(i); //放入对应的 🪣 中</span><span class="p4">for (let i = 0; i &lt; 10; i++)</span><span class="p6">_result = _result.concat(_tempArr[i]); // 将 🪣 中数据重新装起来</span><span class="p4">return _result.concat(); // 将值给结果</span><span class="p2">}<!-- -->;</span><span class="p2">const _getNum = (num: number, digit: number) =&gt;</span><span class="p4">Number((num.toString().split(&quot;&quot;).reverse()[digit - 1])) || 0; // 获取指定位数的数值</span><span class="p2">for (let i = minEleLength; i &lt;= maxEleLength; i++)</span><span class="p4">arr = _sort(arr, i), // 排序</span><span class="p6">cum++; // 计数器自增</span><span class="p2">return cum;</span><span class="p">}</span></code></div></div><div><div><div>基数排序就是把每一个元素与后面的元素进行比较，选出此轮最大元素，然后循环得到最后排序</div><div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n) ，最差 O(n<sup>2</sup>)</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>快速排序</div><div id="sort-6-" class="sort_chartDiv__0PfPa"></div><div><div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button style="background-color:var(--mi-background-color)" type="button" class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div><div><div>快速排序是对冒泡排序的一种改进；每次将第一个元素放到正确位置，然后分成两部分；每一部分再递归，直到各部分长度为 1。</div><div>时间复杂度 O(nlogn)，空间复杂度 O(logn)；最优 --- ，最差 O(n<sup>2</sup>)</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>堆排序</div><div id="sort-7-" class="sort_chartDiv__0PfPa"></div><div><div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button style="background-color:var(--mi-background-color)" type="button" class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div><div><div>堆 排序就是利用堆的数据结构进行排序。堆是近乎于完全二叉树的结构。先将数组排成一个完全二叉树，这就已经找到了最值，值时候将最值放大最左或者最右，然后继续排出该元素后继续排。</div><div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n) ，最差 O(n<sup>2</sup>)</div></div><div>数据交换次数 <!-- -->0</div></div></div><div class="sort_page__RRm32"><div>插入排序</div><div id="sort-8-" class="sort_chartDiv__0PfPa"></div><div><div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button style="background-color:var(--mi-background-color)" type="button" class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div><div><div>插入排序就是把每一个元素插入到前面已经排好的顺序中去。</div><div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 O(1)；最优 n - 1 ，最差 O(n<sup>2</sup>)</div><div></div></div><div>数据交换次数 <!-- -->0</div></div></div></div><div class="PageLayout_footer__Bhw_l" style="height:2rem"><div class="textCenter PageLayout_footer__Bhw_l  undefined "><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011302002071" target="_blank" style="text-decoration:none"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABJ0AAASdAHeZh94AAABlklEQVQY0y3BPUgbcRgH4N97udwlZ5K7RDy1fmEj1ZAoCrpZKLRdOpQOFQS/NiFTHZy7VJe6iIqCCMV2Kh26uAg6CYI0HZpSaehSNB+aM5dovEtyd7l/lz4P4T9WLivf9t7P58vXc82A7OkVlE/ji28/UohKAMADAGNM/PouuZ/L/Hz5pJCFvyuM04HRsez60iRjbIqIXA8AvBoRNtY/l2aXayk0LpuwCyai5hW29GhsiEvL21+ODjl2cPDQql7OBETA1h24iSD8TzvhFO4gyzxu+coC+3sT4zTr1+M2b0k+yz5A7Xk3nDqDbbiQFkZxfELoEfPh+vn+BNckQ2ohAyOJFpzv5GBXTZBlIbP2B4/iPkiuCV+wwXhJ8YlFTcDq9AVW6q9Btg2pYuK72o4PszkYZgPhbpKJVZmqp5JHWvr3sDqswss7cJkXnCSg+EOHPNifao1vPuMoSMVQJJpXJgbQsDkYth+1ewfli3sEEl2IhDo0itAtBwC82PHGpzV3PXXKoGLpguvX1Pa+tCJ2rlHbiyQA/AP0AKRHmh1oNAAAAABJRU5ErkJggg==" height="10" alt="一张图"/>京公网安备 11011302002071号</a></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/sort","query":{},"buildId":"GLOTieeQaYuedObUaoYz6","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>排序演示</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+    <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+    <meta charSet="UTF-8" />
+    <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+    <meta name="description" content="let  my self super  ,exist  easy" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+    <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+    <meta name="next-head-count" content="11" />
+    <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+    <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" />
+    <link rel="preload" href="/next/static/css/c1eebdb32de9da73.css" as="style" />
+    <link rel="stylesheet" href="/next/static/css/c1eebdb32de9da73.css" data-n-p="" /><noscript
+        data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+    <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+    <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+    <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+    <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+    <script src="/next/static/chunks/927-cbfaebbfe67b92fc.js" defer=""></script>
+    <script src="/next/static/chunks/560-4435cd29deedbb86.js" defer=""></script>
+    <script src="/next/static/chunks/124-04b11df73a66a93d.js" defer=""></script>
+    <script src="/next/static/chunks/pages/sort-5257572cfdaaacd5.js" defer=""></script>
+    <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+    <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+    <style id="__jsx-a4447eaa0ca7cb3f">
+        p.jsx-a4447eaa0ca7cb3f {
+            color: "#ff0"
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <div class="PageLayout_page__s4HoR"><noscript>
+                <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+                        class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+                        class="jsx-a4447eaa0ca7cb3f" />
+                    <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+                    <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+                    <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+                    <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+                            class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+                    <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+                            class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+                    <p class="jsx-a4447eaa0ca7cb3f">.</p>
+                    <p class="jsx-a4447eaa0ca7cb3f">.</p>
+                    <p class="jsx-a4447eaa0ca7cb3f">.</p>
+                    <p class="jsx-a4447eaa0ca7cb3f">.</p>
+                </div>
+            </noscript>
+            <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+                <div class="PageLayout_tabBar__qHep4">
+                    <div class="inlineBlock"></div>
+                    <ul class="flexRowOneLineInline  tabBar_ul__dxMUg  undefined"
+                        style="width:96%;overflow:hide;box-shadow:none">
+                        <li class="tabBar_activeItem__2wWUf tabBar_li__NYtiJ  textInOneLine" style="width:16%"
+                            data-index="0"> <a data-index="0" href="/collection/">收藏网址</a></li>
+                        <li class=" tabBar_li__NYtiJ  textInOneLine" style="width:16%" data-index="1"> <a data-index="1"
+                                href="/">自典</a></li>
+                        <li class=" tabBar_li__NYtiJ  textInOneLine" style="width:16%" data-index="2"> <a data-index="2"
+                                href="/interView/">一些</a></li>
+                        <li class=" tabBar_li__NYtiJ  textInOneLine" style="width:16%" data-index="3"> <a data-index="3"
+                                href="/sort/">排序</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+                <div
+                    style="position:sticky;width:120%;top:0px;padding:10px;z-index:3;background-color:var(--mi-background-color)">
+                    <div>原始数据： [<!-- -->]</div>
+                    <div>数据长度 <div class="ant-slider inlineBlock css-w8mnev ant-slider-horizontal" style="width:60%">
+                            <div class="ant-slider-rail"></div>
+                            <div class="ant-slider-track" style="left:0%;width:30.555555555555557%"></div>
+                            <div class="ant-slider-step"></div>
+                            <div class="ant-slider-handle" style="left:30.555555555555557%;transform:translateX(-50%)"
+                                tabindex="0" role="slider" aria-valuemin="4" aria-valuemax="40" aria-valuenow="15"
+                                aria-disabled="false"></div>
+                        </div>
+                    </div>
+                    <div>倒<!-- -->序： <button type="button" role="switch" aria-checked="true"
+                            class="ant-switch css-w8mnev ant-switch-checked">
+                            <div class="ant-switch-handle"></div><span class="ant-switch-inner"><span
+                                    class="ant-switch-inner-checked"></span><span
+                                    class="ant-switch-inner-unchecked"></span></span>
+                        </button> 当前<!-- -->正<!-- -->序</div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>计数排序</div>
+                    <div id="sort-0-" class="sort_chartDiv__0PfPa"></div>
+                    <div>
+                        <div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button
+                                style="background-color:var(--mi-background-color)" type="button"
+                                class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div>
+                        <div>
+                            <div>计数排序就是统计每一个元素的个数，然后再重新排列。</div>
+                            <div>时间复杂度 O(n + k)，空间复杂度 --；最优 -- ，最差 -- ;</div>
+                            <div>当 O(k) &gt; O(n*log(n)) 的时候效率不如基于比较（如归并排序、推排序）的比较的排序。其他时候优于任何比较算法。</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>归并排序</div>
+                    <div id="sort-1-" class="sort_chartDiv__0PfPa">
+                        <div class="sort_noChar__u9onD"><code
+                                class="c"><span class="p">/** 归并排序 */</span><span class="p">function mergeSortFunction(arr: any, cumNum: number = 0): any <!-- -->{</span><span class="p2">let cum = <!-- -->{<!-- --> cum: cumNum <!-- -->}<!-- -->; // 计数器</span><span class="p2">if (arr.length &lt; 2) // 当分到最后，直接返回元素本身</span><span class="p4">return [0, arr];</span><span class="p2">var middle = Math.floor(arr.length / 2), // 数值中值</span><span class="p4">left = arr.slice(0, middle), // 数组左一半</span><span class="p4">right = arr.slice(middle); //  数组右一半</span><span class="p2">const result = [], [leftCum, leftTemp] = mergeSortFunction(left, cum.cum), [rightCum, rightTemp] = mergeSortFunction(right, cum.cum); // 每次的结果</span><span class="p2">cum.cum = cum.cum + leftCum + rightCum; // 计数器 </span><span class="p2">while (leftTemp.length &gt; 0 &amp;&amp; rightTemp.length &gt; 0)  // 两个数组必须都有元素才可以比对</span><span class="p4">result.push(leftTemp[0] &lt; rightTemp[0] ? leftTemp.shift() : rightTemp.shift()) // 排序交换数据</span><span class="p6">, cum.cum++; // 计数器自增</span><span class="p2">arr = result.concat(leftTemp).concat(rightTemp); // 给数组复制</span><span class="p2">return [cum.cum, arr]; // 返回计数器和数组</span><span class="p">}</span></code>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>归并排序就是采用分治法。</div>
+                            <div>时间复杂度 O(n*log(n))，空间复杂度 O(n)</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>选择排序</div>
+                    <div id="sort-2-" class="sort_chartDiv__0PfPa"></div>
+                    <div>
+                        <div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button
+                                style="background-color:var(--mi-background-color)" type="button"
+                                class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div>
+                        <div>
+                            <div>选择排序就是每一趟找出最值，然后下一趟，直到结束</div>
+                            <div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n<sup>2</sup>) ，最差 O(n<sup>2</sup>)</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>冒泡排序</div>
+                    <div id="sort-3-" class="sort_chartDiv__0PfPa"></div>
+                    <div>
+                        <div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button
+                                style="background-color:var(--mi-background-color)" type="button"
+                                class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div>
+                        <div>
+                            <div>冒泡排序就是把每一个元素与后面的元素进行比较，选出此轮最大元素，然后循环得到最后排序</div>
+                            <div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n) ，最差 O(n<sup>2</sup>)</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>希尔排序</div>
+                    <div id="sort-4-" class="sort_chartDiv__0PfPa"></div>
+                    <div>
+                        <div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button
+                                style="background-color:var(--mi-background-color)" type="button"
+                                class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div>
+                        <div>
+                            <div>比较相距一定距离的元素进行排序，各趟比较所用的距离随着算法而减少，直到比较相邻的最后一趟</div>
+                            <div>一种插入排序的优化版本，时间复杂度 O(n<sup>1.3-2</sup>)，空间复杂度 O(1)；表现一般。</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>基数排序</div>
+                    <div id="sort-5-" class="sort_chartDiv__0PfPa">
+                        <div class="sort_noChar__u9onD"><code
+                                class="c"><span class="p">function radixSortFunction(arr: any) <!-- -->{</span><span class="p2">let cum = 0, length = arr.length - 1, minEle = arr[0],</span><span class="p4">maxEle = arr[length], minEleLength = 0, maxEleLength;</span><span class="p2">if (length &lt; 1) return cum; // 仅有一个元素或没有元素则直接返回</span><span class="p2">for (let i of arr) <!-- -->{</span><span class="p4">if (i) <!-- -->{</span><span class="p6">if (i &lt; minEle) minEle = i; // 找出最小值</span><span class="p6">else if (i &gt; maxEle) maxEle = i; // 找到最大值</span><span class="p4">}</span><span class="p2">}</span><span class="p2">if (minEle == maxEle) return cum; // 如果数组内所有的值都相等</span><span class="p2">minEleLength = minEle.toString().length; // 初始化最小值长度</span><span class="p2">maxEleLength = maxEle.toString().length; // 初始化最大值长度</span><span class="p2">const _sort = (arr: any, digit: number) =&gt; <!-- -->{</span><span class="p4">const _tempArr: any = []; // 设定临时长度的</span><span class="p4">let _result: any = []; // 结果数组</span><span class="p4">for (let i = 10; i--;)</span><span class="p6">_tempArr.push([]); // 初始化临时数组</span><span class="p4">for (let i of arr)</span><span class="p6">_tempArr[_getNum(i, digit)].push(i); //放入对应的 🪣 中</span><span class="p4">for (let i = 0; i &lt; 10; i++)</span><span class="p6">_result = _result.concat(_tempArr[i]); // 将 🪣 中数据重新装起来</span><span class="p4">return _result.concat(); // 将值给结果</span><span class="p2">}<!-- -->;</span><span class="p2">const _getNum = (num: number, digit: number) =&gt;</span><span class="p4">Number((num.toString().split(&quot;&quot;).reverse()[digit - 1])) || 0; // 获取指定位数的数值</span><span class="p2">for (let i = minEleLength; i &lt;= maxEleLength; i++)</span><span class="p4">arr = _sort(arr, i), // 排序</span><span class="p6">cum++; // 计数器自增</span><span class="p2">return cum;</span><span class="p">}</span></code>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>基数排序就是把每一个元素与后面的元素进行比较，选出此轮最大元素，然后循环得到最后排序</div>
+                            <div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n) ，最差 O(n<sup>2</sup>)</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>快速排序</div>
+                    <div id="sort-6-" class="sort_chartDiv__0PfPa"></div>
+                    <div>
+                        <div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button
+                                style="background-color:var(--mi-background-color)" type="button"
+                                class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div>
+                        <div>
+                            <div>快速排序是对冒泡排序的一种改进；每次将第一个元素放到正确位置，然后分成两部分；每一部分再递归，直到各部分长度为 1。</div>
+                            <div>时间复杂度 O(nlogn)，空间复杂度 O(logn)；最优 --- ，最差 O(n<sup>2</sup>)</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>堆排序</div>
+                    <div id="sort-7-" class="sort_chartDiv__0PfPa"></div>
+                    <div>
+                        <div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button
+                                style="background-color:var(--mi-background-color)" type="button"
+                                class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div>
+                        <div>
+                            <div>堆 排序就是利用堆的数据结构进行排序。堆是近乎于完全二叉树的结构。先将数组排成一个完全二叉树，这就已经找到了最值，值时候将最值放大最左或者最右，然后继续排出该元素后继续排。
+                            </div>
+                            <div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 -- ；最优 O(n) ，最差 O(n<sup>2</sup>)</div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+                <div class="sort_page__RRm32">
+                    <div>插入排序</div>
+                    <div id="sort-8-" class="sort_chartDiv__0PfPa"></div>
+                    <div>
+                        <div>总计：<span class="W4rem inlineBlock textCenter">0</span> <button
+                                style="background-color:var(--mi-background-color)" type="button"
+                                class="ant-btn css-w8mnev ant-btn-default"><span>演 示</span></button></div>
+                        <div>
+                            <div>插入排序就是把每一个元素插入到前面已经排好的顺序中去。</div>
+                            <div>时间复杂度 O(n<sup>2</sup>)，空间复杂度 O(1)；最优 n - 1 ，最差 O(n<sup>2</sup>)</div>
+                            <div></div>
+                        </div>
+                        <div>数据交换次数 <!-- -->0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="PageLayout_footer__Bhw_l" style="height:2rem">
+                <div class="textCenter PageLayout_footer__Bhw_l  undefined "><a
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011302002071"
+                        target="_blank" style="text-decoration:none"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABJ0AAASdAHeZh94AAABlklEQVQY0y3BPUgbcRgH4N97udwlZ5K7RDy1fmEj1ZAoCrpZKLRdOpQOFQS/NiFTHZy7VJe6iIqCCMV2Kh26uAg6CYI0HZpSaehSNB+aM5dovEtyd7l/lz4P4T9WLivf9t7P58vXc82A7OkVlE/ji28/UohKAMADAGNM/PouuZ/L/Hz5pJCFvyuM04HRsez60iRjbIqIXA8AvBoRNtY/l2aXayk0LpuwCyai5hW29GhsiEvL21+ODjl2cPDQql7OBETA1h24iSD8TzvhFO4gyzxu+coC+3sT4zTr1+M2b0k+yz5A7Xk3nDqDbbiQFkZxfELoEfPh+vn+BNckQ2ohAyOJFpzv5GBXTZBlIbP2B4/iPkiuCV+wwXhJ8YlFTcDq9AVW6q9Btg2pYuK72o4PszkYZgPhbpKJVZmqp5JHWvr3sDqswss7cJkXnCSg+EOHPNifao1vPuMoSMVQJJpXJgbQsDkYth+1ewfli3sEEl2IhDo0itAtBwC82PHGpzV3PXXKoGLpguvX1Pa+tCJ2rlHbiyQA/AP0AKRHmh1oNAAAAABJRU5ErkJggg=="
+                            height="10" alt="一张图" />京公网安备 11011302002071号</a></div>
+            </div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"pageProps":{}},"page":"/sort","query":{},"buildId":"GLOTieeQaYuedObUaoYz6","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
+</body>
+
+</html>

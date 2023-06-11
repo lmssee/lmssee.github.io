@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>简介</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e浏览器对象模型\u003c/h5\u003e\n\u003cp\u003eBOM是 Browser Object Model的缩写，即浏览器对象模型，它提供了独立于网页内容而与浏览器窗口进行交互的 API，这些\n    API由若干对象组成。这些对象也被称为宿主对象，它们可以用来管理浏览历史和地址、获取浏览器信息，并具有其它的一些实用功能。\u003c/p\u003e\n\u003cp\u003e过去，有关 BOM的操作没有一个国际标准，各浏览器厂商自行定义宿主对象的功能，这造成了浏览器之间的兼容性难题，也给开发者带来很大的难题。现今，随着 HTML5规范的发布，其中规定了 BOM的所有\n    API，因此不会再存在无据可参考的尴尬局面。\u003c/p\u003e\n\u003cdetails\u003e\n    \u003csummary\u003e扩展 —— --⊱⊱⊱⊱⊱\u003c/summary\u003e\n    \u003ch5\u003eBOM之源—— window对象\u003c/h5\u003e\n    \u003cp\u003eBOM是 Browser Object Model的缩写，即浏览器对象模型，它提供了独立于网页内容而与浏览器窗口进行交互的 API，这些 API由若干对象组成，由于浏览器是\n        JavaScript程序的宿主，因此，这些对象也被称为宿主对象。\u003c/p\u003e\n    \u003cp\u003e宿主对象中最核心的就是 window对象，该对象是浏览器最顶层的一个对象，之所以称 window为对象而不是类，因为它其实是浏览器窗口这个类的一个实例。\u003c/p\u003e\n    \u003cp\u003ewindow对象可以产生其它对象，例如 history、 location、 document等。因为 window对象的顶层性，所以在使用其方法和属性时，一般无需指定对象名，例如下面的调用是完全等价的：\u003c/p\u003e\n    \u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003ealert(\"欢迎你的访问！请按\"确定\"按钮继续！\" );\u003c/span\u003e\u003c/code\u003e\n    \u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003ewindow.alert(\"欢迎你的访问！请按\"确定\"按钮继续！\" );\u003c/span\u003e\u003c/code\u003e\n    \u003cp\u003ewindow对象及其产生的对象都称为宿主对象，包括 window、 navigator、 history、 location、 document、 screen等，分别用来处理不同的操作。其中，\n        window代表所在的浏览器窗口，这是一个顶层的对象，其它对象都由该对象派生。\u003c/p\u003e\n    \u003cp\u003eBOM （浏览器对象模型）对浏览器窗口进行访问和操作，与 DOM 不同， BOM 只是 JavaScript 的一部分 。\u003c/p\u003e\n    \u003cul\u003e\n        \u003cli\u003e弹出新的浏览器窗口\u003c/li\u003e\n        \u003cli\u003e移动、关闭浏览器窗口以调整窗口大小\u003c/li\u003e\n        \u003cli\u003e提供 Web 浏览器详细的信息的定位对象\u003c/li\u003e\n        \u003cli\u003e提供用户屏幕分辨率详细的屏幕信息\u003c/li\u003e\n        \u003cli\u003e对 cookie 的支持\u003c/li\u003e\n        \u003cli\u003eIE 扩展了 BOM,加入了 ActiveXObject 类，通过 JavaScript 实例化 ActiveX\u003c/li\u003e\n    \u003c/ul\u003e\n    \u003cp\u003eBOM (Browser Object Model, 浏览器对象模型 )主要管理浏览器窗口，提供了大量的、独立的、可以与浏览器窗口进行互动的功能，这些功能与任何网页无关。 BOM 是对象组成，其中代表浏览器窗口的\n        windows 对象是 BOM 的顶层，其它对象都是其子对象。\u003c/p\u003e\n    \u003cp\u003eBOM 标准归 W3C 下的 HTML5。\u003c/p\u003e\n\u003c/details\u003e\n\u003ch5\u003ewindows 对象\u003c/h5\u003e\n\u003cp\u003ewindow 对象是 BOM 的核心，代表窗口的一个实例。在浏览器中， window 既是 JavaScript 访问窗口的接口，也是 JavaScript 的全局对象（ Global），因此在声明的全局作用域的变量和函数也是\n    window 对象的属性和方法。\u003c/p\u003e\n\u003cp\u003e通过 Window对象可以控制窗口的大小和位置、由窗口弹出的对话框、打开窗口与关闭窗口，还可以控制窗口上是否显示地址栏、工具栏和状态栏等栏目。对于窗口中的内容，\n    Window对象可以控制是否重载网页、返回上一个文档或前进到下一个文档。\u003c/p\u003e\n\u003cp\u003e在框架方面， Window对象可以处理框架与框架之间的关系，并通过这种关系在一个框架处理另一个框架中的文档。 Window对象还是所有其它对象的顶级对象。通过对 Window对象的子对象进行操作，可以实现更多的动态效果。\n    Window对象作为对象的一种，也有着其自己的方法和属性。\u003c/p\u003e\n\u003ch6\u003e访问浏览器窗口\u003c/h6\u003e\n\u003cp\u003e通过 window 访问窗口，同时与浏览器相关的其它客户端对象都是 window 的子对象，通过 window 进行引用 。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003ewindow 客户端 JavaScript 中的顶层对象。每当 \u0026lt;body\u0026gt;或 \u0026lt;frameset\u0026gt;标签出现时， window 对象就被自动创建\u003c/li\u003e\n    \u003cli\u003enavigator 包含客户端有关浏览器的信息\u003c/li\u003e\n    \u003cli\u003escreen 包含客户端显示屏的信息\u003c/li\u003e\n    \u003cli\u003ehistory 包含浏览器窗口访问过的 url 信息\u003c/li\u003e\n    \u003cli\u003elocation 包含当前网页文档的 url 信息\u003c/li\u003e\n    \u003cli\u003edocument 包含整个 HTML 文档，可被用来访问文档内容，及页面所有的页面元素\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e全局作用域\u003c/h5\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003evar a = \"a\"; \u003c/span\u003e\u003cspan class=\"p2\"\u003ewindow.b = \"window.b\"; \u003c/span\u003e\u003cspan class=\"p2\"\u003ec =\n        \"c\"; \u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(delete window.a); \u003cspan class=\"r\"\u003e// false\n        \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(delete window.b); \u003cspan class=\"r\"\u003e// true \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ealert(delete window.c); \u003cspan class=\"r\"\u003e// true \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(window.a);\n        \u003cspan class=\"r\"\u003e// a \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(window.b); \u003cspan class=\"r\"\u003e// undefined\n        \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ealert(window.c); \u003cspan class=\"r\"\u003e// undefined \u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e使用 var 语句声明的全局变量， window 会为这个属性定义一个名为 \"configurable\" 的特性，设置为 false ，就无法通过 delete 删除。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e直接使用未声明的变量，会抛出异常。\u003c/p\u003e\n\u003c/div\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ BOM","title":"简介"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","BOM","简介"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+  <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>简介</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e浏览器对象模型\u003c/h5\u003e\n\u003cp\u003eBOM是 Browser Object Model的缩写，即浏览器对象模型，它提供了独立于网页内容而与浏览器窗口进行交互的 API，这些\n    API由若干对象组成。这些对象也被称为宿主对象，它们可以用来管理浏览历史和地址、获取浏览器信息，并具有其它的一些实用功能。\u003c/p\u003e\n\u003cp\u003e过去，有关 BOM的操作没有一个国际标准，各浏览器厂商自行定义宿主对象的功能，这造成了浏览器之间的兼容性难题，也给开发者带来很大的难题。现今，随着 HTML5规范的发布，其中规定了 BOM的所有\n    API，因此不会再存在无据可参考的尴尬局面。\u003c/p\u003e\n\u003cdetails\u003e\n    \u003csummary\u003e扩展 —— --⊱⊱⊱⊱⊱\u003c/summary\u003e\n    \u003ch5\u003eBOM之源—— window对象\u003c/h5\u003e\n    \u003cp\u003eBOM是 Browser Object Model的缩写，即浏览器对象模型，它提供了独立于网页内容而与浏览器窗口进行交互的 API，这些 API由若干对象组成，由于浏览器是\n        JavaScript程序的宿主，因此，这些对象也被称为宿主对象。\u003c/p\u003e\n    \u003cp\u003e宿主对象中最核心的就是 window对象，该对象是浏览器最顶层的一个对象，之所以称 window为对象而不是类，因为它其实是浏览器窗口这个类的一个实例。\u003c/p\u003e\n    \u003cp\u003ewindow对象可以产生其它对象，例如 history、 location、 document等。因为 window对象的顶层性，所以在使用其方法和属性时，一般无需指定对象名，例如下面的调用是完全等价的：\u003c/p\u003e\n    \u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003ealert(\"欢迎你的访问！请按\"确定\"按钮继续！\" );\u003c/span\u003e\u003c/code\u003e\n    \u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003ewindow.alert(\"欢迎你的访问！请按\"确定\"按钮继续！\" );\u003c/span\u003e\u003c/code\u003e\n    \u003cp\u003ewindow对象及其产生的对象都称为宿主对象，包括 window、 navigator、 history、 location、 document、 screen等，分别用来处理不同的操作。其中，\n        window代表所在的浏览器窗口，这是一个顶层的对象，其它对象都由该对象派生。\u003c/p\u003e\n    \u003cp\u003eBOM （浏览器对象模型）对浏览器窗口进行访问和操作，与 DOM 不同， BOM 只是 JavaScript 的一部分 。\u003c/p\u003e\n    \u003cul\u003e\n        \u003cli\u003e弹出新的浏览器窗口\u003c/li\u003e\n        \u003cli\u003e移动、关闭浏览器窗口以调整窗口大小\u003c/li\u003e\n        \u003cli\u003e提供 Web 浏览器详细的信息的定位对象\u003c/li\u003e\n        \u003cli\u003e提供用户屏幕分辨率详细的屏幕信息\u003c/li\u003e\n        \u003cli\u003e对 cookie 的支持\u003c/li\u003e\n        \u003cli\u003eIE 扩展了 BOM,加入了 ActiveXObject 类，通过 JavaScript 实例化 ActiveX\u003c/li\u003e\n    \u003c/ul\u003e\n    \u003cp\u003eBOM (Browser Object Model, 浏览器对象模型 )主要管理浏览器窗口，提供了大量的、独立的、可以与浏览器窗口进行互动的功能，这些功能与任何网页无关。 BOM 是对象组成，其中代表浏览器窗口的\n        windows 对象是 BOM 的顶层，其它对象都是其子对象。\u003c/p\u003e\n    \u003cp\u003eBOM 标准归 W3C 下的 HTML5。\u003c/p\u003e\n\u003c/details\u003e\n\u003ch5\u003ewindows 对象\u003c/h5\u003e\n\u003cp\u003ewindow 对象是 BOM 的核心，代表窗口的一个实例。在浏览器中， window 既是 JavaScript 访问窗口的接口，也是 JavaScript 的全局对象（ Global），因此在声明的全局作用域的变量和函数也是\n    window 对象的属性和方法。\u003c/p\u003e\n\u003cp\u003e通过 Window对象可以控制窗口的大小和位置、由窗口弹出的对话框、打开窗口与关闭窗口，还可以控制窗口上是否显示地址栏、工具栏和状态栏等栏目。对于窗口中的内容，\n    Window对象可以控制是否重载网页、返回上一个文档或前进到下一个文档。\u003c/p\u003e\n\u003cp\u003e在框架方面， Window对象可以处理框架与框架之间的关系，并通过这种关系在一个框架处理另一个框架中的文档。 Window对象还是所有其它对象的顶级对象。通过对 Window对象的子对象进行操作，可以实现更多的动态效果。\n    Window对象作为对象的一种，也有着其自己的方法和属性。\u003c/p\u003e\n\u003ch6\u003e访问浏览器窗口\u003c/h6\u003e\n\u003cp\u003e通过 window 访问窗口，同时与浏览器相关的其它客户端对象都是 window 的子对象，通过 window 进行引用 。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003ewindow 客户端 JavaScript 中的顶层对象。每当 \u0026lt;body\u0026gt;或 \u0026lt;frameset\u0026gt;标签出现时， window 对象就被自动创建\u003c/li\u003e\n    \u003cli\u003enavigator 包含客户端有关浏览器的信息\u003c/li\u003e\n    \u003cli\u003escreen 包含客户端显示屏的信息\u003c/li\u003e\n    \u003cli\u003ehistory 包含浏览器窗口访问过的 url 信息\u003c/li\u003e\n    \u003cli\u003elocation 包含当前网页文档的 url 信息\u003c/li\u003e\n    \u003cli\u003edocument 包含整个 HTML 文档，可被用来访问文档内容，及页面所有的页面元素\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003e全局作用域\u003c/h5\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003evar a = \"a\"; \u003c/span\u003e\u003cspan class=\"p2\"\u003ewindow.b = \"window.b\"; \u003c/span\u003e\u003cspan class=\"p2\"\u003ec =\n        \"c\"; \u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(delete window.a); \u003cspan class=\"r\"\u003e// false\n        \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(delete window.b); \u003cspan class=\"r\"\u003e// true \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ealert(delete window.c); \u003cspan class=\"r\"\u003e// true \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(window.a);\n        \u003cspan class=\"r\"\u003e// a \u003c/span\u003e\u003c/span\u003e\u003cspan class=\"p2\"\u003ealert(window.b); \u003cspan class=\"r\"\u003e// undefined\n        \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ealert(window.c); \u003cspan class=\"r\"\u003e// undefined \u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e使用 var 语句声明的全局变量， window 会为这个属性定义一个名为 \"configurable\" 的特性，设置为 false ，就无法通过 delete 删除。\u003c/p\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e直接使用未声明的变量，会抛出异常。\u003c/p\u003e\n\u003c/div\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ BOM","title":"简介"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","BOM","简介"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

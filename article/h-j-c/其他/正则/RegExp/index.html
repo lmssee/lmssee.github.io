@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>RegExp</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e 正则表达式语法 \u003c/h5\u003e\n\u003cp\u003e 要想使用正则表达式必须首先创建一个 RegExp 对象。在 JavaScript 中有两种方式创建 RegExp 对象，一种是直接使用正则表达式文字，例如下面的代码（注意使用两个斜杠包围，并且不带引号）： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = /ab+c/;\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 另一种是创建 RegExp 对象，该类专门用来处理正则表达式运算，下面是一个简单的构造器语法： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = new RegExp(\"ab+c\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 另外，也可以使用一个 RegExp 对象作为参数创建另一个 RegExp 对象，例如： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = new RegExp(new RegExp(\"ab+c\"));\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 或。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = new RegExp(/ab+c/);\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 如果正则表达式是作为一个常量永恒不变的，那么使用文字方式是最好的选择，它可以提高运算性能；如果正则表达式后面还会有所改变，例如按照用户输入的一个正则表达式来进行匹配运算，那么就创建一个 RegExp 对象。 \u003c/p\u003e\n\u003cp\u003e 学习正则表达式的最便捷途径是使用范例，我们可以创建如下的范例，它将检测字符串变量 oString 中是否包含 abc 这 3 个相互紧挨的字符，这个字符使用变量 pattern 定义： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e// 定义正则表达式文字，你可以在这里替换正则表达式 \u003c/span\u003e\n    \u003cspan class=\"p\"\u003evar pattern = \"abc\";\u003c/span\u003e\n    \u003cspan class=\"p\"\u003evar re = new RegExp(pattern); \u003cspan class=\"r\"\u003e// 创建 RegExp 实例 \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003evar oString = \"abcefg\"; // 定义要匹配的字符串，可以进行替换 \u003c/span\u003e\n    \u003cspan class=\"p\"\u003edocument.write(re.exec(oString)); \u003cspan class=\"r\"\u003e// 进行匹配测试，并写出结果 \u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e 因为变量 oString 中包含 abc ，所以匹配成功，返回了字符串 abc ；如果匹配不成功，则返回 null 。 \u003c/p\u003e\n\u003cp\u003e 其中变量 pattern 的值便是正则表达式，使用两个斜杠包围，其中的内容又被称为正则表达式文本或正则表达式模式（ pattern ）。 \u003c/p\u003e\n\u003cp\u003e 这个范例为后面学习正则表达式语法带来了方便，改变变量 pattern 的值可以重新定义正则表达式模式，改变变量 oString 的值可以重新定义要匹配的字符串。 \u003c/p\u003e\n\u003ch5\u003e 优先权顺序 \u003c/h5\u003e\n\u003ctable id=\"td_a\"\u003e\n    \u003ccaption\u003e 正则表达式操作符的优先权 \u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth\u003e 操作符 \u003c/th\u003e\n        \u003cth\u003e 额 \u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\u003cscript\u003e\n    var td_a = [\n        [\"\\\\\", \"  转义符  \"],\n        [\"\\()  、  (?:)  、（？  =  ）、（？！）、  []\", \"  圆括号和方括号  \"],\n        [\"\\*  、  +  、  ?  、  {n}  、  {m}  、  {n,m}\", \"  限定符  \"],\n        [\"\\^  、  \\$  、  \\\\  任何元字符  \", \"  位置和顺序  \"],\n        [\"\\|\", \" \\\" 或  \\\"  运算  \"]\n    ];\n    _MiMethod.td(\"td_a\")\n\u003c/script\u003e\n\u003ch5\u003e 创建 RegExp 对象 \u003c/h5\u003e\n\u003cp\u003e 每一条正则表达式模式对应一个 RegExp 实例 。 \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e 使用 RegExp 的显式构造函数： new RegExp(\"pattern\"[,\"flags\"])// 即 new RegExp(\" 模式 \"[,\" 标记 \"])\u003c/li\u003e\n    \u003cli\u003e 使用 RegExp 的隐式构造函数，采用纯文本格式： /pattern/[flags] \u003c/li\u003e\n\u003c/ul\u003e\n\u003cul\u003e\n    \u003cli\u003eglobal ：布尔值，表示是否设置了 g 标记 \u003c/li\u003e\n    \u003cli\u003eignoreCase ：布尔值，表示是否设置了 i 标记 \u003c/li\u003e\n    \u003cli\u003eunicode ：布尔值，表示是否设置了 u 标记 \u003c/li\u003e\n    \u003cli\u003esticky ：布尔值，表示是否设置了 y 标记 \u003c/li\u003e\n    \u003cli\u003elastIndex ：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始 \u003c/li\u003e\n    \u003cli\u003emultiline ：布尔值，表示是否设置了 m 标记 \u003c/li\u003e\n    \u003cli\u003edotAll ：布尔值，表示是否设置了 s 标记 \u003c/li\u003e\n    \u003cli\u003esource ：正则表达式的字面量字符串（不是传给构造函数的模式字符串），没有开头和结尾的 斜杠\n    \u003c/li\u003e\n    \u003cli\u003eflags ：正则表达式的标记字符串。始终以字面量而非传入构造函数的字符串模式形式返回（没 有前后斜杠）\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003epattern 为要使用的正则表达式模式文本，是必选项。在第一种方式中， pattern 部分以 JavaScript 字符串的形式存在，需要使用双引号或单引号括起来；在第二种方式中， pattern 部分嵌套在两个 \" /\n    \" 之间，不能使用引号。 \u003c/p\u003e\n\u003cp\u003eflags 用于设置正则表达式的标志信息，是可选项。如果设置 flags 部分，在第一种方式中，以字符串的形式存在；在第二种方式中，以文本的形式紧接在最后一个 \" / \" 字符之后。 flags 可以是以下标志字符的组合。\n\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eg 是全局标志。如果设置了这个标志，对某个文本执行搜索和替换操作时，将对文本中所有匹配的部分起作用。如果不设置这个标志，则仅搜索和替换最早匹配的内容 \u003c/li\u003e\n    \u003cli\u003ei 是忽略大小写标志。如果设置了这个标志，进行匹配比较时，将忽略大小写 \u003c/li\u003e\n    \u003cli\u003em 是多行标志。 \u003c/li\u003e\n    \u003cli\u003ey ：粘附模式，表示只查找从 lastIndex 开始及之后的字符串 \u003c/li\u003e\n    \u003cli\u003eu ： Unicode 模式，启用 Unicode 匹配 \u003c/li\u003e\n    \u003cli\u003es ： dotAll 模式，表示元字符 . 匹配任何字符（包括 \\n 或 \\r ） \u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e 文本格式中的参数不要使用引号标记，而构造函数的参数则要使用引号标记 \u003cbr\u003e/ab+c/i \u003cbr\u003enew RegExp(\"ab+c\",\"i\")\n        \u003cbr\u003e 当使用构造函数的时候，必须使用正常的字符串避开规则（在字符串中加入前导字符 \\ ） \u003cspan class=\"p\"\u003ere=new RegExp(\"\\\\w+\") \u003cbr\u003ere=/\\w+/\n        \u003c/span\u003e 在动态创建正则表达式时，使用构造函数 RegExp() 会更便捷\n    \u003c/p\u003e\n\u003c/div\u003e\n\u003cp\u003e 由于正则表达式模式文本中的转义字符也是 \" \\ \" ，如果正则表达式中要匹配原义字符 \" \\ \" ，在正则表达式模式文本中要以 \" \\\\ \" 来表示。当使用显式构造函数的方式创建 RegExp 实例对象的时候，就需要使用 \"\n    \\\\\\\\\n    \" 来表示原义字符 \" \\ \" 。例如： var re=new RegExp(\"\\\\\\\\\") 。 \u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ 其他 ✈︎✈︎ 正则","title":"RegExp"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","其他","正则","RegExp"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+  <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>RegExp</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e 正则表达式语法 \u003c/h5\u003e\n\u003cp\u003e 要想使用正则表达式必须首先创建一个 RegExp 对象。在 JavaScript 中有两种方式创建 RegExp 对象，一种是直接使用正则表达式文字，例如下面的代码（注意使用两个斜杠包围，并且不带引号）： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = /ab+c/;\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 另一种是创建 RegExp 对象，该类专门用来处理正则表达式运算，下面是一个简单的构造器语法： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = new RegExp(\"ab+c\");\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 另外，也可以使用一个 RegExp 对象作为参数创建另一个 RegExp 对象，例如： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = new RegExp(new RegExp(\"ab+c\"));\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 或。 \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003evar re = new RegExp(/ab+c/);\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003e 如果正则表达式是作为一个常量永恒不变的，那么使用文字方式是最好的选择，它可以提高运算性能；如果正则表达式后面还会有所改变，例如按照用户输入的一个正则表达式来进行匹配运算，那么就创建一个 RegExp 对象。 \u003c/p\u003e\n\u003cp\u003e 学习正则表达式的最便捷途径是使用范例，我们可以创建如下的范例，它将检测字符串变量 oString 中是否包含 abc 这 3 个相互紧挨的字符，这个字符使用变量 pattern 定义： \u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003e// 定义正则表达式文字，你可以在这里替换正则表达式 \u003c/span\u003e\n    \u003cspan class=\"p\"\u003evar pattern = \"abc\";\u003c/span\u003e\n    \u003cspan class=\"p\"\u003evar re = new RegExp(pattern); \u003cspan class=\"r\"\u003e// 创建 RegExp 实例 \u003c/span\u003e\u003c/span\u003e\n    \u003cspan class=\"p\"\u003evar oString = \"abcefg\"; // 定义要匹配的字符串，可以进行替换 \u003c/span\u003e\n    \u003cspan class=\"p\"\u003edocument.write(re.exec(oString)); \u003cspan class=\"r\"\u003e// 进行匹配测试，并写出结果 \u003c/span\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e 因为变量 oString 中包含 abc ，所以匹配成功，返回了字符串 abc ；如果匹配不成功，则返回 null 。 \u003c/p\u003e\n\u003cp\u003e 其中变量 pattern 的值便是正则表达式，使用两个斜杠包围，其中的内容又被称为正则表达式文本或正则表达式模式（ pattern ）。 \u003c/p\u003e\n\u003cp\u003e 这个范例为后面学习正则表达式语法带来了方便，改变变量 pattern 的值可以重新定义正则表达式模式，改变变量 oString 的值可以重新定义要匹配的字符串。 \u003c/p\u003e\n\u003ch5\u003e 优先权顺序 \u003c/h5\u003e\n\u003ctable id=\"td_a\"\u003e\n    \u003ccaption\u003e 正则表达式操作符的优先权 \u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth\u003e 操作符 \u003c/th\u003e\n        \u003cth\u003e 额 \u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\u003cscript\u003e\n    var td_a = [\n        [\"\\\\\", \"  转义符  \"],\n        [\"\\()  、  (?:)  、（？  =  ）、（？！）、  []\", \"  圆括号和方括号  \"],\n        [\"\\*  、  +  、  ?  、  {n}  、  {m}  、  {n,m}\", \"  限定符  \"],\n        [\"\\^  、  \\$  、  \\\\  任何元字符  \", \"  位置和顺序  \"],\n        [\"\\|\", \" \\\" 或  \\\"  运算  \"]\n    ];\n    _MiMethod.td(\"td_a\")\n\u003c/script\u003e\n\u003ch5\u003e 创建 RegExp 对象 \u003c/h5\u003e\n\u003cp\u003e 每一条正则表达式模式对应一个 RegExp 实例 。 \u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e 使用 RegExp 的显式构造函数： new RegExp(\"pattern\"[,\"flags\"])// 即 new RegExp(\" 模式 \"[,\" 标记 \"])\u003c/li\u003e\n    \u003cli\u003e 使用 RegExp 的隐式构造函数，采用纯文本格式： /pattern/[flags] \u003c/li\u003e\n\u003c/ul\u003e\n\u003cul\u003e\n    \u003cli\u003eglobal ：布尔值，表示是否设置了 g 标记 \u003c/li\u003e\n    \u003cli\u003eignoreCase ：布尔值，表示是否设置了 i 标记 \u003c/li\u003e\n    \u003cli\u003eunicode ：布尔值，表示是否设置了 u 标记 \u003c/li\u003e\n    \u003cli\u003esticky ：布尔值，表示是否设置了 y 标记 \u003c/li\u003e\n    \u003cli\u003elastIndex ：整数，表示在源字符串中下一次搜索的开始位置，始终从 0 开始 \u003c/li\u003e\n    \u003cli\u003emultiline ：布尔值，表示是否设置了 m 标记 \u003c/li\u003e\n    \u003cli\u003edotAll ：布尔值，表示是否设置了 s 标记 \u003c/li\u003e\n    \u003cli\u003esource ：正则表达式的字面量字符串（不是传给构造函数的模式字符串），没有开头和结尾的 斜杠\n    \u003c/li\u003e\n    \u003cli\u003eflags ：正则表达式的标记字符串。始终以字面量而非传入构造函数的字符串模式形式返回（没 有前后斜杠）\n    \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003epattern 为要使用的正则表达式模式文本，是必选项。在第一种方式中， pattern 部分以 JavaScript 字符串的形式存在，需要使用双引号或单引号括起来；在第二种方式中， pattern 部分嵌套在两个 \" /\n    \" 之间，不能使用引号。 \u003c/p\u003e\n\u003cp\u003eflags 用于设置正则表达式的标志信息，是可选项。如果设置 flags 部分，在第一种方式中，以字符串的形式存在；在第二种方式中，以文本的形式紧接在最后一个 \" / \" 字符之后。 flags 可以是以下标志字符的组合。\n\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003eg 是全局标志。如果设置了这个标志，对某个文本执行搜索和替换操作时，将对文本中所有匹配的部分起作用。如果不设置这个标志，则仅搜索和替换最早匹配的内容 \u003c/li\u003e\n    \u003cli\u003ei 是忽略大小写标志。如果设置了这个标志，进行匹配比较时，将忽略大小写 \u003c/li\u003e\n    \u003cli\u003em 是多行标志。 \u003c/li\u003e\n    \u003cli\u003ey ：粘附模式，表示只查找从 lastIndex 开始及之后的字符串 \u003c/li\u003e\n    \u003cli\u003eu ： Unicode 模式，启用 Unicode 匹配 \u003c/li\u003e\n    \u003cli\u003es ： dotAll 模式，表示元字符 . 匹配任何字符（包括 \\n 或 \\r ） \u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"note\"\u003e\n    \u003cp\u003e 文本格式中的参数不要使用引号标记，而构造函数的参数则要使用引号标记 \u003cbr\u003e/ab+c/i \u003cbr\u003enew RegExp(\"ab+c\",\"i\")\n        \u003cbr\u003e 当使用构造函数的时候，必须使用正常的字符串避开规则（在字符串中加入前导字符 \\ ） \u003cspan class=\"p\"\u003ere=new RegExp(\"\\\\w+\") \u003cbr\u003ere=/\\w+/\n        \u003c/span\u003e 在动态创建正则表达式时，使用构造函数 RegExp() 会更便捷\n    \u003c/p\u003e\n\u003c/div\u003e\n\u003cp\u003e 由于正则表达式模式文本中的转义字符也是 \" \\ \" ，如果正则表达式中要匹配原义字符 \" \\ \" ，在正则表达式模式文本中要以 \" \\\\ \" 来表示。当使用显式构造函数的方式创建 RegExp 实例对象的时候，就需要使用 \"\n    \\\\\\\\\n    \" 来表示原义字符 \" \\ \" 。例如： var re=new RegExp(\"\\\\\\\\\") 。 \u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ 其他 ✈︎✈︎ 正则","title":"RegExp"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","其他","正则","RegExp"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

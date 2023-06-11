@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>方法</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003e在成功时所调用的 success_callback 函数中会带有一个参数，这个参数是一个获取地理位置详细数据信息的 Position 对象参数。 Position 有两个属性 coords 和 timestamp 属性。\n    timestamp 属性表示获取地理位置的时间， coords 属性的值 。\n\u003c/p\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003ccaption\u003ecoords 的属性值\u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth width=\"30%\"\u003e属性\u003c/th\u003e\n        \u003cth\u003e额\u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\u003ch5\u003eerror_callback\u003c/h5\u003e\n\u003cp\u003eerror_callback 和 success_callback 函数一样带有一个参数，该对象有 message 和 code 两个属性，前者表示错误信息，后者表示错误代码。\u003c/p\u003e\n\u003cp\u003e其中，错误代码（ error.code ）的值有 4 个，说明如下。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e0 （ UNKNOW_ERROR ）：描述未知的错误信息，表示不包括在其它错误代码中的错误，可以在 message 属性中查找错误信息\u003c/li\u003e\n    \u003cli\u003e1 （ PERMISSION_DENIED ）：用户拒绝了浏览器定位服务的请求\u003c/li\u003e\n    \u003cli\u003e2 （ POSITION_UNAVALIABLE ）：没有正确获取或者获取不到地理位置信息\u003c/li\u003e\n    \u003cli\u003e3 （ TIMEOUT ）：获取地理位置时操作过时，必须在 positionOptions 参数中指定了 timeout 值才有可能发生这种错误\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003epositionOptions\u003c/h5\u003e\n\u003cp\u003epositionOptions 的数据格式为 JSON ，它有三个可选择的属性，说明如下。\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003eenableHighAcuracy ：它的值是一个布尔类型，表示是否启用高精确度模式，如果启用这种模式，浏览器在获取位置信息时可能需要耗费更多的时间\u003c/li\u003e\n    \u003cli\u003etimeout ：它的值是一个整数，表示浏览器需要在指定的时间内获取位置信息，否则触发 error_callback 函数中的错误\u003c/li\u003e\n    \u003cli\u003emaximumAge ：它是一个整数或者常量，表示浏览器重新获取位置信息的时间间隔\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch5\u003ewatchCurrentPosition() 方法\u003c/h5\u003e\n\u003cp\u003ewatchCurrentPosition() 方法可以实时获取或者检测用户的地理位置信息，它能像追踪器一样时刻监视用户的位置，只要发生变化，浏览器就会触发 watchCurrentPosition() 方法中的回调函数。\n\u003c/p\u003e\n\u003cp\u003ewatchCurrentPosition() 方法中同样包含三个参数，这三个参数的说明与 getCurrentPosition() 完全一样。不同的地方就是返回值，它类似于内置的延迟函数 setTimeout() 或者间隔函数\n    setInterval() ，返回一个 watchID ，可以被清除掉。\n\u003c/p\u003e\n\u003cp\u003eclearWatch() 方法会接收一个 watchPosition 返回的 watchId ，清除对用户位置的循环监视。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003enavigator.geolocation.clearWatch(watchId);\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003ewatchId 参数并不是必需的，如果不向该方法中传递参数，则表示清除所有的 watchPosition 对象。\u003c/p\u003e\n\u003cp\u003e经纬度坐标可以用以下两种方式表示：\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e十进制格式，如 39.172 22\u003c/li\u003e\n    \u003cli\u003eDMS 角度格式，如 39°20'\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cscript\u003e\n    var Aa = [\n        ['accuracy', '当前地理位置的精确度',],\n        ['latitude', '当前地理位置的纬度',],\n        ['longitude', '当前地理位置的经度',],\n        ['altitude', '当前地理位置的海拔高度',],\n        ['altitudeAccurancy', '当前地理位置的海拔精确度（单位： m ）',],\n        ['heading', '设置当前的前进方向，用正北方向的顺时针旋转角度来表示。无法获取时返回 null',],\n        ['speed', '当前设置的前进速度，以 m/s 为单位，无法获取时返回值为 null',],\n    ];\n    _MiMethod.td('Aa', Aa);\n\u003c/script\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 定位","title":"方法"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","定位","方法"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+  <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>方法</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003cp\u003e在成功时所调用的 success_callback 函数中会带有一个参数，这个参数是一个获取地理位置详细数据信息的 Position 对象参数。 Position 有两个属性 coords 和 timestamp 属性。\n    timestamp 属性表示获取地理位置的时间， coords 属性的值 。\n\u003c/p\u003e\n\u003ctable id=\"Aa\"\u003e\n    \u003ccaption\u003ecoords 的属性值\u003c/caption\u003e\n    \u003ctr\u003e\n        \u003cth width=\"30%\"\u003e属性\u003c/th\u003e\n        \u003cth\u003e额\u003c/th\u003e\n    \u003c/tr\u003e\n\u003c/table\u003e\n\u003ch5\u003eerror_callback\u003c/h5\u003e\n\u003cp\u003eerror_callback 和 success_callback 函数一样带有一个参数，该对象有 message 和 code 两个属性，前者表示错误信息，后者表示错误代码。\u003c/p\u003e\n\u003cp\u003e其中，错误代码（ error.code ）的值有 4 个，说明如下。\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e0 （ UNKNOW_ERROR ）：描述未知的错误信息，表示不包括在其它错误代码中的错误，可以在 message 属性中查找错误信息\u003c/li\u003e\n    \u003cli\u003e1 （ PERMISSION_DENIED ）：用户拒绝了浏览器定位服务的请求\u003c/li\u003e\n    \u003cli\u003e2 （ POSITION_UNAVALIABLE ）：没有正确获取或者获取不到地理位置信息\u003c/li\u003e\n    \u003cli\u003e3 （ TIMEOUT ）：获取地理位置时操作过时，必须在 positionOptions 参数中指定了 timeout 值才有可能发生这种错误\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003epositionOptions\u003c/h5\u003e\n\u003cp\u003epositionOptions 的数据格式为 JSON ，它有三个可选择的属性，说明如下。\u003c/p\u003e\n\u003col\u003e\n    \u003cli\u003eenableHighAcuracy ：它的值是一个布尔类型，表示是否启用高精确度模式，如果启用这种模式，浏览器在获取位置信息时可能需要耗费更多的时间\u003c/li\u003e\n    \u003cli\u003etimeout ：它的值是一个整数，表示浏览器需要在指定的时间内获取位置信息，否则触发 error_callback 函数中的错误\u003c/li\u003e\n    \u003cli\u003emaximumAge ：它是一个整数或者常量，表示浏览器重新获取位置信息的时间间隔\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch5\u003ewatchCurrentPosition() 方法\u003c/h5\u003e\n\u003cp\u003ewatchCurrentPosition() 方法可以实时获取或者检测用户的地理位置信息，它能像追踪器一样时刻监视用户的位置，只要发生变化，浏览器就会触发 watchCurrentPosition() 方法中的回调函数。\n\u003c/p\u003e\n\u003cp\u003ewatchCurrentPosition() 方法中同样包含三个参数，这三个参数的说明与 getCurrentPosition() 完全一样。不同的地方就是返回值，它类似于内置的延迟函数 setTimeout() 或者间隔函数\n    setInterval() ，返回一个 watchID ，可以被清除掉。\n\u003c/p\u003e\n\u003cp\u003eclearWatch() 方法会接收一个 watchPosition 返回的 watchId ，清除对用户位置的循环监视。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\u003cspan class=\"p\"\u003enavigator.geolocation.clearWatch(watchId);\u003c/span\u003e\u003c/code\u003e\n\u003cp\u003ewatchId 参数并不是必需的，如果不向该方法中传递参数，则表示清除所有的 watchPosition 对象。\u003c/p\u003e\n\u003cp\u003e经纬度坐标可以用以下两种方式表示：\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e十进制格式，如 39.172 22\u003c/li\u003e\n    \u003cli\u003eDMS 角度格式，如 39°20'\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cscript\u003e\n    var Aa = [\n        ['accuracy', '当前地理位置的精确度',],\n        ['latitude', '当前地理位置的纬度',],\n        ['longitude', '当前地理位置的经度',],\n        ['altitude', '当前地理位置的海拔高度',],\n        ['altitudeAccurancy', '当前地理位置的海拔精确度（单位： m ）',],\n        ['heading', '设置当前的前进方向，用正北方向的顺时针旋转角度来表示。无法获取时返回 null',],\n        ['speed', '当前设置的前进速度，以 m/s 为单位，无法获取时返回值为 null',],\n    ];\n    _MiMethod.td('Aa', Aa);\n\u003c/script\u003e","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ 定位","title":"方法"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","html","定位","方法"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

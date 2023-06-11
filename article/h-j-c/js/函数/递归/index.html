@@ -1,9 +1,80 @@
-<!DOCTYPE html><html lang="zh-CN"><head><title>随笔记余生</title><meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1"/><link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico"/><meta charSet="UTF-8"/><meta name="keywords" content="lmssee,letmiseesee,田金龙"/><meta name="description" content="let  my self super  ,exist  easy"/><meta name="format-detection" content="telephone=no"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="baidu-site-verification" content="codeva-LWbOgCgliW"/><link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css"/><script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script><meta name="next-head-count" content="12"/><link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style"/><link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script><script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script><script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script><script src="/next/static/chunks/pages/_app-a4b78db546643c4b.js" defer=""></script><script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script><script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script><script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_buildManifest.js" defer=""></script><script src="/next/static/GLOTieeQaYuedObUaoYz6/_ssgManifest.js" defer=""></script><style id="__jsx-a4447eaa0ca7cb3f">p.jsx-a4447eaa0ca7cb3f{color:"#ff0"}</style></head><body><div id="__next"><div class="PageLayout_page__s4HoR"><noscript><div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/> <br class="jsx-a4447eaa0ca7cb3f"/><p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p><p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p><p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge" class="jsx-a4447eaa0ca7cb3f">edge</a> </p><p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/" class="jsx-a4447eaa0ca7cb3f">chrome</a></p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p><p class="jsx-a4447eaa0ca7cb3f">.</p></div></noscript><div class="PageLayout_tabBar__qHep4" style="height:3rem"><div class="articleTitle"><div>递归</div><div>双击页面可关闭</div></div> </div><div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)"><div><style>
-                            table{
-                                border-collapse: collapse
-                            }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-                             td{
-                              border: .5px dotted  var(--mi-uni-background-color);
-                            }
-                            </style><div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e递归函数\u003c/h5\u003e\n\u003cp\u003e所谓递归函数，就是函数在自身的函数体内调用自身。任何一个有意义的递归总是由两部分组成的：递归调用和递归终止条件，递归运算在无限制的情况下，会无休止的调用自身。显然，程序不该出现这种无休止的递归调用，而只应出现有限次数的、有终止的调用。\n\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;script\u0026gt; \u003c/span\u003e\u003cspan class=\"p2\"\u003efunction f(n) { \u003c/span\u003e\u003cspan class=\"p4\"\u003evar l\n        = 0; \u003c/span\u003e\u003cspan class=\"p4\"\u003eif (n.nodeType == 1) l++; \u003c/span\u003e\u003cspan class=\"p4\"\u003evar child = n.childNodes;\n    \u003c/span\u003e\u003cspan class=\"p4\"\u003efor (var i = 0; i \u0026lt; child.length; i++) { \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003el += f(child[i]); \u003c/span\u003e\u003cspan class=\"p4\"\u003e} \u003c/span\u003e\u003cspan class=\"p4\"\u003ereturn l; \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p2\"\u003ewindow.onload = function() { \u003c/span\u003e\u003cspan class=\"p4\"\u003evar body =\n        document.getElementsByTagName(\"body\")[0]; \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003ealert(f(body)) \u003c/span\u003e\u003cspan class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;/script\u0026gt; \u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e尾递归\u003c/h5\u003e\n\u003cp\u003e尾递归是递归的一种优化算法，它从最后开始计算，每递归一次就算出相应的结果，即函数调用出现在调用函数的尾部，因为是尾部，所以不用去保存任何局部变量。返回时调用函数可以直接通过调用者，返回到调用者的调用者。\u003c/p\u003e\n\u003cp\u003e下面是线性递归。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003efunction f(n){\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ereturn ( n == 1) ? 1 : n * f (n - 1 );\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e}\u003c/span\u003e\n    \u003cspan class=\"p\"\u003econsole.log(f(5));\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e使用尾递归后。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003efunction f(n,a) {\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ereturn ( n == 1) ? a : f( n - 1 ,a * n);\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e}\u003c/span\u003e\n    \u003cspan class=\"p\"\u003econsole.log(f(5,1));\u003c/span\u003e\n\u003c/code\u003e\n\u003cp class=\"p4\"\u003e简单比较\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e线性递归： f(n)，返回值会被调用者使用\u003c/li\u003e\n    \u003cli\u003e尾递归： f(m,n)，返回值不会被调用者使用\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e尾递归由于直接返回值，不需要保存临时变量，所以性能不会产生线性增加，并且 JavaScript 解释器会将尾递归形式转化为非梯形形状。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ 函数","title":"递归"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","函数","递归"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<head>
+  <title>随笔记余生</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1" />
+  <link rel="icon" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/cn.ico" />
+  <meta charSet="UTF-8" />
+  <meta name="keywords" content="lmssee,letmiseesee,田金龙" />
+  <meta name="description" content="let  my self super  ,exist  easy" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="baidu-site-verification" content="codeva-LWbOgCgliW" />
+  <link rel="stylesheet" href="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/article.css" />
+  <script src="https://lmssee-1307513325.cos.ap-nanjing.myqcloud.com/http/depart.js"></script>
+  <meta name="next-head-count" content="12" />
+  <link rel="preload" href="/next/static/css/893679506eeb1c96.css" as="style" />
+  <link rel="stylesheet" href="/next/static/css/893679506eeb1c96.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="/next/static/chunks/webpack-c6dbc7736a27341e.js" defer=""></script>
+  <script src="/next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+  <script src="/next/static/chunks/main-81fa9cced5cdea31.js" defer=""></script>
+  <script src="/next/static/chunks/pages/app-a4b78db546643c4b.js" defer=""></script>
+  <script src="/next/static/chunks/876-1625ceb9fcab51bd.js" defer=""></script>
+  <script src="/next/static/chunks/154-d226cac4a2ec0c6e.js" defer=""></script>
+  <script src="/next/static/chunks/pages/article/%5B%5B...id%5D%5D-a672718e4865d1aa.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/buildManifest.js" defer=""></script>
+  <script src="/next/static/GLOTieeQaYuedObUaoYz6/ssgManifest.js" defer=""></script>
+  <style id="__jsx-a4447eaa0ca7cb3f">
+    p.jsx-a4447eaa0ca7cb3f {
+      color: "#ff0"
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <div class="PageLayout_page__s4HoR"><noscript>
+        <div id="noScript" class="jsx-a4447eaa0ca7cb3f"> <br class="jsx-a4447eaa0ca7cb3f" /> <br
+            class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" /> <br class="jsx-a4447eaa0ca7cb3f" />
+          <p class="jsx-a4447eaa0ca7cb3f">Hello，能看到这个界面是缘分呀</p>
+          <p class="jsx-a4447eaa0ca7cb3f">可能是浏览器的版本太低 ,或者是 js 被无情的禁用了。</p>
+          <p class="jsx-a4447eaa0ca7cb3f">推荐靠谱浏览器</p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.microsoft.com/en-us/edge"
+              class="jsx-a4447eaa0ca7cb3f">edge</a> </p>
+          <p class="jsx-a4447eaa0ca7cb3f"><a href="https://www.google.com/intl/zh-CN/chrome/dev/"
+              class="jsx-a4447eaa0ca7cb3f">chrome</a></p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+          <p class="jsx-a4447eaa0ca7cb3f">.</p>
+        </div>
+      </noscript>
+      <div class="PageLayout_tabBar__qHep4" style="height:3rem">
+        <div class="articleTitle">
+          <div>递归</div>
+          <div>双击页面可关闭</div>
+        </div>
+      </div>
+      <div class="PageLayout_container__2kHHl" style="height:calc(100% - 5rem)">
+        <div>
+          <style>
+            table {
+              border-collapse: collapse
+            }
+
+            td {
+              border: .5px dotted var(--mi-uni-background-color);
+            }
+          </style>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"data":"\u003ch5\u003e递归函数\u003c/h5\u003e\n\u003cp\u003e所谓递归函数，就是函数在自身的函数体内调用自身。任何一个有意义的递归总是由两部分组成的：递归调用和递归终止条件，递归运算在无限制的情况下，会无休止的调用自身。显然，程序不该出现这种无休止的递归调用，而只应出现有限次数的、有终止的调用。\n\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p2\"\u003e\u0026lt;script\u0026gt; \u003c/span\u003e\u003cspan class=\"p2\"\u003efunction f(n) { \u003c/span\u003e\u003cspan class=\"p4\"\u003evar l\n        = 0; \u003c/span\u003e\u003cspan class=\"p4\"\u003eif (n.nodeType == 1) l++; \u003c/span\u003e\u003cspan class=\"p4\"\u003evar child = n.childNodes;\n    \u003c/span\u003e\u003cspan class=\"p4\"\u003efor (var i = 0; i \u0026lt; child.length; i++) { \u003c/span\u003e\n    \u003cspan class=\"p6\"\u003el += f(child[i]); \u003c/span\u003e\u003cspan class=\"p4\"\u003e} \u003c/span\u003e\u003cspan class=\"p4\"\u003ereturn l; \u003c/span\u003e\u003cspan\n        class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p2\"\u003ewindow.onload = function() { \u003c/span\u003e\u003cspan class=\"p4\"\u003evar body =\n        document.getElementsByTagName(\"body\")[0]; \u003c/span\u003e\n    \u003cspan class=\"p4\"\u003ealert(f(body)) \u003c/span\u003e\u003cspan class=\"p2\"\u003e} \u003c/span\u003e\u003cspan class=\"p\"\u003e\u0026lt;/script\u0026gt; \u003c/span\u003e\u003cspan\n        class=\"p\"\u003e\u003c/span\u003e\n\u003c/code\u003e\n\u003ch5\u003e尾递归\u003c/h5\u003e\n\u003cp\u003e尾递归是递归的一种优化算法，它从最后开始计算，每递归一次就算出相应的结果，即函数调用出现在调用函数的尾部，因为是尾部，所以不用去保存任何局部变量。返回时调用函数可以直接通过调用者，返回到调用者的调用者。\u003c/p\u003e\n\u003cp\u003e下面是线性递归。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003efunction f(n){\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ereturn ( n == 1) ? 1 : n * f (n - 1 );\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e}\u003c/span\u003e\n    \u003cspan class=\"p\"\u003econsole.log(f(5));\u003c/span\u003e\n\u003c/code\u003e\n\u003cp\u003e使用尾递归后。\u003c/p\u003e\n\u003ccode class=\"c\"\u003e\n    \u003cspan class=\"p\"\u003efunction f(n,a) {\u003c/span\u003e\n    \u003cspan class=\"p2\"\u003ereturn ( n == 1) ? a : f( n - 1 ,a * n);\u003c/span\u003e\n    \u003cspan class=\"p\"\u003e}\u003c/span\u003e\n    \u003cspan class=\"p\"\u003econsole.log(f(5,1));\u003c/span\u003e\n\u003c/code\u003e\n\u003cp class=\"p4\"\u003e简单比较\u003c/p\u003e\n\u003cul\u003e\n    \u003cli\u003e线性递归： f(n)，返回值会被调用者使用\u003c/li\u003e\n    \u003cli\u003e尾递归： f(m,n)，返回值不会被调用者使用\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e尾递归由于直接返回值，不需要保存临时变量，所以性能不会产生线性增加，并且 JavaScript 解释器会将尾递归形式转化为非梯形形状。\u003c/p\u003e","pageTitle":"h-j-c ✈︎✈︎ js ✈︎✈︎ 函数","title":"递归"},"__N_SSG":true},"page":"/article/[[...id]]","query":{"id":["h-j-c","js","函数","递归"]},"buildId":"GLOTieeQaYuedObUaoYz6","isFallback":false,"gsp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>
