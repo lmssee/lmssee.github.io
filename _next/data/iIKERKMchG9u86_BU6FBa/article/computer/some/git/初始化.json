@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5> 初始化 </h5>\n<p>git init 会创建一个 git 仓库，或重新出实话一个现有仓库，初始化 git ：</p>\n<code class=\"c\">\n    <span class=\"p\">git init</span>\n</code>\n<p>该命令会创建一个空 git 仓库，还会创建引用主分支的 HEAD 初始文件。</p>","pageTitle":"computer ✈︎✈︎ some ✈︎✈︎ git","title":"初始化"},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>res</h5>\n<p>响应对象（res/response）的生命周期始于 Node 核心对象 http.ServerRespense 的实例。</p>","pageTitle":"node ✈︎✈︎ NodeJs ✈︎✈︎ 基础","title":"响应对象"},"__N_SSG":true}

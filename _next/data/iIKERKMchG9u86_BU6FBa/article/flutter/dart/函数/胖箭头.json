@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>胖箭头（函数）</h5>\n<p>仅能有一条代码段！！且结尾不能加分号。</p>\n<code class=\"c\">\n    <span class=\"p\">var printSome = ()=&gt;{</span>\n    <span class=\"p\">print('some')</span>\n    <span class=\"p\">}</span>\n</code>","pageTitle":"flutter ✈︎✈︎ dart ✈︎✈︎ 函数","title":"胖箭头"},"__N_SSG":true}

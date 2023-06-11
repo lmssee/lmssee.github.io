@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>闭包</h5>\n<p>设置闭包，避免产生全局变量的污染问题。但是会造成内层泄漏问题。</p>\n<p>方法返回方法。</p>","pageTitle":"flutter ✈︎✈︎ dart ✈︎✈︎ 函数","title":"闭包"},"__N_SSG":true}

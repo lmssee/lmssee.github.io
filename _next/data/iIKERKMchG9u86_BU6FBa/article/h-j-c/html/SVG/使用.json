@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>在 HTML 中使用 SVG</h5>\n<h6>使用 embed 插入</h6>\n<ul>\n    <li>优点：所有主要浏览器都支持，并允许使用脚本</li>\n    <li>缺点：不推荐 HTML 4 和 XHTML 中使用</li>\n</ul>\n<p>大型的 svg 建议使用矢量编译器 </p>","pageTitle":"h-j-c ✈︎✈︎ html ✈︎✈︎ SVG","title":"使用"},"__N_SSG":true}

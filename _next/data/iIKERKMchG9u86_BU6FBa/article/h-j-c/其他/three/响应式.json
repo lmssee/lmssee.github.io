@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>设置摄像机的配置</h5>\n<p>将摄像机（Camera）的 aspect 属性设置为画布的宽高比，可防止变形：</p>\n<code class=\"c\">\n    <span class=\"p\">camera.aspect = canvas.clientWidth/canvas.clientHeight;</span>\n    <span class=\"p\">camera.updateProjectionMatrix();</span>\n</code>\n<h5>渲染器与画布同尺寸</h5>\n<p>当渲染器与画布同尺寸时</p>","pageTitle":"h-j-c ✈︎✈︎ 其他 ✈︎✈︎ three","title":"响应式"},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>code ERESOLVE</h5>\n<p>由于 npm7.0 比 npm6.0 更加严格，使用下面代码：</p>\n<code class=\"c\">\n    <span class=\"p\">npm i --legacy-peer-deps</span>\n</code>","pageTitle":"node ✈︎✈︎ NodeJs ✈︎✈︎ 一些","title":"npm i"},"__N_SSG":true}

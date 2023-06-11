@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>使用中间件</h5>\n<p>应该把中间件加在所有的路由之前：</p>\n<code class=\"c\">\n    <span class=\"p\">app.use(express.static(__dirname + '/public'));</span>\n</code>","pageTitle":"node ✈︎✈︎ NodeJs ✈︎✈︎ express","title":"静态文件"},"__N_SSG":true}

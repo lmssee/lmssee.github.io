@@ -1,0 +1,1 @@
+{"pageProps":{"data":"<h5>Container</h5>\n<p>类似于 js 中的 div 小程序的 view。有 child、width、height、decoration 等参数。</p>\n<p>其 Color 可选参数与 decoration 冲突。当有 decoration 时需要将 color 声明在 decoration 下的 color命名参数。</p>\n<p>在 decoration 下，shape 命名参数和 border 命名参数有冲突，无法同时声明。</p>","pageTitle":"flutter ✈︎✈︎ flutter ✈︎✈︎ 结构组件","title":"container"},"__N_SSG":true}
