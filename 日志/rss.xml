@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>let mi see see Blog</title>
+        <link>https://lmssee.github.io/日志</link>
+        <description>let mi see see Blog</description>
+        <lastBuildDate>Sun, 02 Feb 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[mdx 相关]]></title>
+            <link>https://lmssee.github.io/日志/mdx 使用</link>
+            <guid>https://lmssee.github.io/日志/mdx 使用</guid>
+            <pubDate>Sun, 02 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[与 docusaurus 相关的使用说明]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="description-文件描述">description 文件描述<a href="https://lmssee.github.io/%E6%97%A5%E5%BF%97/mdx%20%E4%BD%BF%E7%94%A8#description-%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0" class="hash-link" aria-label="description 文件描述的直接链接" title="description 文件描述的直接链接">​</a></h2>
+<p>文件描述用于添加到文件头，展示为当前文件的 <code>name="description"</code> 信息</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="title-标题展示">title 标题展示<a href="https://lmssee.github.io/%E6%97%A5%E5%BF%97/mdx%20%E4%BD%BF%E7%94%A8#title-%E6%A0%87%E9%A2%98%E5%B1%95%E7%A4%BA" class="hash-link" aria-label="title 标题展示的直接链接" title="title 标题展示的直接链接">​</a></h2>
+<p>title 不仅是网页的 title ，也会在<a href="https://lmssee.github.io/%E6%97%A5%E5%BF%97/mdx%20%E4%BD%BF%E7%94%A8#">侧栏</a>数据缺失时被搜集作为左侧文本展示</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tags-标签组">tags 标签组<a href="https://lmssee.github.io/%E6%97%A5%E5%BF%97/mdx%20%E4%BD%BF%E7%94%A8#tags-%E6%A0%87%E7%AD%BE%E7%BB%84" class="hash-link" aria-label="tags 标签组的直接链接" title="tags 标签组的直接链接">​</a></h2>
+<p>tags 可用于标记博文或文档，归类。tag 可在根文件下进行管理</p>
+<div class="language-yml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">docs/tags/yml</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">docusaurus</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">label</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'建站'</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">#  tag 名，用于展示与该文件关联</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">permalink</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'build_website'</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic"># 展示在导航栏</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">description</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"构建网站的相关数据信息"</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic"># 标签描述</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2></h2>]]></content:encoded>
+            <category>建站</category>
+        </item>
+        <item>
+            <title><![CDATA[相关技术使用]]></title>
+            <link>https://lmssee.github.io/日志/相关技术使用</link>
+            <guid>https://lmssee.github.io/日志/相关技术使用</guid>
+            <pubDate>Sat, 01 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[主要技术 [docusaurus]]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要技术-docusaurus">主要技术 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">docusaurus</a><a href="https://lmssee.github.io/%E6%97%A5%E5%BF%97/%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF%E4%BD%BF%E7%94%A8#%E4%B8%BB%E8%A6%81%E6%8A%80%E6%9C%AF-docusaurus" class="hash-link" aria-label="主要技术-docusaurus的直接链接" title="主要技术-docusaurus的直接链接">​</a></h2>
+<p>构建最最主要的技术当然是框架 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">docusaurus</a>。当然，该框架也是需要基础的技术支持：</p>
+<ul>
+<li><a href="https://www.w3.org/zh-hans/" target="_blank" rel="noopener noreferrer">html</a>：网页骨架支持。标准由 <a href="https://www.w3.org/zh-hans/" target="_blank" rel="noopener noreferrer">w3c</a> 提供，学习 <a href="https://developer.mozilla.org/zh-CN/docs/Web/html" target="_blank" rel="noopener noreferrer">mdn html</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener noreferrer">css</a>： 网页精装必备。标准也有 <a href="https://www.w3.org/zh-hans/" target="_blank" rel="noopener noreferrer">w3c</a> 提供, 学习可上 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank" rel="noopener noreferrer">mdn css</a></li>
+<li><a href="https://tc39.es/" target="_blank" rel="noopener noreferrer">js</a>：  构建网页多样化、现代化的智能家居。标准由 <a href="https://tc39.es/" target="_blank" rel="noopener noreferrer">tc39.es</a> 提供， 学习可上 <a href="https://developer.mozilla.org/zh-CN/docs/Web/javascript" target="_blank" rel="noopener noreferrer">mdn js</a></li>
+<li><a href="https://nodejs.org/zh-cn" target="_blank" rel="noopener noreferrer">node</a>： 现代化构建网站的技术</li>
+</ul>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> BackRipple </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'oops-ui'</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> a </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p>]]></content:encoded>
+            <category>建站</category>
+        </item>
+        <item>
+            <title><![CDATA[又一次重构]]></title>
+            <link>https://lmssee.github.io/日志/又一次重构</link>
+            <guid>https://lmssee.github.io/日志/又一次重构</guid>
+            <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[[lmssee] 经过漫长的 [next.js] + [nest.js] 重构。 终于，还是选择了 [docusaurus] 技术进行一键构站。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lmssee.com/" target="_blank" rel="noopener noreferrer">lmssee</a> 经过漫长的 <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">next.js</a> + <a href="https://docs.nestjs.com/" target="_blank" rel="noopener noreferrer">nest.js</a> 重构。 终于，还是选择了 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">docusaurus</a> 技术进行一键构站。</p>
+<p>网站之前经过了 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">java script</a> ⇨ <a href="https://v2.cn.vuejs.org/" target="_blank" rel="noopener noreferrer">vue</a> ⇨ <a href="https://nuxt.com/" target="_blank" rel="noopener noreferrer">nuxt.js</a> ⇨ <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">next.js</a> 一路折腾， 我最终还是选择了 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">docusaurus</a> 。</p>
+<p>古话说的好，越是免费越是贵。在技术上就是越是省事的东西最终越麻烦。或许，也就我自己这么觉得。</p>
+<p>一键建站是指在使用 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">docusaurus</a> 的构建命令即可极速搭建</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># classic 是模版类型</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npx create-docusaurus@latest [project name] classic</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>然后，仅需执行 <code>cd [project name] &amp;&amp; npx docusaurus start</code> 即可让网站进行运行。而且么，默认的样式和布局结构也不是很坏。</p>
+<p>但默认的使用默认的东西，是最便捷的。毕竟，<code>npx docusaurus build</code> 直接构建成静态网站。</p>
+<p>不足也很明显，那就是编码完全基于 <code>markdown</code> ，即本地编写，再有就是当你不想被默认的布局和样式束缚时，麻烦才是刚刚开始。</p>
+<p>而我使用 <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noopener noreferrer">docusaurus</a> 最最要的原因就是能够实现 <a href="https://lmssee.com/" target="_blank" rel="noopener noreferrer">lmssee.com</a>、<a href="https://lmssee.cn/" target="_blank" rel="noopener noreferrer">lmssee.cn</a> 与 <a href="https://lmssee.github.io/" target="_blank" rel="noopener noreferrer">lmssee.github.io</a> 做到三站统一。</p>
+<p>前几年使用 <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">next.js</a> 进行构建的时候对比了 next</p>]]></content:encoded>
+            <category>建站</category>
+        </item>
+    </channel>
+</rss>
