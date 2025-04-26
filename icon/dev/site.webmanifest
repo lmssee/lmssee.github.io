@@ -1,0 +1,21 @@
+{
+  "name": "灵土慧核",
+  "short_name": "earthnut",
+  "icons": [
+    {
+      "src": "/cors/icon/dev/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/cors/icon/dev/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "Step into the spiritual earth wisdom core, this wisdom core nurtured by the spirituality of the earth. Here, the natural sciences and the arts are intertwined, expert insights collide with popular creativity, drawing inspiration from the ancient land to open the door to enlightening and enriching wisdom (well, the title and description are all  DouBao)",
+  "display": "standalone"
+}
