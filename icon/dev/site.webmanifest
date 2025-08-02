@@ -1,0 +1,21 @@
+{
+  "name": "花生亻",
+  "short_name": "earthnut",
+  "icons": [
+    {
+      "src": "/cors/icon/dev/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/cors/icon/dev/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "你好，花生吃了没？没吃？没吃就算了，那玩意吃多了不好。一伤钱，二伤肾。但是，我是花生亻。",
+  "display": "standalone"
+}
