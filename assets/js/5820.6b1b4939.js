@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknotebook=self.webpackChunknotebook||[]).push([[5820],{5820:(e,c,t)=>{t.d(c,{createArchitectureServices:()=>k.S});var k=t(83738);t(89932)}}]);
