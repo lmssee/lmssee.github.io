@@ -1,0 +1,21 @@
+{
+  "name": "地球笔记",
+  "short_name": "enn",
+  "icons": [
+    {
+      "src": "/img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "这里并不是真的地球笔记！！！ Learn! Master! Share!  Solve!  Explore!  Evolve!",
+  "display": "standalone"
+}

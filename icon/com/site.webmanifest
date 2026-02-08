@@ -1,0 +1,21 @@
+{
+  "name": "左左和右右",
+  "short_name": "lmssee",
+  "icons": [
+    {
+      "src": "/icon/com/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon/com/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "左左和右右的个站，包含了一些 npm 包和一些 edge extension 说明，同时也包含了部分的学习资料",
+  "display": "standalone"
+}

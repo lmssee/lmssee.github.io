@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknotebook=globalThis.webpackChunknotebook||[]).push([[80930],{27660(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"sidebar_reader"}')}}]);
