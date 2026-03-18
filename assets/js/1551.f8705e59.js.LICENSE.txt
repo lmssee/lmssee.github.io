@@ -1,0 +1,19 @@
+/**
+ * @module @enr/useTimeId
+ * @file useTimeId.ts
+ * @description 使用定时器返回的时间戳
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2025-01-07 11:20
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-07 08:12
+ */
+
+/**
+ * 过去随机数
+ *
+ * @packageDocumentation
+ * @module @a-js-tools/get-random-number
+ * @license MIT
+ */

@@ -1,0 +1,24 @@
+/**
+ * @module @enr/imperative-handle
+ * @file imperative-handle.ts
+ * @description 公共的命令句柄
+ * @author Mr.MudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ Mr.MudBean
+ * @since 2026-02-04 06:52
+ * @version 2.0.1
+ * @lastModified 2026-02-04 07:57
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/data-default
+ * @file data-default.ts
+ * @description 默认属性值
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 11:55
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-05 17:22
+ */

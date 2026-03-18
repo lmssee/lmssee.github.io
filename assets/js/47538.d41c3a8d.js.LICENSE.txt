@@ -1,0 +1,173 @@
+/**
+ * @module @enr/class-event-action
+ * @file class-event-action.ts
+ * @description 交互事件
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-23 01:23
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-04 06:46
+ */
+
+/**
+ * @module @enr/tools
+ * @file tools.ts
+ * @description 工具
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2024-12-07 01:36
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-01-25 01:37
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-build-background
+ * @file class-build-background.ts
+ * @description 构建默认的页面
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 14:17
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-05 17:41
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-element-html-meta
+ * @file class-html-element-meta.ts
+ * @description 构建元素节点数据
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-21 21:32
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-03 12:53
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-param
+ * @file class-param.ts
+ * @description 参数类
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 02:40
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-05 19:20
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-render-action
+ * @file class-render-action.ts
+ * @description 渲染动作类
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 12:07
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-03 14:44
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-render-data
+ * @file class-render-data.ts
+ * @description 渲染数据类
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 02:56
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-03 17:52
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-ripple
+ * @file class-ripple.ts
+ * @description ripple 类，整合其他类
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 03:03
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-05 19:24
+ *
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-test-envelop
+ * @file class-element-environment.ts
+ * @description _
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-26 01:24
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-01 06:00
+ */
+
+/**
+ * @packageDocumentation
+ * @module @enr/class-webgl
+ * @file class-webgl.ts
+ * @description 构建 webGl
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 02:44
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-02-04 06:51
+ */
+
+/**
+ * @packageDocumentation
+ * @module @qqi/reducer/index
+ * @file index.ts
+ * @description _
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-26 19:56
+ * @version 0.0.0
+ * @lastModified 2026-01-27 11:41
+ */
+
+/**
+ * 检测 Javascript 数据类型工具之: object
+ *
+ * @packageDocumentation
+ * @module @a-type-of-js/object
+ * @license MIT
+ */
+
+/**
+ * 获取随机字符串
+ *
+ * @packageDocumentation
+ * @module @a-js-tools/get-random-string
+ * @license MIT
+ */
+
+/**
+ * 过去随机数
+ *
+ * @packageDocumentation
+ * @module @a-js-tools/get-random-number
+ * @license MIT
+ */
+
+/**
+ * 防抖和节流
+ *
+ * @packageDocumentation
+ * @module @a-js-tools/performance
+ * @license MIT
+ */
