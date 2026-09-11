@@ -1,0 +1,12 @@
+/**
+ * @packageDocumentation
+ * @module @enr/data-default
+ * @file data-default.ts
+ * @description 默认属性值
+ * @author MrMudBean <Mr.MudBean@outlook.com>
+ * @license MIT
+ * @copyright 2026 ©️ MrMudBean
+ * @since 2026-01-22 11:55
+ * @version 2.0.0-alpha.0
+ * @lastModified 2026-03-25 20:26
+ */

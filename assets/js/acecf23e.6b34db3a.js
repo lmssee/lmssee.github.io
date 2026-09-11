@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmain_doc_of_docusaurus||=[]).push([[1903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/\u5efa\u7ad9\u65e5\u5fd7","blogTitle":"\u5efa\u7ad9 \ud83d\udcc5","authorsListPath":"/\u5efa\u7ad9\u65e5\u5fd7/authors"}')}}]);

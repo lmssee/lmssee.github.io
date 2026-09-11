@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmain_doc_of_docusaurus||=[]).push([[8709],{95685(a){a.exports=JSON.parse('{"metadata":{"permalink":"/\u5efa\u7ad9\u65e5\u5fd7/page/4","page":4,"postsPerPage":10,"totalPages":4,"totalCount":34,"previousPage":"/\u5efa\u7ad9\u65e5\u5fd7/page/3","blogDescription":"Blog","blogTitle":"\u5efa\u7ad9 \ud83d\udcc5"}}')}}]);

@@ -1,0 +1,146 @@
+*,
+body,
+html,
+header,
+nav,
+section,
+aside,
+article,
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 3px double #f0f;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #0f0;
+  border: none;
+  overflow: hidden;
+}
+
+body {
+  /* 定义页面布局 */
+  display: grid;
+  /* 定义三行的高度 */
+  grid-template-rows: 50px auto 50px;
+  /* 定义两列的宽度 */
+  grid-template-columns: 150px auto;
+  /**  网格命名  */
+  grid-template-areas:
+    'header header'
+    'nav section'
+    'footer footer';
+  /**  网格间距  */
+  gap: 10px;
+  /* 视口 */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  & > header {
+    grid-area: header;
+    color: #000;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #000, #fff);
+    background-repeat: no-repeat;
+    background-size: 100% 12px;
+    background-position: 0 100%;
+  }
+
+  & > nav {
+    grid-area: nav;
+    letter-spacing: 3px;
+    writing-mode: vertical-rl;
+    box-shadow: 1px 1px 12px #0ff3;
+    border-radius: 14px;
+  }
+
+  & > section {
+    grid-area: section;
+  }
+}
+
+body > section {
+  display: grid;
+  /* 定义三行的高度 */
+  grid-template-rows: 100%;
+  /* 定义两列的宽度 */
+  grid-template-columns: auto 80px;
+  /**  网格间距  */
+  gap: 10px;
+  grid-template-areas: 'article aside';
+
+  & > article {
+    grid-area: article;
+  }
+
+  & > aside {
+    grid-area: aside;
+    writing-mode: vertical-rl;
+    box-shadow: 1px 1px 24px #0f9;
+    border-radius: 24px;
+  }
+
+  &::before {
+    content: 'HTML5 文档的主要内容区域';
+    position: absolute;
+    letter-spacing: 15px;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 16px;
+    border-radius: 10px;
+  }
+}
+
+article > section {
+  height: 100%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto 60px;
+  grid-template-rows: 100%;
+  grid-template-areas: 'article aside';
+
+  & > article {
+    grid-area: article;
+
+    & > header {
+      padding: 10px;
+      text-align: center;
+    }
+
+    text-indent: 2rem;
+  }
+
+  & > aside {
+    grid-area: aside;
+    writing-mode: vertical-rl;
+    background-color: #ff63;
+    color: #96f;
+  }
+}
+
+footer {
+  grid-area: footer;
+  background-color: #666;
+  box-shadow: -1px -1px 12px #3f66;
+}
+
+.text-center {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
